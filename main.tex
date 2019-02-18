@@ -47,7 +47,15 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\usepackage{eso-pic}
+\newcommand\BackgroundPic{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{background.jpg}
+\vfill
+}}}
 
 
 
@@ -55,20 +63,35 @@
 %%%%%%%%%%%%%%%%%%
 %%% First page %%%
 %%%%%%%%%%%%%%%%%%
-
+\AddToShipoutPicture*{\BackgroundPic}
 \begin{titlepage}
 \begin{center}
 
-\includegraphics[width=0.6\textwidth]{images/parisNanterre-logo}\\[1cm]
+% \includegraphics[width=0.3\textwidth]{images/parisNanterre-logo}
+% \includegraphics[width=0.2\textwidth]{images/logo_afia_2x.png}
+% \includegraphics[width=0.2\textwidth]{images/Final Logo.png}\\[2 cm]
+\begin{figure}[!htb]
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{images/parisNanterre-logo}
+\endminipage\hfill
+\minipage{0.2\textwidth}
+  \includegraphics[width=\linewidth]{images/logo_afia_2x.png}
+\endminipage\hfill
+\minipage{0.2\textwidth}%
+  \includegraphics[width=\linewidth]{images/datategy.png}
+\endminipage
+\end{figure}
+\\[3cm] 
+\bigskip
+{\huge \bfseries Mémoire de fin d'étude M2 MIAGE}\\[1cm]
+\\[1.5cm]
 
-{\large Mémoire de fin d'étude Master 2 MIAGE}\\[0.5cm]
-
-
-
+\centerline{\includegraphics[width=20.5cm]{images/cover.png}}
+\\[1.5cm]
 % Title
-\rule{\linewidth}{0.5mm} \\[0.4cm]
-{ \huge \bfseries Quel est l'impact de la visualisation du Big Data sur les smart cities? \\[0.4cm] }
-\rule{\linewidth}{0.5mm} \\[1.5cm]
+%\rule{\linewidth}{0.5mm} \\[0.4cm]
+%{ \huge \bfseries Quel est l'impact de la visualisation du Big Data sur les smart cities? \\[0.4cm] }
+%\rule{\linewidth}{0.5mm} \\[1.5cm]
 
 % Author and supervisor
 \noindent
