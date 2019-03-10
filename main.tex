@@ -47,15 +47,7 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{eso-pic}
-\newcommand\BackgroundPic{%
-\put(0,0){%
-\parbox[b][\paperheight]{\paperwidth}{%
-\vfill
-\centering
-\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{background.jpg}
-\vfill
-}}}
+
 
 
 
@@ -63,13 +55,10 @@
 %%%%%%%%%%%%%%%%%%
 %%% First page %%%
 %%%%%%%%%%%%%%%%%%
-\AddToShipoutPicture*{\BackgroundPic}
+
 \begin{titlepage}
 \begin{center}
 
-% \includegraphics[width=0.3\textwidth]{images/parisNanterre-logo}
-% \includegraphics[width=0.2\textwidth]{images/logo_afia_2x.png}
-% \includegraphics[width=0.2\textwidth]{images/Final Logo.png}\\[2 cm]
 \begin{figure}[!htb]
 \minipage{0.25\textwidth}
   \includegraphics[width=\linewidth]{images/parisNanterre-logo}
@@ -81,18 +70,16 @@
   \includegraphics[width=\linewidth]{images/datategy.png}
 \endminipage
 \end{figure}
-\\[3cm] 
-\bigskip
-{\huge \bfseries Mémoire de fin d'étude M2 MIAGE}\\[1cm]
-\\[1.5cm]
+\vspace{1cm}
+{\Large Mémoire de fin d'étude Master 2 MIAGE}\\[0.5cm]
 
-\centerline{\includegraphics[width=20.5cm]{images/cover.png}}
-\\[1.5cm]
+
+
 % Title
-%\rule{\linewidth}{0.5mm} \\[0.4cm]
-%{ \huge \bfseries Quel est l'impact de la visualisation du Big Data sur les smart cities? \\[0.4cm] }
-%\rule{\linewidth}{0.5mm} \\[1.5cm]
-
+\rule{\linewidth}{0.5mm} \\[0.4cm]
+{ \huge \bfseries Quel est l'impact de la visualisation du Big Data sur les smart cities? \\[0.4cm] }
+\rule{\linewidth}{0.5mm} \\[1.5cm]
+\includegraphics[width=1\textwidth]{images/Smart-City.jpg}\\[1cm]
 % Author and supervisor
 \noindent
 \begin{minipage}{0.4\textwidth}
@@ -106,7 +93,7 @@
     \emph{Encadrants :} \\
     Mme.~Sonia \textsc{GUEHIS}\\
     M.~Mehdi \textsc{CHOUITEN }
-    
+
   \end{flushright}
 \end{minipage}
 
@@ -400,8 +387,8 @@ La variable de données utilise la progression de la couleur pour se représente
     \centering
     \includegraphics[height=5cm]{images/choropleth.png}
     \scriptsize{source :\url{https://datavizcatalogue.com/methods/choropleth.html}}
-    \caption{Carte Choroplèthes}
-    \label{fig:2.9}
+    \caption{Carte Choroplèthes 1}
+    \label{fig:1.9}
 \end{figure}
 
 \begin{figure}[!htb]
@@ -412,8 +399,8 @@ Une erreur courante lors de la production de cartes Choroplèthes est de coder d
 \end{minipage}\hfil
 \begin{minipage}{0.35\linewidth}
     \includegraphics[height=8cm]{images/choropleth-zoom.png}
-    \caption{}
- \label{fig:4.6}
+    \caption{Carte Choroplèthes 1}
+ \label{fig:2.9}
 \end{minipage}
 \end{figure}
 \subsubsection{4. Les cartes thermiques (Heatmap)}
@@ -422,7 +409,7 @@ La figure ~\ref{fig:2.11} ci-dessous montre les précipitations annuelles moyenn
 \centering
 \includegraphics[width=0.4\textwidth]{images/Heatmap.png}
 \scriptsize{source :\url{https://blog.socialcops.com/academy/resources/7-techniques-to-visualize-geospatial-data/}}
-\caption{\label{fig:2.11} Carte thermique}
+\caption{\label{fig:2.10} Carte thermique}
 \end{wrapfigure}
 Les cartes thermiques permettent de visualiser les données à travers des variations de coloration. Lorsqu'elles sont appliquées à un format tabulaire, les cartes thermiques sont utiles pour effectuer un examen croisé des données multivariées, en plaçant des variables dans les lignes et les colonnes, et en colorant les cellules du tableau. Les cartes thermiques sont utiles pour afficher la variance entre plusieurs variables, révéler toutes les tendances, indiquer si des variables sont similaires les unes aux autres et pour détecter si des corrélations existent entre elles. \\
 
@@ -570,6 +557,35 @@ DATATEGY est une société de conseil et d’expertise en Data Science. Elle con
 La Smart City, ou ville intelligente consiste globalement en l’optimisation des coûts, de l’organisation, du bien-être des habitants.La ville est au service du citoyen mais ce dernier a néanmoins des obligations à respecter pour s’inscrire lui même comme acteur bénéficiant de ses services .Nous agissons en droite ligne avec l’objectif des opérateurs, des métropoles, et des territoires afin d’accompagner cet enjeu sociétal, politique et environnemental.Les solutions développées par DATATEGY s’interconnectent avec les réseaux existants, le croisement et l’exploitation des données.......
 \section{Visualisation big data dans le cadre de la solution OctoCity}
 L'objectif de cette partie est de présenter les tâches qui été réalisés sur la visualisation de Big data dans le cadre de la solution OctoCity.(état de l’art- Critiques - proposition et réflexion).
+
+\subsubsection{Bublle map}
+\begin{figure}[!htp]
+    \centering
+    \includegraphics[height=6cm]{images/datategy-bubble-map.jpg}
+    \scriptsize{}
+    \caption{Visualisation le numbre de controle}
+    \label{fig:3.1}
+\end{figure}
+
+
+\subsubsection{Scatter plot}
+\begin{figure}[!htp]
+    \centering
+    \includegraphics[height=6cm]{images/datategy-scatter-plot.jpg}
+    \scriptsize{}
+    \caption{Visualisation le numbre de contravention par station}
+    \label{fig:3.2}
+\end{figure}
+
+
+\subsubsection{Suburst diagram}
+\begin{figure}[!htp]
+    \centering
+    \includegraphics[height=6cm]{images/datategy-sunburst.jpg}
+    \scriptsize{}
+    \caption{Visualisation le numbre de contravention par 3 niveaux}
+    \label{fig:3.3}
+\end{figure}
 
 \chapter{ Bilan et conclusion}
 \section{Bilan professionnel}
