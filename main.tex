@@ -294,54 +294,65 @@ Dans le monde des affaires au rythme rapide, chaque seconde compte. Les entrepri
 Même si peu de dirigeants nieraient le fait que les processus et les activités opérationnels quotidiens d’une organisation aient un impact direct sur les performances globales de l’entreprise, il peut être difficile de voir exactement comment ces activités affectent le succès de la société. Les outils de visualisation de données volumineuses résolvent ce problème en permettant aux dirigeants de découvrir visuellement les relations cachées qui relient les processus quotidiens aux performances de l'entreprise.
 \subsubsection{4. Raconter une histoire à travers des données:}
 L'esprit humain a tendance à préférer traiter les informations de manière linéaire, c'est-à-dire qu'il aime voir les causes, les effets et les résolutions alignés de manière à raconter une histoire. En présentant les données de manière centrée visuellement, la visualisation de données volumineuses donne à l’information quelque chose qui lui manque généralement : un sentiment de progression. Cela rend la compréhension plus facile et l’utilisation aussi à utiliser pour les utilisateurs.
+\subsection{Les éléments déterminant le choix de visualisation du Big Data:}
+La visualisation est la première étape pour donner du sens aux données. Pour transcrire et présenter de manière simple les corrélations de données, les analystes de données utilisent un large éventail de charts, de diagrammes et de cartes. Le choix de la bonne technique et de sa configuration est souvent le véritable enjeu pour rendre les données compréhensibles. Et inversement, l’utilisation de techniques erronées peut ne pas présenter tout le potentiel des données, voire les rendre non pertinentes.
+
+Les nombreux facteurs qui influencent les choix de visualisation des données sont :
+\subsubsection{1. L’audience:}
+Il est important d’ajuster la représentation des données au public cible. Par exemple, si ce sont des clients finaux qui parcourent leurs progrès dans une application de sport, la simplicité est de mise. Par contre, si les analyses de données sont destinées à des chercheurs ou à des décideurs expérimentés, il est nécessaire d’aller au-delà des simples graphiques.
+Il faut décider les données que la visualisation affichera, quels sont ses objectifs et ce qu’elle peut éventuellement révéler. Chaque visualisation doit avoir un objectif clairement défini pour piloter sa création.
+\subsubsection{2. Le contenu:}
+Ce qu’il faut présenter est aussi important que celui à qui il faut le montrer. Il existe 4 méthodes de base pour aborder la visualisation de données:
+- Relations: il indique les liens et l'impact mutuel entre des éléments spécifiques (tels que le niveau d'éducation et le revenu moyen). Le nuage de points (Scatter plot) est le meilleur choix dans ce cas.
+- Timeframe: les graphiques linéaires conviennent parfaitement si l’objectif est de montrer comment un certain phénomène se développe au fil du temps.
+- Composition: cette technique est développée pour révéler la structure d'une seule unité, en montrant ses éléments constitutifs. La méthode la plus simple consiste à utiliser un graphique à secteurs, mais s’il est nécessaire d’obtenir une visualisation des données plus précise, le graphique à barres horizontales empilées à 100% ou un graphique en pente est un bon choix.
+- Comparaisons: les diagrammes à barres sont habituellement utiliser pour  comparer deux valeurs ou plus.
+\subsubsection{3. Le contexte: }
+Il est possible d’utiliser différentes approches pour l'apparence des graphiques et par conséquent, il est nécessaire de les lire en fonction du contexte. Pour souligner un certain chiffre, par exemple une forte croissance des bénéfices par rapport aux années précédentes, il est possible d’utiliser les nuances d’une couleur et choisir celle qui est brillante pour l’élément le plus significatif du graphique. Au contraire, pour différencier les éléments, il est recommandé d’utiliser des couleurs contrastées.
+\subsubsection{4. La dynamique:  }
+Il existe différents types de données, chacune impliquant un taux de changement différent. Par exemple, les résultats financiers peuvent être mesurés tous les mois ou tous les ans, tandis que les séries chronologiques et les données de suivi changent constamment. Selon le type de changement, une représentation dynamique (steaming) ou une visualisation statique peuvent être envisagés.
+\subsubsection{5. L’objectif:  }
+L’objectif de la visualisation des données a également une influence considérable sur la manière dont elle est mise en œuvre. Afin d'effectuer une analyse complexe d'un système ou de combiner différents types de données pour une vue plus détaillée, les visualisations sont compilées dans des tableaux de bord avec des contrôles et des filtres. Cependant, les tableaux de bord ne sont pas nécessaires pour afficher un aperçu des données unique ou occasionnel.
+\subsubsection{6. Les couleurs: }
+Les couleurs choisies auront un impact important sur l'efficacité globale de modèle de visualisation de données. Il est important de maintenir la cohérence des couleurs dans les documents et le contraste.
+7. Utiliser des cartes interactives
+La visualisation de données peut devenir une source de contenu numérique précieux, ce qui nécessite l'ajout d'éléments interactifs à la présentation. Les cartes interactives jouent un rôle majeur à cet égard car elles permettent aux utilisateurs de s’engager et de ne rechercher que les informations dont ils ont réellement besoin.
+Les cartes interactives permettent aux utilisateurs de parcourir le graphique, d'effectuer des zooms avant et arrière, d'identifier des éléments spéciaux au clic, d'obtenir une vue d'ensemble à 360 degrés et de nombreuses autres fonctionnalités intéressantes. La création de telles cartes est un processus très complexe, mais elle laissera certainement une bonne impression aux clients.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Les techniques de visualisation dans un contexte Big Data }
-Pour le Big Data, la visualisation n’est pas simplement une fonctionnalité pratique, c’est une obligation. En effet, un utilisateur ne peut saisir à lui seul les données volumineuses et en constante augmentation. Plusieurs techniques de visualisation Big Data existent; celles-ci peuvent être à la fois spécifiques et non spécifiques.
-\subsubsection{Graphiques bidimensionnelle :}
-Le moyen le plus simple de montrer le développement d'un ou de plusieurs ensembles de données est un graphique. Les informations données par les graphiques diffèrent selon qu’ils sont des graphiques à barres et linéaires montrant la relation entre les éléments dans le temps, ou des graphiques en camembert illustrant les composantes ou les proportions entre les éléments d'un ensemble.
-\subsubsection{1. Graphique à barres:}
-Le graphique à barres classique utilise des barres horizontales ou verticales (graphique à colonnes) pour montrer des comparaisons numériques discrètes entre les catégories. Un axe du graphique montre les catégories spécifiques comparées et l'autre axe représente une échelle de valeurs discrètes.
-Les graphiques en barres se distinguent des histogrammes, car ils ne présentent pas de développement continu sur un intervalle. Les données discrètes du graphique à barres sont des données catégoriques et répondent donc à la question de "combien ?" dans chaque catégorie.
 
+\chapter{Les techniques et les approches de la visualisation du Big Data}
+Donner un sens aux faits, aux chiffres et aux mesures est une forme d'art, l'art de la visualisation de données. Les scientifiques de diverses disciplines utilisent des techniques informatiques pour modéliser des événements complexes et visualiser des phénomènes qui ne peuvent pas être observés directement, tels que les conditions météorologiques, les conditions médicales ou les relations mathématiques.
+\section{Les techniques de visualisation du Big Data}
+La visualisation de données fournit une suite importante d’outils et de techniques permettant d’obtenir une compréhension qualitative. Dans cette section, les différentes techniques de base tels que les graphiques, les infographiques,  les cartographies et géo-visualisation seront présentés.
+\subsection{Les graphiques:}
+Il existe quatre catégories de graphiques de base, qui peuvent être utilisés pour présenter les données (Comparaison , Composition , Distribution et Relation).
 \begin{figure}[!ht]
     \centering
-    \includegraphics[height=5cm]{images/bar_chart.png}
-    \scriptsize{source:\url{https://datavizcatalogue.com/methods/bar_chart.html}}
-    \caption{Graphique à barres}
-    \label{fig:1.3}
+    \includegraphics[height=8cm]{images/diagramme-de-charts.jpg}
+    %\scriptsize{source:\url{add url}}
+    \caption{Le diagramme de sélection de graphique}
+    \label{fig:2.1}
 \end{figure}
-\subsubsection{2.Camemberts }
-\begin{wrapfigure}{R}{0.5\textwidth}
-\centering
-\includegraphics[width=0.4\textwidth]{images/pie_chart.png}
-%\scriptsize{source :\url{https://datavizcatalogue.com/methods/pie_chart.html}}
-\caption{\label{fig:1.4}Camemberts}
-\end{wrapfigure}
+ Le diagramme de sélection de graphique illustré à la figure ~\ref{fig:2.1}
+, permet de choisir le bon graphique en fonction du type de données.
+\subsubsection{1. Comparaison: }
+Ces visualisations se rapportent au temps et à la taille des données. Les graphiques de comparaison sont utilisés pour comparer la magnitude des valeurs et peuvent être utilisés pour trouver facilement les valeurs les plus basses et les plus hautes dans les données. Les graphiques de comparaison peuvent être également utiliser pour comparer les valeurs actuelles par rapport aux valeurs anciennes afin de déterminer si les valeurs augmentent ou diminuent. Les questions les plus courantes sont «quels produits se vendent le mieux» et «comment nos ventes se comparent-elles à celles de l'année dernière».
+Il n’existe pas un seul graphique à utiliser pour toutes les données synchronisées; certaines situations requièrent des graphiques linéaires tandis que d'autres nécessitent des graphiques à barres ou des graphiques en aires (pour les données cycliques).
+Par exemple, pour un nombre moins élevé de catégories parmi les éléments, le  graphique à barres affiche mieux les différences entre les données que les camemberts. C’est la raison pour laquelle il est préférable d’utiliser un graphique à barres qu’un graphique à secteurs lorsqu'il est question de comparaison.
+\subsubsection{2. Composition:}
+Les graphiques de composition sont utilisés pour voir comment une partie se compare à la totalité et comment une valeur totale peut être divisée en plusieurs valeurs. Un graphique de composition montre la valeur relative, mais certains graphiques peuvent également être utilisés pour montrer la différence absolue. La différence est entre regarder le pourcentage du total et la valeur du total. Les questions communes sont «quelle part du marché nous avons dans une région» ou «en quels domaines notre budget est-il divisé».
+Ces visualisations font référence à des ensembles de données qui évoluent dans le temps ou incluent des données statiques. Avec les données statiques, un diagramme à secteurs peut fonctionner.
+\subsubsection{3. Relations : }
+Les diagrammes de relations sont utilisés pour voir la relation entre les données et peuvent être utilisés pour trouver des corrélations, des valeurs aberrantes et des grappes de données. Les questions courantes sont les suivantes: «existe-t-il une corrélation entre les dépenses publicitaires et les ventes de nos produits» ou «comment les dépenses et les revenus varient-ils d’une région à l’autre et quel est l’écart»
 
-Les camemberts aident à montrer les proportions et les pourcentages entre les catégories en divisant un cercle en segments proportionnels. Les entreprises qui utilisent à la fois des données traditionnelles et des données volumineuses peuvent utiliser cette technique pour examiner des segments de clientèle ou des parts de marché.
-Chaque longueur d'arc représente une proportion de chaque catégorie, tandis que le cercle complet représente la somme totale de toutes les données, égale à 100\%.
-Les camemberts sont idéaux pour donner au lecteur une idée rapide de la distribution proportionnelle des données.
+\subsubsection{4. Distribution: }
+Les graphiques de distribution sont utilisés pour voir comment les valeurs quantitatives sont réparties le long d'un axe, du plus bas au plus élevé. En examinant la forme des données, un utilisateur peut identifier des caractéristiques telles que la plage de valeurs, la tendance centrale, la forme et les valeurs aberrantes. Il peut être utilisé pour répondre à des questions telles que «nombre de clients par groupe d'âge» ou «combien de jours en retard ont nos paiements».
+Pour illustrer mieux ce type de graphique, le graphique de nuages de points (Scatter plot) est présenté ci-dessous :
+\pagebreak
 
-\subsubsection{3. Graphiques linéaires}
-Les graphiques linéaires sont utilisés pour afficher des valeurs quantitatives sur un intervalle ou une période continue. Le graphique linéaire est le plus souvent utilisé pour afficher les tendances et analyser l’évolution des données dans le temps.
-Les graphiques linéaires sont dessinés en traçant d'abord les points de données sur une grille de coordonnées cartésiennes, puis en reliant une ligne entre tous ces points. En général, l'axe des ordonnées a une valeur quantitative, tandis que l'axe des abscisses est une échelle de temps ou une séquence d'intervalles. Les valeurs négatives peuvent être affichées sous l'axe des abscisses.
-La direction des lignes sur le graphique fonctionne comme une belle métaphore pour les données: une pente ascendante indique où les valeurs ont augmenté et une pente descendante indique où les valeurs ont diminué. Le parcours de la ligne sur le graphique peut créer des modèles qui révèlent les tendances d'un jeu de données.
-Lorsqu'elles sont regroupées avec d'autres lignes (autres séries de données), des lignes individuelles peuvent être comparées les unes aux autres. 
-Dans la BI traditionnelle, les graphiques linéaires peuvent montrer l'évolution des ventes, des bénéfices et des revenus des 12 derniers mois. Lorsqu'elles utilisent le Big Data, les entreprises peuvent utiliser cette technique de visualisation pour suivre le nombre total de clics d'application par semaine, le nombre moyen de plaintes adressées au centre d'appels par mois, etc.
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[height=5cm]{images/line_graph.png}
-    \scriptsize{source :\url{https://datavizcatalogue.com/methods/pie_chart.html}}
-    \caption{Graphique linéaire}
-    \label{fig:1.5}
-\end{figure}
-Parmis les graphiques linéaires, il existe des graphiques en aires qui sont des graphiques en courbes, mais la zone située sous la ligne est remplie avec une certaine couleur. Les graphiques en aires sont dessinés en traçant d'abord les points de données sur une grille de coordonnées cartésiennes, en joignant une ligne entre les points et en remplissant l'espace situé en dessous de la ligne complétée.
-
-\subsubsection{4.Diagramme de dispersion:}
-Le diagramme de dispersion est également connu sous le nom de graphe de dispersion, de graphe de points, de tracé X-Y ou de Scattergramme.
-
-Les diagrammes de dispersion utilisent une collection de points placés à l'aide de coordonnées cartésiennes pour afficher les valeurs de deux variables. En affichant une variable dans chaque axe, il est possible de détecter une relation ou une corrélation entre les deux variables.
+En affichant une variable dans chaque axe, il est possible de détecter une relation ou une corrélation entre les deux variables.
 \begin{figure}[!htb]
 \begin{minipage}{0.46\linewidth}
 Différents types de corrélation peuvent être interprétés à travers les modèles affichés sur les diagrammes de dispersion. Il existe une corrélation positive (les valeurs augmentent ensemble), négative (une valeur diminue avec l’augmentation), nulle (pas de corrélation), linéaire, exponentiel et en forme de U. La force de la corrélation peut être déterminée par la proximité des points sur le graphique. Les points qui finissent loin du groupe général de points sont appelés points aberrants.
@@ -355,11 +366,46 @@ Les diagrammes de dispersion sont parfaits lorsqu’il est associé des données
  \label{fig:1.6}
 \end{minipage}
 \end{figure}
+\subsection{Infographie}
+Les infographies sont devenues un moyen de communication de masse; ils sont conçus pour atteindre un public plus large en simplifiant les sujets complexes et en les organisant dans un format facile à digérer, contrairement à d'autres types de visualisations. \\*
+Une infographie (graphique d'information) est une représentation visuelle de l'information qui vise à rendre les données facilement compréhensibles au premier coup d'œil. Une infographie utilise au minimum le texte et peut constituer un outil puissant pour afficher des données, expliquer des concepts, simplifier les présentations, cartographier les relations, afficher les tendances et fournir des informations essentielles.Les infographies se présentent sous différentes formes. Ils sont classés en fonction de leur objectif, des types d’objets utilisés et du flux d’informations. 
+\newpage
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[height=10cm]{images/infographic.jpg}
+    %\scriptsize{source:\url{add url}}
+    \caption{infographic}
+    \label{fig:2.1}
+\end{figure}
+\subsubsection{1. Infographie d'information}
+L'infographie informationnelle se distingue par son utilisation de texte supérieure à la moyenne par rapport à d'autres types d'infographie. Le graphique peut être amélioré par des icônes, des formes, des couleurs et d'autres éléments visuels, mais dans l'ensemble, l'accent est mis sur les mots.
 
-\subsubsection{Techniques de visualisation des données géospatiales}
-Les cartes sont largement utilisées dans différentes industries. Ils permettent de positionner des éléments sur des objets et des zones pertinents - cartes géographiques, plans de construction, aménagements de sites Web, etc. Parmi les visualisations de cartes les plus populaires, on compte les cartes thermiques, les cartes de distribution de points, les cartogrammes.
+\subsubsection{2. Infographie de la chronologie }
+L'infographie de la chronologie décrit les événements ou les actions dans un ordre chronologique. Ils sont souvent utilisés pour démontrer le développement d’un produit, une tendance historique ou l’évolution d’une idée. L'infographie de la chronologie utilise des icônes, des images et des éléments graphiques pour transmettre le message. Le format de la timeline peut être vertical, horizontal ou sinueux. Les infographies verticales et chronologiques sinueuses sont généralement plus faciles à lire. Une infographie de chronologie horizontale convient mieux aux affiches, aux présentations et aux environnements où l'espace n'est pas une contrainte.
 
-Parmis les techniques de visualisation des données géospatiales, il existe : 
+\subsubsection{3. Infographie de graphiques }
+L’infographie de graphiques a un graphique comme pièce maîtresse de la visualisation des informations. Des couleurs, des formes et des icônes peuvent être ajoutés à des fins d'emphase et/ou d'explication. Les graphiques fonctionnent mieux lorsqu’il est effectué une comparaison élémentaire d'éléments. 
+
+\subsubsection{4. Infographie de graphiques en secteurs}
+Les graphiques en secteur apparaissent assez souvent dans l'infographie, car ils sont très utiles quand il faut montrer des pourcentages d'un tout. Il est préférable d'utiliser les graphiques en secteur pour afficher des différences au sein d'un groupe en fonction d'une variable. Dans l'infographie, les graphiques en secteur viennent dans beaucoup de variantes et de styles pour montrer les différents composants d’un élément ou pour comparer une valeur à plusieurs autres valeurs.
+
+\subsubsection{5. Infographie de processus }
+L’infographie de processus décrit les processus de prise de décision. Les infographies de processus sont également appelées arbres de décision ou organigrammes. Chaque étape est liée à la suivante par des lignes et des flèches directionnelles. 
+
+Alors qu'il existe différents types d'infographies, certains éléments sont essentiels pour rendre une représentation visuelle des données qualifiée d'infographie. Pratiquement toutes les infographies utilisent chacune d’elles dans une certaine mesure (couleurs, polices, icônes et images).
+
+\subsection{Cartographie et Géomatique }
+Le terme géomatique est un néologisme composé de « géo » (pour géographie) et de « matique » (pour informatique). C’est la discipline ayant pour objet « la gestion des données à référence spatiale et qui fait appel aux sciences et aux technologies reliées à leur acquisition, leur stockage, leur traitement et leur diffusion » (Marcel Bergeron, 1993, Vocabulaire de la Géomatique Québec). En somme, la géomatique est le domaine de l’informatique auquel se rattache les SIG (Système d’Information Géographique).
+La cartographie incorpore trois dimensions sous-jacentes:
+
+\begin{itemize}
+\item \textbf{Une dimension informatique:}  aujourd’hui, sauf dans la volonté de produire une image originale à forte valeur artistique, plus personne ne réalise de carte à la main mais via des logiciels spécialisés. 
+\item \textbf{Une dimension spatiale:}  l’information géographique (localisée dans l’espace) est la matière première du cartographe. 
+\item \textbf{ Une dimension graphique:} cartographier, c’est dessiner l’espace géographique, ses continuités, ses ruptures. C’est mettre sur écran une représentation schématique de l’espace géographique.
+\end{itemize} 
+Le processus de conception cartographique concerne une transformation systématique des données spatiales en un affichage spatial multidimensionnel. Ce processus est généralement exécuté en appliquant des méthodes de «conception cartographique scientifique», ainsi que des règles esthétiques.
+
+En cartographie, une carte peut fournir un aperçu général d’une zone géographique avec différents niveaux de détail; le niveau et la surface dépendent du point de vue et de la fonction du cartographe. Les cartographes utilisent plusieurs méthodes pour créer des cartes thématiques, mais quatre méthodes sont plus courantes:
 \subsubsection{1. Les cartes à points (Dot Map)}
 Les cartes à points sont un moyen de détecter les modèles spatiaux ou la distribution des données sur une région géographique, en plaçant des points de taille égale sur une région géographique.
 Il existe deux types de cartes à points : un en un (un point représente un seul compte ou un objet) et un en plusieurs (un point représente une unité particulière, par exemple 1 point = 10 arbres).
@@ -415,128 +461,62 @@ Les cartes thermiques permettent de visualiser les données à travers des varia
 
 En règle générale, toutes les lignes constituent une catégorie (étiquettes affichées à gauche ou à droite) et toutes les colonnes constituent une autre catégorie (étiquettes affichées en haut ou en bas). Les lignes et les colonnes individuelles sont divisées en sous-catégories, qui correspondent toutes les unes aux autres dans une matrice. Les cellules contenues dans le tableau contiennent des données catégoriques à code de couleurs ou des données numériques, basées sur une échelle de couleurs. Les données contenues dans une cellule sont basées sur la relation entre les deux variables de la ligne et de la colonne de connexion.
 
-Une légende est nécessaire à côté d’une carte thermique pour que celle-ci puisse être lue avec succès. Les données catégorielles sont codées par couleur, tandis que les données numériques nécessitent une échelle de couleurs qui se mélange d'une couleur à l'autre afin de représenter la différence entre les valeurs hautes et basses. Une sélection de couleurs unies peut être utilisée pour représenter plusieurs plages de valeurs (0-10, 11-20, 21-30, etc.) ou vous pouvez utiliser une échelle de dégradé pour une seule plage (par exemple, 0 à 100) en mélangeant deux ou plus de couleurs ensemble.
-
-En raison de leur confiance dans la couleur pour communiquer les valeurs, les Heatmaps sont un graphique mieux adapté pour afficher une vue plus générale des données numériques, car il est plus difficile de distinguer avec précision les différences entre les nuances de couleur et d’extraire des points de données spécifiques (à inclure les données brutes dans les cellules).
+Une légende est nécessaire à côté d’une carte thermique pour que celle-ci puisse être lue avec succès. Les données catégorielles sont codées par couleur, tandis que les données numériques nécessitent une échelle de couleurs qui se mélange d'une couleur à l'autre afin de représenter la différence entre les valeurs hautes et basses. 
 Les cartes thermiques peuvent également être utilisées pour afficher les modifications des données au fil du temps si l'une des lignes ou des colonnes est définie sur des intervalles de temps. Par exemple, utilisez une carte thermique pour comparer les changements de température au cours de l’année dans plusieurs villes, afin de déterminer les endroits les plus chauds ou les plus froids. Ainsi, les lignes pourraient répertorier les villes à comparer, les colonnes contiennent chaque mois et les cellules contiennent les valeurs de température.
 
-\subsubsection{La Géovisualisation}
-La géovisualisation est un terme court pour «Visualisation géographique» et désigne un ensemble d’outils et de techniques permettant d’appuyer l’analyse de données géospatiales au moyen de la visualisation interactive. A l'instar des domaines connexes de la visualisation scientifique et de la visualisation d'informations, la géovisualisation met l'accent sur la transmission d'informations. La géovisualisation communique les informations géospatiales d'une manière qui, associée à la compréhension humaine, permet l'exploration des données et la prise de décisions. Les cartes statiques traditionnelles ont une capacité d'exploration limitée; La géovisualisation permet des cartes plus interactives, y compris la possibilité d'explorer différentes couches de la carte, d'effectuer un zoom avant ou arrière et de modifier l'aspect visuel de la carte. La géovisualisation représente un ensemble de technologies et de pratiques cartographiques qui tirent parti de la capacité des technologies modernes d’apporter des modifications à une carte en temps réel, permettant aux utilisateurs d’ajuster les données cartographiées. Il est important de rendre les données complexes plus claires et utiles grâce à une conception visuelle appropriée, par exemple en inventant de nouvelles métaphores visuelles, en créant des algorithmes d'analyse, etc.
-L'analyse visuelle intègre de nouveaux outils avec des techniques interactives innovantes et des représentations visuelles pour permettre une interaction homme-information. La conception des outils et des techniques repose sur des principes cognitifs et perceptuels. Cette science du raisonnement analytique fournit le cadre sur lequel on peut construire des technologies d'analyse visuelle stratégiques et tactiques pour l'analyse des menaces, la prévention et la réaction.
+
+\subsection{La Géovisualisation}
+La géo-visualisation et l'analyse visuelle de données géospatiales sont devenues un centre d'intérêt pour la recherche, les industries, le gouvernement et d'autres organisations pour améliorer la mobilité, l'efficacité énergétique, la gestion des déchets et l'administration publique d'une ville intelligente.\\
+
+La géovisualisation communique les informations géospatiales d'une manière qui, associée à la compréhension humaine, permet l'exploration des données et la prise de décisions. Les cartes statiques traditionnelles ont une capacité d'exploration limitée. La géovisualisation permet des cartes plus interactives, y compris la possibilité d'explorer différentes couches de la carte, d'effectuer un zoom avant ou arrière, de modifier l'aspect visuel de la carte et d’apporter des modifications à une carte en temps réel permettant aux utilisateurs d’ajuster les données cartographiées. La géovisualisation représente un ensemble de technologies et de pratiques cartographiques qui tirent parti de la capacité des technologies modernes. Il est important de rendre les données complexes plus claires et utiles grâce à une conception visuelle appropriée, par exemple en inventant de nouvelles métaphores visuelles, en créant des algorithmes d'analyse, etc. \\*
+L'analyse visuelle intègre de nouveaux outils avec des techniques interactives innovantes et des représentations visuelles pour permettre une interaction homme-information. La conception des outils et des techniques repose sur des principes cognitifs et perceptuels. Cette science du raisonnement analytique fournit le cadre sur lequel il est possible de construire des technologies d'analyse visuelle stratégiques et tactiques pour l'analyse des menaces, la prévention et la réaction.
 Les outils d'analyse visuelle doivent permettre différentes tâches d'analyse, telles que:
+
 \begin{itemize}
 \item Comprendre rapidement les situations, ainsi que les tendances et les événements qui ont généré les conditions actuelles.
 \item Identifier les futurs possibles et leurs signes avant-coureurs
 \item Surveiller les événements actuels pour détecter l'apparition de signes avant-coureurs et d'événements imprévus.
 \end{itemize}
 
-La gestion des données spatiales joue un rôle fondamental dans la conception de l’information urbaine, qui fait partie du cycle vertueux de l’information. La conception de l'information urbaine est l'un des outils les plus importants dans l'analyse des processus urbains et dans la planification d'une «ville intelligente».
+La gestion des données spatiales joue un rôle fondamental dans la conception de l’information urbaine. La conception de l'information urbaine est l'un des outils les plus importants dans l'analyse des processus urbains et dans la planification d'une «ville intelligente».
 
-Ces dernières années, différentes techniques de représentation des données spatiales ont été considérablement développées dans différents types de cartes (cartes de points, de lignes, de polygones, de cartes choroplètes, de cartes isoplètes, de cartogrammes, etc.). Les indicateurs spatiaux peuvent être représentés de différentes manières: en deux ou en trois dimensions, en fonction du caractère bidimensionnel ou tridimensionnel des phénomènes. Si le phénomène analysé a principalement deux dimensions, il est courant de le représenter en utilisant le même nombre de variables spatiales.
-Un exemple des avantages obtenus en développant de nouvelles approches pour la cartographie des données en géovisualisation est illustré ci-dessous. La figure ~\ref{fig:1.12} présente les données sur les ventes des clients d'un établissement de vente au détail établi dans la région du Grand Toronto (GTA) utilisant une approche SIG traditionnelle. La figure ~\ref{fig:1.12} illustre le gain d'interprétation résultant de la cartographie 3D des mêmes données sous-jacentes. Le système SIG adapté utilisé dans cet exemple offre à l'utilisateur la possibilité de manipuler rapidement le niveau de déformation de l'axe Z et d'explorer la carte à partir de n'importe quelle perspective.
+Ces dernières années, différentes techniques de représentation des données spatiales ont été considérablement développées dans différents types de cartes (cartes de points, de lignes, de polygones, de cartes choroplèthes, de cartes isoplèthes, de cartogrammes, etc).\\ Les indicateurs spatiaux peuvent être représentés de différentes manières: en deux ou en trois dimensions, en fonction du caractère bidimensionnel ou tridimensionnel des phénomènes. Si le phénomène analysé a principalement deux dimensions, il est courant de le représenter en utilisant le même nombre de variables spatiales. 
+La représentation consiste à faire des choix qui nécessitent un premier niveau d’analyse pour extraire la signification et la transmettre à l’utilisateur via une représentation graphique, telle que la carte ou la visualisation 3D illustré ci-dessous. 
+
+
 \begin{figure}[!ht]
     \centering
-    \includegraphics[height=5.5cm]{images/geo1.jpg}
-    \scriptsize{source :\url{https:// }}
-    \caption{la visualisation GIS traditionnel et la géovisualisation }
-    \label{fig:1.12}
+    \includegraphics[height=6.6cm]{images/bienIci.jpg}
+    %\scriptsize{source :\url{https:// }}
+    \caption{capture d'écran du site Bien’Ici }
+    \label{fig:2.9}
 \end{figure}
+La figure ~\ref{fig:2.9} présente une nouvelle approche pour la recherche immobilière, plus simple, plus rapide et plus agréable pour les internautes par l’entreprise Bien’Ici . Sa cartographie en 3D était développée par l’agence de jeux vidéos F4Map qui a modélisé la France entière en 3D. La carte passe automatiquement en 3D à partir d’un certain niveau de zoom. Toutes les annonces sont repérables sur la carte par un point rouge ou une étiquette de prix.  La carte en 3D permet de déplacer dans tous les sens afin de découvrir le logement et le quartier sous tous les angles.
 
-%Les figures suivantes montrent quelques exemples de représentation spatiale de données et d'indicateurs dans les zones urbaines et extra-urbaines dans une approche SIG traditionnelle et dans une approche plus intéressante de la géovisualisation:
-%\begin{figure}[!htp]
-    %\centering
-    %\includegraphics[height=5.5cm]{images/geo4.jpg}
-    %\caption{Dans l'image de gauche (a), l'indicateur de la fluidité du trafic en deux dimensions en zone extra-urbaine, France (voir www.coraly.com);Dans l'image de droite (b), l'indicateur de flux de %trafic est affiché en trois jours.}
- %   \label{fig:2.13}
-%\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Outils de visualisation du Big Data: }
+Les outils de visualisation de données sont exactement les armes dont nous avons besoin. Ces outils nous montrent diverses informations sur les données collectées. Les grands entreprises tels que Google et Microsoft collectent et manipulent des données volumineuses pour concevoir l'avenir de leurs stratégies commerciales. Cette section couvre certains outils de visualisation associés au Big Data. Les outils de visualisation sont diverses.  Plusieurs approches se sont dégagés selon le contexte. \\
 
-%\begin{figure}[!htp]
-    %\centering
-    %\includegraphics[height=5.5cm]{images/geo2.jpg}
-    %\caption{Indicateur de température (ou de bruit) sur la façade de %bâtiments en milieu urbain [M. Ioannilli].}
- %   \label{fig:2.14}
-%\end{figure}
+\subsection{Approche de visualisation de JS}
+Cette approche contient l’ensemble des bibliothèques de Java Script spécialisées dans la visualisation de données. Elle aide les développeurs qui confectionnent des applications web ou mobile à visualiser les données dans leurs propres applications. 
+Parmis les nombreuses bibliothèques Javascript, les six bibliothèques les plus utilisées sont décrites ci-dessous : 
+\subsubsection{1. Data Driven Document «D3.js»}
+D3.js est une bibliothèque Javascript permettant de visualiser le Big Data de la manière que le développeur souhaite. Une connaissance solide en Javascript du développeur est nécessaire pour donner une forme aux données collectées. 
 
-%\begin{figure}[!htp]
-    %\centering
-   % \includegraphics[height=5.5cm]{images/geo3.jpg}
-  %  \caption{Indicateurs spatiaux: intensité du signal WI-FI d’Internet}
- %   \label{fig:2.15}
-%\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Outils de visualisation de données }
-Les outils de visualisation de données sont exactement les armes dont nous avons besoin. Ces outils nous montrent diverses informations sur les données collectées. Les grands entreprises tels que Google et Microsoft collectent et manipulent des données volumineuses pour concevoir l'avenir de leurs stratégies commerciales. Dans cette section, nous discuterons de certains de ces outils de visualisation big data populaires.\\
+D3.js est très complète avec beaucoup d’exemples à disposition, avec une personnalisation totale possible. Elle permet l’accès à des primitives SVG permettant toute innovation. Les données peuvent être sous différents formats, le plus souvent JSON,  CSV ou geoJSON. Ces principales caractéristiques sont : 
 
-\subsubsection{1. Google Chart}
-Google est une référence évidente et est bien connu pour la convivialité offerte par ses produits et Google chart n’est pas une exception. C'est l'un des outils les plus simples pour visualiser de grands ensembles de données. Google chart contient un large éventail de galeries de graphiques, allant d'un simple graphique linéaire à une structure hiérarchique complexe en forme d'arborescence. Vous pouvez utiliser n'importe lequel de ces graphiques selon vos besoins. De plus, la partie la plus importante lors de la conception d’un graphique est la personnalisation et, avec Google, il est assez spartiate. Vous pouvez toujours demander de l’aide technique si vous voulez approfondir.
-\begin{figure}[!htp]
-    \centering
-    \includegraphics[height=6cm]{images/googlecharts.jpg}
-    \scriptsize{source : \url{https://developers.google.com/chart/}}
-    \caption{Google charts}
-    \label{fig:2.13}
-\end{figure}
-\subsubsection{2. Tableau Chart}
-Tableau Desktop est un incroyable outil de visualisation de données (SaaS) permettant de manipuler le Big Data. Il est disponible pour tout le monde. Il propose deux autres variantes, «Tableau Server» et «Tableau Online» dans le cloud, spécialement conçues pour les organisations liées au Big Data.
-
-Il n’est pas nécessaire d’être un codeur pour utiliser cet outil. Cet outil est très pratique et fournit une vitesse ultra rapide. La toile ou le tableau de bord est convivial et compatible «glisser-déposer». Par conséquent, il crée une atmosphère conviviale dans tout environnement de travail.
-\begin{figure}[!htp]
-    \centering
-    \includegraphics[height=8cm]{images/tableau.jpg}
-    \scriptsize{source : \url{https://developers.google.com/chart/}}
-    \caption{tableau charts}
-    \label{fig:2.14}
-\end{figure}
-\subsubsection{3. D3js}
-D3 ou Data Driven Document est une bibliothèque Javascript permettant de visualiser le Big Data de la manière que nous souhaitons. Ce n'est pas un outil, comme les autres, l'utilisateur a besoin de bien comprendre le javascript pour donner une forme aux données collectées. 
-
-Intégrée à une page Web HTML, la bibliothèque JavaScript D3.js utilise des fonctions JavaScript prédéfinies pour sélectionner des éléments, créer des objets SVG, les styliser ou leur ajouter des transitions, des effets dynamiques ou des info-bulles. Ces objets peuvent également être largement stylisés à l'aide de CSS. Les grands ensembles de données peuvent facilement être liés à des objets SVG en utilisant de simples fonctions D3.js pour générer des graphiques et des diagrammes en texte enrichi / graphiques. Les données peuvent être sous différents formats, le plus souvent JSON, des valeurs séparées par une virgule (CSV) ou geoJSON, mais si nécessaire, des fonctions JavaScript peuvent être écrites pour lire d'autres formats de données.
-D3.js est un projet open source et fonctionne sans plugin. Il nécessite très peu de code et présente les avantages suivants:
 \begin{itemize}
-    \item Excellente visualisation des données.
-    \item C'est modulaire. Vous pouvez télécharger un petit fichier de D3.js que vous souhaitez utiliser.
-    \item Pas besoin de charger toute la bibliothèque à chaque fois.
-    \item Facile à construire un composant de cartographie.
-    \item Manipulation DOM.
-\end{itemize}
-\subsubsection{Performance}
-Étant donné que D3.js repose sur une série d’injecteurs (voir la section relative à l’architecture), la longueur et la complexité de la chaîne d’injection sont l’une des principales variables en termes de performances. Pour définir le coût d'une visualisation en termes de performances, vous devez mesurer certains aspects, tels que le temps de réponse (temps nécessaire pour traiter un seul élément), le débit (délai après le traitement d'un autre élément ou le "délai d'attente"). temps) et le temps de latence (le temps entre un changement dans le jeu de données et la première forme de sortie). Sur la base de ces métriques, il est possible de créer des solutions plus optimisées pouvant même tirer parti des modèles internes d’accélération.
-Quatre composants principaux interviennent dans la chaîne de traitement de D3.js:
-\begin{enumerate}
-    \item Données d'entrée: ensemble d'entrées contenant les informations nécessaires à la création de la visualisation.
-    \item Liaison d'élément: relation informelle entre une entrée de données et un élément dans le DOM.
-    \item Chaîne de méthodes: la chaîne de méthodes qui extrait les paramètres d'élément en fonction des données.
-    \item DOM (Document Object Model): éléments du document auxquels les entrées sont liées via la liaison d'élément.
-    \item Ces processus sont plus faciles à comprendre lorsqu’ils sont visualisés comme dans l’image.
+    \item Prise en charge de nombreux types de graphiques, bien plus que la grande majorité des autres bibliothèques de graphiques JavaScript.
+    \item Combine des composants de visualisation puissants et une approche de manipulation DOM basée sur les données.
+    \item Facile à déboguer à l'aide de l'inspecteur d'éléments intégré au navigateur.
+    \item Des centaines d'exemples.
+    \item Glisser déposer , zommer et d'autre.
+    \item D3 est une bibliothèque JavaScript open source pour les graphiques, qui est gratuite pour tout type d'utilisation.
     
-\end{enumerate}
-\begin{figure}[!htp]
-    \centering
-    \includegraphics[height=3cm]{images/d3_diagram.png}
-    \scriptsize{source : \url{https://delftswa.gitbooks.io/desosa2016/d3js/chapter.html}}
-    \caption{D3 diagram}
-    \label{fig:1.15}
-\end{figure}
+\end{itemize}
 
-\subsubsection{Architecture}
-D3.js étant un cadre avec lequel vous pouvez créer vos propres visualisations, il est principalement composé de fonctions et de modules qui créent des éléments dans une visualisation ou les modifient d’une manière ou d’une autre. La base est un module principal qui offre des méthodes de liaison document-données, dans lesquelles les autres modules se connectent pour créer les graphiques souhaités. En liant les éléments de données aux éléments du document, D3.js peut créer ces visualisations de manière transparente avec un temps système réduit. Le navigateur gère le rendu de la même manière qu’un document HTML / SVG classique et est donc très rapide.
-L'architecture actuelle est basée sur des modules et des dépendances, qui sont visualisés dans l'image 5.
-\begin{figure}[!htp]
-    \centering
-    \includegraphics[height=10cm]{images/d3_modules.png}
-    \scriptsize{source : \url{https://delftswa.gitbooks.io/desosa2016/d3js/chapter.html}}
-    \caption{D3 modules}
-    \label{fig:1.16}
-\end{figure}
-D3 jouit d'une grande popularité avec une moyenne de 9 000 téléchargements [4] par semaine. Cette notoriété est le produit cumulatif d’une documentation et d’exemples détaillés, d’un excellent soutien de la part de la communauté et de l’approche facile de Michael Bostock lui-même. Le public cible est constitué d'un nombre toujours croissant de développeurs Web, de praticiens de la visualisation de données, de petites entreprises et de jeunes entreprises qui visent un grand bond en avant dans leurs connaissances et leur croissance. En conjonction avec ceux-ci, il existe divers géants du marché [2]. comme Microsoft (Microsoft BI utilise D3) qui ont utilisé D3 pour la visualisation interactive de données. Ce qui fait de D3 un choix attrayant pour de nombreuses entreprises, c’est sa flexibilité graphique dans la représentation des données et sa capacité à assumer divers rôles. Plusieurs outils, tels que des outils d'exploration, des outils d'exploration de données, des outils de communication et des outils d'analyse peuvent être conçus avec cette base. Ci-dessous sont les entreprises qui utilisent beaucoup D3.js dans les visualisations de médias, les reportages de mode et bien plus encore.
 
-Open Street map: Éditer les plans des rues ouvertes
-Dataviz: pour les outils de communication et de gestion
-Chart.io: Fournir des solutions de tableau de bord professionnel
-Plotly: Parcelles de rendu
-DataMeer: Représenter l'exploration Big Data
-New York Times: Graphes de rendu et analyse statistique.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{L'impact de la visualisation du Big Data sur les smart cities}
 \section{Etude comparative }
 L’objectif de cette partie est de réaliser une étude comarative entre les deffernet technique de la visualisation Big data :
@@ -545,6 +525,15 @@ L’objectif de cette partie est de réaliser une étude comarative entre les de
 
 \section{Les éléments déterminant le choix de visualisation du Big Data}
 Mauvaises tactiques peuvent ne pas présenter tout le potentiel des données, ou même les rendre non pertinentes. Etudier le choix de technique ou les outiles de la visualisation big data selon (Public - Contenu - Le contexte - Dynamique - Objectif).
+
+
+
+
+
+
+
+
+
 \section{Les défis de la visualisation du Big Data}
 L’objectif de cette partie est d’aborder les difficultés et les défis de la visualisation du Big Data. 
 \section{Défis et opportunités avec la visualisation du Big Data dans le contexte des Smart Cities}
