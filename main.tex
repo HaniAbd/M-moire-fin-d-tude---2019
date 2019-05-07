@@ -256,7 +256,7 @@ Le comportement et le jumelage mèneront à de nouvelles connaissances. De l'év
 La smart sécurité fournit des cartes des zones géographiques détaillées sur le plan spatial et le plan temprel, permettant ainsi d’aider à déterminer facilement les changements qui pourraient survenir.
 Elle aide à prévoir les changements environnementaux futurs ou les catastrophes naturelles telles que la détection des tremblements de terre, qui permettront de sauver des vies et d'économiser des ressources.\\
 
-\subsection{Les exigences des applications de ville intelligente basées sur le Big Data}
+\subsection{Les exigences des applications de ville intelligente}
 Les applications de ville intelligente basées sur le Big Data doivent répondre à plusieurs exigences découlant de la nature particulière des besoins de la ville intelligente et des caractéristiques du Big Data. Certaines exigences sont technologiques, tandis que d’autres sont liées à la sensibilisation des citoyens et aux rôles des gouvernements.\\
 \subsubsection{Gestion des données volumineuses : }
 Le principal avantage des applications de ville intelligente est qu’elles génèrent de gros volumes de données dans divers formats et dans de nombreux secteurs tels que le trafic, l’énergie, l’éducation, la santé et la fabrication. Ces données sont générées et collectées de manière massive et régulière, offrant ainsi une vue en temps réel de ce qui se passe dans la ville à tout moment. Pour garantir une utilisation appropriée et utile de ces données dans les applications de ville intelligente, il est important de disposer d'outils de gestion des données volumineuses appropriés et efficaces. La gestion des données volumineuses comprend le développement et l'exécution d'architectures, de politiques, de pratiques et de procédures qui gèrent correctement l'ensemble du cycle de vie des données tout au long de son utilisation dans les applications de ville intelligente. Comme les données proviennent de sources différentes avec des formats différents, il est nécessaire de disposer de fonctionnalités avancées de gestion des données permettant de reconnaître les différents formats et sources de données, de structurer, de gérer, de classer et de contrôler tous ces types et structures. La gestion des données volumineuses pour les applications de ville intelligente doit également permettre une gestion évolutive de données volumineuses afin de prendre en charge les applications hors ligne, ainsi qu'un traitement à faible temps de latence pour servir efficacement les applications en temps réel.\\
@@ -475,7 +475,7 @@ Les outils d'analyse visuelle doivent permettre différentes tâches d'analyse, 
 \begin{itemize}
 \item Comprendre rapidement les situations, ainsi que les tendances et les événements qui ont généré les conditions actuelles.
 \item Identifier les futurs possibles et leurs signes avant-coureurs
-\item Surveiller les événements actuels pour détecter l'apparition de signes avant-coureurs et d'événements imprévus.
+\item Surveiller les événements actuels pour détecter l'apparition de signes avant-coureurs et d'événements imprévus.\\
 \end{itemize}
 
 La gestion des données spatiales joue un rôle fondamental dans la conception de l’information urbaine. La conception de l'information urbaine est l'un des outils les plus importants dans l'analyse des processus urbains et dans la planification d'une «ville intelligente».
@@ -491,7 +491,7 @@ La représentation consiste à faire des choix qui nécessitent un premier nivea
     \caption{capture d'écran du site Bien’Ici }
     \label{fig:2.9}
 \end{figure}
-La figure ~\ref{fig:2.9} présente une nouvelle approche pour la recherche immobilière, plus simple, plus rapide et plus agréable pour les internautes par l’entreprise Bien’Ici . Sa cartographie en 3D était développée par l’agence de jeux vidéos F4Map qui a modélisé la France entière en 3D. La carte passe automatiquement en 3D à partir d’un certain niveau de zoom. Toutes les annonces sont repérables sur la carte par un point rouge ou une étiquette de prix.  La carte en 3D permet de déplacer dans tous les sens afin de découvrir le logement et le quartier sous tous les angles.
+La figure ~\ref{fig:2.9} présente une nouvelle approche pour la recherche immobilière, plus simple, plus rapide et plus agréable pour les internautes par l’entreprise Bien’Ici . Sa cartographie en 3D était développée par l’agence de jeux vidéos F4Map\footnote{ La carte F4 (F4Map) est une carte 3D basée sur Openstreetmap qui utilise la technologie WebGL } qui a modélisé la France entière en 3D. La carte passe automatiquement en 3D à partir d’un certain niveau de zoom. Toutes les annonces sont repérables sur la carte par un point rouge ou une étiquette de prix.  La carte en 3D permet de déplacer dans tous les sens afin de découvrir le logement et le quartier sous tous les angles.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Outils de visualisation du Big Data: }
@@ -514,67 +514,165 @@ D3.js est très complète avec beaucoup d’exemples à disposition, avec une pe
     \item D3 est une bibliothèque JavaScript open source pour les graphiques, qui est gratuite pour tout type d'utilisation.
     
 \end{itemize}
+\subsubsection{2. Chartist.js}
+Chartist.js est une bibliothèque JS open source non intrusive qui peut également être utilisée pour créer des graphiques réactifs. Chartist convient aux utilisateurs qui ont besoin d’un graphique très simple (lignes, barres ou secteurs) et qui n’exigent pas beaucoup de visualisation de données. Les principales caractéristiques sont :
+\begin{itemize}
+\item \textbf{} Nombre de types de graphiques restreint
+\item \textbf{} Possibilité d’ajouter des animations.
+\item \textbf{} La documentation de l’API contient toutes les informations
+\item \textbf{}  Nécessaires, mais peu pratique à utiliser et nécessitant de longs parchemins.
+\item \textbf{} Permet d'utiliser des plugins pour étendre les fonctionnalités.
+\item \textbf{} Utilise SVG pour dessiner les graphiques (compatibles à l’avenir).
+Vieux navigateurs supportés.
+\item \textbf{} Open source, gratuit pour tout type d’utilisation.
+\end{itemize} 
+\subsubsection{3. Chart.js}
+Chart.js est une bibliothèque JavaScript simple et flexible pour la visualisation de données. C’est une excellente solution de base pour les développeurs qui ne nécessitent pas de nombreux types de graphiques et de fonctions de personnalisation, mais qui souhaitent que leurs graphiques soient nets, clairs et instructifs. Les principales caractéristiques sont : 
+\begin{itemize}
+\item \textbf{} Huit types de graphique: ligne, zone, barre, camembert, radar, polaire, bulle et diffusion.
+\item \textbf{} Tous les types de graphique peuvent être personnalisés et animés.
+\item \textbf{}  Lorsqu'ils sont utilisés en ligne, tous les graphiques sont réactifs.
+\item \textbf{} La fonctionnalité peut être étendue grâce à l'utilisation de plugins.
+\item \textbf{} Une documentation assez riche.
+\item \textbf{} Support via Stack Overflow.
+\item \textbf{} Les navigateurs supportent IE9 +.
+\item \textbf{} Une bibliothèque de graphiques JS open-source gratuite. Publié sous licence MIT.
+\end{itemize} 
+\subsubsection{4. HighCharts}
+Highcharts est l’une des bibliothèques de graphiques JavaScript les plus complètes et les plus populaires, basée sur HTML5, avec un rendu au format SVG / VML. Il est léger, prend en charge un large éventail de types de graphiques et garantit des performances élevées. Les principales caractéristiques sont : 
+\begin{itemize}
+\item \textbf{} Une utilisation du JavaScript pur. 
+\item \textbf{} Les données peuvent être chargées en externe.
+\item \textbf{} Une documentation robuste, une référence API et une présentation de la communauté.
+\item \textbf{} Une exploration des données du graphique et d'autres options d'interactivité.
+\item \textbf{} Une utilisation possible avec différentes framework front-end tels que React, Angular, Meteor, .NET, iOS, etc.
+\item \textbf{} Une exportation au format PNG, JPG, PDF ou SVG.
+\item \textbf{} Gratuit pour les organismes à but non lucratif. Payé pour un usage commercial (à partir de 50 \$).
+\end{itemize} 
+
+\subsubsection{5. C3.js}
+
+C3.js est une autre bibliothèque de diagrammes réutilisable. C3.js est Open Source et est basé sur la bibliothèque D3.js qui est actuellement très complète et permet de réaliser une grande diversité de rapports. Les principales caractéristiques sont :
+\begin{itemize}
+\item \textbf{} Grand nombre d’outils de cartographie basés sur D3.
+\item \textbf{} Les graphiques sont interactifs et peuvent être dynamiques (onclick, onmouseover, etc). 
+\item \textbf{} Il est également possible de les imprimer en PDF.
+\item \textbf{} Pouvoir activer ou désactiver le zoom sur un graphique, charger des données depuis une url ou un fichier de type CSV, inverser les abscisses et ordonnées, modifier la « tooltip ».
+\item \textbf{} Il fournit un certain nombre d'API et de callbacks pour mettre à jour le graphique.
+\item \textbf{} Une bibliothèque de graphiques JS open-source gratuite. Publié sous licence MIT.
+\end{itemize} 
+
+\subsubsection{6. Plotly.js}
+Plotly.js est une bibliothèque JavaScript de haut niveau, gratuite et à code source ouvert. Il est basé sur D3.js et WebGL. Il peut donc être utilisé pour créer de nombreux types de graphiques, notamment des graphiques 3D aux graphiques statistiques. Les principales caractéristiques sont : 
+\begin{itemize}
+\item \textbf{} 20 types de graphiques pouvant être intégrés à des sites Web ou utilisés pour créer des présentations dynamiques.
+\item \textbf{} Utilisée comme une bibliothèque de graphiques basée sur un navigateur pour Python, R et MATLAB, en résumant des graphiques en une structure JSON déclarative.
+\item \textbf{} Permet d'utiliser des feuilles de calcul Excel ou de se connecter à votre base de données.
+\item \textbf{} Exportation de graphiques en PNG et JPG; EPS, SVG et PDF sont disponibles sur abonnement.
+\item \textbf{} Documentation complète sur les API.
+\item \textbf{} Open-source, bibliothèque gratuite.
+\end{itemize} 
+\subsubsection{7. Nvd3}
+NVD3 est une bibliothèque Javascript visant à créer des graphiques et des composants réutilisables pour D3.js, en offrant les mêmes fonctionnalités puissantes, mais beaucoup plus simple à utiliser. Elle permet de gérer des ensembles de données complexes et de créer des visualisations avancées.
+
+\subsection{Approche de visualisation des BI}
+Les outils d'aide à la décision ont pour objectif d’aider à comprendre les tendances et à tirer parti de données pour permettre de prendre des décisions commerciales stratégiques.
+Ces outils permettent de réaliser des graphiques, des présentations et des tableaux de bord en toute simplicité. Les analyses de données peuvent être effectuées à l’aide de JavaScript, Python, R, Matlab, Jupyter ou encore Excel. 
+Cependant, avec le nombre important d’outils de BI sur le marché, le démarrage du processus de sélection peut être difficile. Parmi ceux-ci , les trois BI les plus utilisés selon les statistiques sont : 
+\subsubsection{1. Sisense}
+Le logiciel de BI Sisense permet aux entreprises de rassembler, d’analyser et de visualiser des données pouvant être utilisées pour prendre de bonnes décisions et d’élaborer des plans stratégiques. L'outil regroupe toutes les informations nécessaires dans un tableau de bord unique avec sa fonctionnalité de glisser-déposer et fournit une vue granulaire des données. Les utilisateurs peuvent proposer une analyse fiable en utilisant des rapports visuels comme base, ce qui simplifie considérablement le processus. L’interface de la plate-forme est facile à utiliser, permettant aux utilisateurs d’apprendre rapidement et facilement la navigation dans les systèmes. Les principaux avantages sont :
+\begin{itemize}
+\item \textbf{Utilisation rationnelle des ressources:}  la technologie In-Chip de Sisense optimise les ressources déjà existantes sur une machine en déterminant la meilleure utilisation possible de sa capacité pour stocker, compresser et accéder à plus de données plus rapidement. Sisense est capable de déplacer des données 50 à 100 fois plus rapidement que les solutions en mémoire en utilisant la mémoire disponible dans la CPU.
+\item \textbf{Performances:}  Sisense est conçu avec une base de données en colonnes évolutive et optimisée en mémoire, capable de gérer des téraoctets de données et des dizaines de requêtes simultanées. Cela permet aux non-techniciens de joindre facilement des données provenant de sources multiples et de créer des visualisations et des rapports interactifs.
+\item \textbf{ Réponse plus rapide:} le produit utilise la technologie BI d'accélération pour scinder chaque requête en blocs de requête et chaque bloc de requête est mis en cache individuellement. Cela se traduit par une réponse plus rapide aux nouvelles requêtes et permet au cache de rester efficace même lorsque le nombre d'utilisateurs et de requêtes augmente.
+Consolidation de graphiq
+\item \textbf{ues provenant de sources multiples:}  le pouvoir unique de Sisense est qu’il reconnaît et rassemble automatiquement des graphiques et des tableaux de différentes sources de données, puis combine les données qu’ils contiennent sans les préparer.
+\end{itemize} 
+\subsubsection{2. Tableau}
+ Tableau aide les entreprises à visualiser et à comprendre les données. Il permet aux organisations de connecter, visualiser et partager des données via un PC ou un iPad. Les utilisateurs peuvent facilement créer des tableaux de bord, les publier et même les partager avec leurs collègues, partenaires et clients sans avoir besoin de connaissances en programmation. \\
+ Le logiciel peut se connecter à de nombreuses sources d’information et importer et visualiser des informations dans un délai très court. Le logiciel est intuitif, facilitant l’utilisation et permettant l’analyse de données à l’aide de la fonctionnalité glisser-déposer. Il favorise la collaboration en permettant l’analyse de groupe et en informant tous les membres de l’équipe à tout moment. Les utilisateurs peuvent également accomplir des tâches pratiquement n'importe où et à tout moment, grâce à l'application mobile native.  Les principaux avantages sont :
+ \begin{itemize}
+\item \textbf{Glisser-déposer :} Tableau a été l'un des premiers systèmes de BI à présenter des tableaux de bord analytiques intuitifs dans lesquels les utilisateurs peuvent manipuler des données avec un simple mécanisme de glisser-déposer.
+\item \textbf{Interactions de tableau de bord à tableau de bord :}  avec Tableau, il est possible de copier différents éléments de tableau de bord et les transférer dans d'autres classeurs. 
+\item \textbf{Authentication SAML\footnote{Security assertion markup language (SAML) est un standard informatique définissant un protocole pour échanger des informations liées à la sécurité. Basé sur le langage XML, SAML a été développé par OASIS.} :} il s’agit d’une méthode open source permettant de créer une expérience de connexion unique. Ceci permet à Tableau de se connecter à n’importe quelle application / système tierce.
+\item \textbf{Création avec Web mobile:}  Tableau affichera non seulement les données sur les appareils mobiles, mais il permettra également de modifier les vues existantes, d'analyser les données et d'enregistrer les nouvelles versions avec une application dédiée.
+\end{itemize} 
+\subsubsection{1. Power BI}
+Microsoft Azure Power BI est un logiciel développé et prise en charge par Microsoft pour les besoins en matière de veille stratégique et d'analyse. Au cœur de Power BI se trouve un service en ligne offrant diverses options d’interaction, ainsi que plusieurs accès permettant la connexion aux données fournies.
+Les principaux avantages sont :
+\begin{itemize}
+\item \textbf{Personnalisation riche des tableaux de bord :}  MS Power BI offre une expérience utilisateur unifiée avec des tableaux de bord et des rapports personnalisés qui répondent aux besoins exacts de l'utilisateur. 
+\item \textbf{Géo-cartes :} Les visualisations de géo-cartes interactives sont également renforcées par Bing Maps.
+\item \textbf{Publication sécurisée de rapports:}  la configuration de l'actualisation des données est automatique et la publication des rapports est rapide, permettant ainsi à tous les utilisateurs de bénéficier des dernières informations.
+\item \textbf{Pas de contraintes de mémoire et de vitesse:} Pas de contraintes de mémoire et de vitesse: la récupération et l’analyse des données est rapide, en éliminant les contraintes de mémoire et de vitesse.
+\item \textbf{Aucune assistance technique spécialisée n’est requise:}  l’utilisateur peut tirer parti des avantages des enquêtes et les analyses agiles sont offertes par Power BI, en éliminant ainsi le besoin d’une assistance technique spécialisée.
+\item \textbf{La fonction de questions / réponses (Q & R):} il est constitue un avantage pour réaliser une BI en libre service.
+\item \textbf{Innovation constante:}  le produit Power BI est mis à jour presque tous les mois avec de nouvelles fonctionnalités.\\
+\end{itemize} 
+Au total, il existe plus de 20 solutions BI sur le marché. Trois outils présentés ci-dessus font partis des solutions leaders. Il est très difficile aujourd’hui de faire un comparatif de tous ces produits. Cependant, ces solutions peuvent être classées sous deux catégories.
+\begin{itemize}
+\item \textbf{} Les solution BI intégrées, tels que Oracle Business Intelligence Foundation Suite, SAP BusinessObjects et IBM Cognos qui sont les leaders en matière d’ERP et qui intègrent leur couche BI dans leur produit pour la génération des rapports prédéfinis. Ces solutions sont plutôt adaptées aux grandes entreprises.
+\item \textbf{} Les solutions d’exploration des données, tels que les produits dédiés à l’informatique décisionnelle et les outils offrant une fonction BI en self-service comme la suite SQL de microsoft, Qlik, Tableau, Tibco, Microstratégy, etc. 
+
+\end{itemize} 
+
+\subsection{Approche de visualisation de SIG}
+La visualisation de données par la cartographie est devenue un moyen essentiel pour les villes intelligentes de tirer parti des données recueillies à partir de diverses technologies ou d’applications intelligentes. Les cartes de système d'information géographique (SIG) fournissent des éléments visuels faciles à assimiler qui peuvent aider les villes à déterminer les zones nécessitant certains aménagements ou services, ainsi que les meilleurs plans de répartition des ressources.
+Parallèlement à l'explosion de l'analyse des données municipales, les outils de cartographie font leur apparition. Certaines d'entre elles sont destinées à des analyses de niche, d'autres à des analyses plus étendues, telles que les réparations nécessaires dans une ville. Bon nombre de ces applications vont au-delà du traçage des données existantes et fournissent également une analyse prédictive pour aider à prévenir et à résoudre les problèmes futurs des villes.
+\subsubsection{1. ArcGIS}
+
+ArcGIS est un système d'information géographique (SIG) permettant de travailler avec des cartes et des informations géographiques. Il est utilisé pour créer, manipuler des cartes, compiler des données géographiques, analyser des informations cartographiées, partager et découvrir des informations géographiques dans diverses applications et gérer des informations géographiques dans une base de données.
+
+
+
+
+
+
+
+
+\subsubsection{2. QGIS}
+
+Quantum GIS (QGIS) est un système d’information géographique (SIG) à source ouverte qui met en œuvre un grand nombre de fonctions d’accès, de visualisation, de traitement et d’analyse de données géospatiales. Il peut accéder aux données vectorielles stockées dans une grande variété de formats, y compris les fichiers (par exemple, fichiers de forme ESRI, KML, GML), les géodatabases (par exemple, PostgreSQL / PostGIs, ODBC, GéoDatabase personnelle ESRI, SQLite) et les protocoles réseau (OPeNDAP, GeoJSON); données raster dans l'un des 40 formats pris en charge par la bibliothèque raster GDAL sous-jacente (y compris NetCDF, HDF5, GeoTIFF, GRIB et JPEG-2000); et services de visualisation et d'accès aux données de Open Geospatial Consortium (services de cartographie Web et d'entités Web [WMS et WFS, respectivement]). Selon la configuration du système hôte, QGIS peut également servir d’interface utilisateur graphique alternative pour le grand nombre de fonctions de traitement géospatial GRASS GIS. QGIS comprend une architecture "plug-in" dans laquelle des extensions aux fonctionnalités principales de l'application peuvent être développées et utilisées, avec les plug-ins actuels, notamment la prise en charge de l'intégration GPS, l'interaction avec les serveurs de données OpenStreetMap et les outils de transformation de données.
+
+
+\section{Etude comparative sur les approches }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{L'impact de la visualisation du Big Data sur les smart cities}
-\section{Etude comparative }
-L’objectif de cette partie est de réaliser une étude comarative entre les deffernet technique de la visualisation Big data :
-\subsection{Selon des critères d'affaires}
-\subsection{Selon des critères techniques}
-
-\section{Les éléments déterminant le choix de visualisation du Big Data}
-Mauvaises tactiques peuvent ne pas présenter tout le potentiel des données, ou même les rendre non pertinentes. Etudier le choix de technique ou les outiles de la visualisation big data selon (Public - Contenu - Le contexte - Dynamique - Objectif).
-
-
-
-
-
-
-
-
-
-\section{Les défis de la visualisation du Big Data}
-L’objectif de cette partie est d’aborder les difficultés et les défis de la visualisation du Big Data. 
-\section{Défis et opportunités avec la visualisation du Big Data dans le contexte des Smart Cities}
-L’objectif de cette partie est d’aborder les difficultées et les défis de la visualisation du Big Data dans le cadre d’une smart city. 
+\chapter{ Etude comparative sur les outils de SIG }
 
 \chapter{Cas pratique: visualisation du Big Data chez Datategy}
 \section{Presentation de Datategy}
 DATATEGY est une société de conseil et d’expertise en Data Science. Elle conçoit, développe et commercialise une plateforme prédictive de lutte contre la fraude basée sur les technologies d’intelligence artificielle 100\% cloud......
 \section{Presentation d’OctoCity solution}
 La Smart City, ou ville intelligente consiste globalement en l’optimisation des coûts, de l’organisation, du bien-être des habitants.La ville est au service du citoyen mais ce dernier a néanmoins des obligations à respecter pour s’inscrire lui même comme acteur bénéficiant de ses services .Nous agissons en droite ligne avec l’objectif des opérateurs, des métropoles, et des territoires afin d’accompagner cet enjeu sociétal, politique et environnemental.Les solutions développées par DATATEGY s’interconnectent avec les réseaux existants, le croisement et l’exploitation des données.......
-\section{Visualisation big data dans le cadre de la solution OctoCity}
+\section{Etude comparative entre les différent bibliothèque de la visualisation}
 L'objectif de cette partie est de présenter les tâches qui été réalisés sur la visualisation de Big data dans le cadre de la solution OctoCity.(état de l’art- Critiques - proposition et réflexion).
 
-\subsubsection{Bublle map}
-\begin{figure}[!htp]
-    \centering
-    \includegraphics[height=6cm]{images/datategy-bubble-map.jpg}
-    \scriptsize{}
-    \caption{Visualisation le numbre de controle}
-    \label{fig:3.1}
-\end{figure}
+%\subsubsection{blabla}
+%\begin{figure}[!htp]
+%    \centering
+%    \includegraphics[height=6cm]{images/datategy-bubble-map.jpg}
+%    \scriptsize{}
+%    \caption{Visualisation le numbre de controle}
+%    \label{fig:3.1}
+%\end{figure}
 
 
-\subsubsection{Scatter plot}
-\begin{figure}[!htp]
-    \centering
-    \includegraphics[height=6cm]{images/datategy-scatter-plot.jpg}
-    \scriptsize{}
-    \caption{Visualisation le numbre de contravention par station}
-    \label{fig:3.2}
-\end{figure}
-
-
-\subsubsection{Suburst diagram}
-\begin{figure}[!htp]
-    \centering
-    \includegraphics[height=6cm]{images/datategy-sunburst.jpg}
-    \scriptsize{}
-    \caption{Visualisation le numbre de contravention par 3 niveaux}
-    \label{fig:3.3}
-\end{figure}
 
 \chapter{ Bilan et conclusion}
 \section{Bilan professionnel}
