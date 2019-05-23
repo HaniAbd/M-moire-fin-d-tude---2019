@@ -505,6 +505,7 @@ La figure ~\ref{fig:2.9} présente une nouvelle approche pour la recherche immob
 Les outils de visualisation de données sont exactement les armes dont nous avons besoin. Ces outils nous montrent diverses informations sur les données collectées. Les grands entreprises tels que Google et Microsoft collectent et manipulent des données volumineuses pour concevoir l'avenir de leurs stratégies commerciales. Cette section couvre certains outils de visualisation associés au Big Data. Les outils de visualisation sont diverses.  Plusieurs approches se sont dégagés selon le contexte. \\
 
 \subsection{Approche de visualisation de JS}
+\label{subsec:JS}
 Cette approche contient l’ensemble des bibliothèques de Java Script spécialisées dans la visualisation de données. Elle aide les développeurs qui confectionnent des applications web ou mobile à visualiser les données dans leurs propres applications. 
 Parmis les nombreuses bibliothèques Javascript, les six bibliothèques les plus utilisées sont décrites ci-dessous : 
 \subsubsection{1. Data Driven Document «D3.js»}
@@ -585,7 +586,7 @@ NVD3 est une bibliothèque Javascript visant à créer des graphiques et des com
 \subsection{Approche de visualisation des BI}
 Les outils d'aide à la décision ont pour objectif d’aider à comprendre les tendances et à tirer parti de données pour permettre de prendre des décisions commerciales stratégiques.
 Ces outils permettent de réaliser des graphiques, des présentations et des tableaux de bord en toute simplicité. Les analyses de données peuvent être effectuées à l’aide de JavaScript, Python, R, Matlab, Jupyter ou encore Excel. 
-Cependant, avec le nombre important d’outils de BI sur le marché, le démarrage du processus de sélection peut être difficile. Parmi ceux-ci , les trois BI les plus utilisés selon les statistiques sont : 
+Cependant, avec le nombre important d’outils de BI sur le marché, le démarrage du processus de sélection peut être difficile. Parmi ceux-ci , les trois BI les plus utilisés selon les statistiques sont \cite{14} : 
 \subsubsection{1. Sisense}
 Le logiciel de BI Sisense permet aux entreprises de rassembler, d’analyser et de visualiser des données pouvant être utilisées pour prendre de bonnes décisions et d’élaborer des plans stratégiques. L'outil regroupe toutes les informations nécessaires dans un tableau de bord unique avec sa fonctionnalité de glisser-déposer et fournit une vue granulaire des données. Les utilisateurs peuvent proposer une analyse fiable en utilisant des rapports visuels comme base, ce qui simplifie considérablement le processus. L’interface de la plate-forme est facile à utiliser, permettant aux utilisateurs d’apprendre rapidement et facilement la navigation dans les systèmes. Les principaux avantages sont :
 \begin{itemize}
@@ -604,7 +605,7 @@ Consolidation de graphiq
 \item \textbf{Authentication SAML\footnote{Security assertion markup language (SAML) est un standard informatique définissant un protocole pour échanger des informations liées à la sécurité. Basé sur le langage XML, SAML a été développé par OASIS.} :} il s’agit d’une méthode open source permettant de créer une expérience de connexion unique. Ceci permet à Tableau de se connecter à n’importe quelle application / système tierce.
 \item \textbf{Création avec Web mobile:}  Tableau affichera non seulement les données sur les appareils mobiles, mais il permettra également de modifier les vues existantes, d'analyser les données et d'enregistrer les nouvelles versions avec une application dédiée.
 \end{itemize} 
-\subsubsection{1. Power BI}
+\subsubsection{3. Power BI}
 Microsoft Azure Power BI est un logiciel développé et prise en charge par Microsoft pour les besoins en matière de veille stratégique et d'analyse. Au cœur de Power BI se trouve un service en ligne offrant diverses options d’interaction, ainsi que plusieurs accès permettant la connexion aux données fournies.
 Les principaux avantages sont :
 \begin{itemize}
@@ -624,33 +625,86 @@ Au total, il existe plus de 20 solutions BI sur le marché. Trois outils présen
 \end{itemize} 
 
 \subsection{Approche de visualisation de SIG}
-La visualisation de données par la cartographie est devenue un moyen essentiel pour les villes intelligentes de tirer parti des données recueillies à partir de diverses technologies ou d’applications intelligentes. Les cartes de système d'information géographique (SIG) fournissent des éléments visuels faciles à assimiler qui peuvent aider les villes à déterminer les zones nécessitant certains aménagements ou services, ainsi que les meilleurs plans de répartition des ressources.
-Parallèlement à l'explosion de l'analyse des données municipales, les outils de cartographie font leur apparition. Certaines d'entre elles sont destinées à des analyses de niche, d'autres à des analyses plus étendues, telles que les réparations nécessaires dans une ville. Bon nombre de ces applications vont au-delà du traçage des données existantes et fournissent également une analyse prédictive pour aider à prévenir et à résoudre les problèmes futurs des villes.
+La visualisation de données par la cartographie est devenue un moyen essentiel pour les villes intelligentes de tirer parti des données recueillies à partir de diverses technologies ou d’applications intelligentes. Les cartes de système d'information géographique (SIG) fournissent des éléments visuels faciles à assimiler et qui peuvent aider les villes à déterminer les zones nécessitant certains aménagements ou services, ainsi que les meilleurs plans de répartition des ressources.
+Certains outils de cartographie sont destinées à des analyses de niche, d'autres à des analyses plus étendues, telles que les réparations nécessaires dans une ville. Bon nombre de ces applications vont au-delà du traçage des données existantes et fournissent également une analyse prédictive pour aider à prévenir et à résoudre les futurs problèmes des villes.
+Les logiciels SIG englobent un large éventail d'applications impliquant une combinaison de cartes numériques et de données géoréférencées. Les logiciels SIG peuvent être classés en différentes catégories.
+Il existe deux catégories principales :  
+
+\begin{enumerate}
+\item \textbf{Logiciel open source} 
+\begin{itemize}
+     \item SIG de bureau tels que GRASS GIS, MapWindow GIS et QGIS.
+     \item Serveurs de cartes Web tels que GeoServer, MapServer et Mapnik.
+     \item Systèmes de gestion de bases de données spatiales tels que PostGIS, SpatiaLite et TerraLib.
+     \item Structures de développement de logiciels et bibliothèques (pour les applications Web) tels que GéoBase (logiciel Telogis GIS), Geomajas, OpenLayers et Leafletjs (Bibliothèque JavaScript ouverte pour des cartes interactives adaptées aux mobiles). 
+   \end{itemize}
+\item \textbf{Logiciel SIG commercial } 
+\begin{itemize}
+     \item SIG de bureau tels que les produits Esri qui comprennent les services ArcMap, ArcGIS, ArcSDE, ArcIMS, ArcWeb et ArcGIS Server.
+     \item Systèmes de gestion de bases de données spatiales tels que PostGIS, MySQL, Microsoft SQL Server, Oracle Spatial et Informix. 
+     \item SIG en tant que service :
+     \begin{enumerate}
+         \item \textbf {SaaS} : logiciel en tant que service tels que : ArcGIS Online CartoDB Mapbox (fournisseur de cartes en ligne personnalisées pour sites Web)
+         \item \textbf {PaaS} : Plate-forme en tant que service tels que : API Google Maps Javascript version 3, API de flux de données et Microsoft Bing Geocode 
+         \item \textbf {DaaS} : Données en tant que service tels que : Cartes Apple, Google Maps, OpenStreetMap et Microsoft Bing Maps 
+       \end{enumerate}
+   \end{itemize}
+\end{enumerate} 
+Parmi ces logiciels de bureau, ArcGIS et QGIS sont les plus connus. 
+
 \subsubsection{1. ArcGIS}
-
-ArcGIS est un système d'information géographique (SIG) permettant de travailler avec des cartes et des informations géographiques. Il est utilisé pour créer, manipuler des cartes, compiler des données géographiques, analyser des informations cartographiées, partager et découvrir des informations géographiques dans diverses applications et gérer des informations géographiques dans une base de données.
-
-......................
-
-
-
-
-
+ArcGIS est une puissante plate-forme de cartographie et d'analyse conçue pour aider les entreprises à explorer des informations et à partager des informations localisées. Le logiciel utilise des outils contextuels de raisonnement spatial et de cartographie pour les industries, les éducateurs, les développeurs et les gouvernements du monde entier.
+Ce programme bien conçu comporte des fonctionnalités haut de gamme utilisant le système d’information géographique (SIG) pour résoudre des problèmes. L'ensemble unique de capacités comprend: l’analyse spatiale, la cartographie et la visualisation, le SIG 3D, l’imagerie et la télédétection, le SIG en temps réel, et la collecte et gestion de données. Les fonctionnalités appliquent l'analyse des lieux aux pratiques commerciales pour créer une compréhension plus profonde et aider à visualiser rapidement la manière dont les informations commerciales sont connectées. ArcGIS libère tout le potentiel des données dans chaque organisation pour révéler des informations plus profondes. Il fournit un ensemble unique d'outils contextuels qui aident les organisations à visualiser et à analyser des données. En outre, il aide les organisations à partager leurs points de vue et à collaborer via des cartes, des applications et des rapports.
+ArcGIS utilise du système d’information géographique (SIG) qui aide les organisations de toutes tailles à interroger, analyser, visualiser et interpréter les données afin de mieux comprendre les relations, les tendances et les modèles. Le système offre une meilleure communication, une meilleure tenue des dossiers, des économies de coûts et une meilleure prise de décision.
+ArcGIS a de nombreux excellentes fonctionnalités tel que la fonctionnalité d'analyse qui constitue le pivot de la plate-forme ArcGIS. Cette fonctionnalité aide à identifier un emplacement commercial idéal, à planifier de meilleures communautés et à réagir plus rapidement dans toutes les situations critiques.
 
 \subsubsection{2. QGIS}
 
-Quantum GIS (QGIS) est un système d’information géographique (SIG) à source ouverte qui met en œuvre un grand nombre de fonctions d’accès, de visualisation, de traitement et d’analyse de données géospatiales. Il peut accéder aux données vectorielles stockées dans une grande variété de formats, y compris les fichiers (par exemple, fichiers de forme ESRI, KML, GML), les géodatabases (par exemple, PostgreSQL / PostGIs, ODBC, GéoDatabase personnelle ESRI, SQLite) et les protocoles réseau (OPeNDAP, GeoJSON); données raster dans l'un des 40 formats pris en charge par la bibliothèque raster GDAL sous-jacente (y compris NetCDF, HDF5, GeoTIFF, GRIB et JPEG-2000); et services de visualisation et d'accès aux données de Open Geospatial Consortium (services de cartographie Web et d'entités Web [WMS et WFS, respectivement]). Selon la configuration du système hôte, QGIS peut également servir d’interface utilisateur graphique alternative pour le grand nombre de fonctions de traitement géospatial GRASS GIS. QGIS comprend une architecture "plug-in" dans laquelle des extensions aux fonctionnalités principales de l'application peuvent être développées et utilisées, avec les plug-ins actuels, notamment la prise en charge de l'intégration GPS, l'interaction avec les serveurs de données OpenStreetMap et les outils de transformation de données.
-......
+Quantum GIS (QGIS) est un système d’information géographique open source, multi-plateforme et convivial conçu pour la visualisation, la modification et l’analyse de données géospatiales. Cette plate-forme est libre d'utilisation et peut gérer plusieurs fonctionnalités et formats de bases de données. Ses plugins principaux fournissent un nombre croissant de capacités.
+Cette outil de SIG permet de visualiser des données, des données de superposition vectorielles \footnote{Les données vectorielles sont constituées de points individuels qui sont stockés sous forme de paires de coordonnées (x, y) pour les données 2D.} et raster \footnote{Les données raster sont constituées de pixels (ou de cellules) et chaque pixel est associé à une valeur.} dans divers formats. Cela permet également de créer, éditer, gérer et exporter des couches de données, vectorielles et raster dans de nombreux formats. Son interface utilisateur conviviale simplifie l'exploration des données et la composition des cartes. L'analyse de données spatiales est disponible dans des bases de données spatiales. En attendant, son architecture de plug-in extensible et ses bibliothèques peuvent être utilisées pour exploiter le logiciel en fonction de nos besoins.
+En outre, le logiciel fonctionne sur de nombreux systèmes d'exploitation, notamment: Mac, Windows, Unix, Linux et Android. Cette plate-forme n'est pas seulement un SIG de bureau, elle fournit également une application serveur, un navigateur de fichiers spatiaux et des applications Web.
+
+
+Il permet d'explorer de manière interactive les données spatiales et de composer des cartes à l'aide de l'interface graphique conviviale. L'interface utilise de nombreux outils, notamment le gestionnaire de base de données, les signets spatiaux, le navigateur QGIS, les outils d'annotation, le panneau de présentation, le composeur de carte, la reprojection à la volée, etc.
+
+QGIS facilite également l'analyse des données spatiales sur toutes les bases de données et autres formats pris en charge par OGR. Le logiciel propose des outils d'échantillonnage, d'analyse vectorielle, de géotraitement, de gestion de base de données et de géométrie. Un autre avantage est la possibilité d'étendre les fonctionnalités de QGIS à l'aide de plugins. Les bibliothèques de plugins extensibles et l'architecture facilitent l'adaptation de la plate-forme aux besoins spécifiques. En outre, il est plus facile de créer des applications supplémentaires en utilisant Python ou C ++.
 
 \section{Etude comparative sur les approches }
+\label{sec:comparative}: 
+Il existe de nombreux outils de visualisation du Big Data, qui sont classé selon le contexte en trois catégories. Au sein de ces catégories, les outils de visualisation de données sont également classé en fonction de leur spécialité. 
+Premièrement, les puissants outils de BI, tels que Tableau, permettent de visualiser, récupérer, analyser et documenter des données. Les outils de BI sont conçus pour rendre le flux de données gérable, permettant ainsi aux organisations, grandes ou petites, de transformer des données non structurées en actions exploitables sans besoin des experts de base de données ou des développeurs.
+Deuxièmement, les bibliothèques de graphiques Javascript tels que D3js sont des outils de développement, principalement des bibliothèques des APIs ou des modules de langage de programmation. Ces outils sont utilisés pour étendre une application à l’aide de méthodes fournies ad hoc par la bibliothèque. 
+Troisièmement, les outils de SIG tels que ArcGIS sont à l’origine de nombreux services de géolocalisation basés sur l’analyse des données et leur visualisation. Pour le développement urbain et sa durabilité, la technologie SIG a la capacité d’être utilisée pour piloter des systèmes d’aide à la planification, à l’aménagement du territoire, la gestion des infrastructures et réseaux, le transport,la logistique, l’assurance, les télécommunications, l’ingénierie, l’éducation et la recherche, etc. 
 
-Dégager les critères pour la comparaison (EX: Cas d’utilisation, Context, Taille d’entreprise ..etc). Avec une conclusion pour décider que les application de SIG sont les plus adaptés dans le cas d’une smart city....
+Après avoir décrit les principales approches caractérisant les outils de visualisation, il est nécessaire de dégager des critères pour comparer ces différents outils. Voici une description de ces critères de comparaison 
+\begin{enumerate}
+  \item \textbf {Catégorie de logiciel }: Il représente la typologie de la solution analysée. Il distingue une application de bureau (application autonome sans mécanisme d'extension), une application ou des services Web, une bibliothèque de logiciels (par exemple, une bibliothèque Javascript pour le Web), un framework logiciel (une application logicielle complexe avec un plugin ou mécanisme basé sur des add-ons pour l'étendre, afin de connecter le framework à une solution existante pour le stockage de données ou l'analyse). 
+  \item \textbf {Technique de visualisation } : Il répond à la question: Pour quel type d’objet graphique l’outil est-il conçu?. Ainsi, il renseigne sur l'objet graphique principal ou le widget pris en charge par l'outil. De nombreuses solutions ne se limitent pas à un seul objet graphique, mais généralement, il existe un ou plusieurs widgets pris en charge par l’outil. Par exemple, Plotly est conçu pour les widgets de graphique, alors que Polymaps pour les cartes.
+  \item \textbf {Système d'exploitation} : Le système d'exploitation (par exemple, Linux, Windows, Mac OS X) sur lequel l'outil est exécuté.
+  \item \textbf {Licence} : Ceci informe sur la licence de la solution, commerciale et open source sous diverses licences (Licence Apache, GNU GPL,MIT etc.).
+  \item \textbf {Évolutivité } : Ce critère concerne les mécanismes de l’évolutivité horizontale des outils afin de prendre en charge de très grands ensembles de données. Certaines solutions concernent, par exemple, la possibilité de connecter le logiciel à 
+  \item \textbf {Extensibilité} : Ce critère concerne les mécanismes d'extension de l'outil via des add-ons ou des plugins, ainsi que la possibilité de le connecter à une solution de stockage existante. Par exemple, Plotly peut être connecté à Matlab ou à R, à l’aide de connecteurs clients spécifiques. 
+  \item \textbf {Dernière version et date de publication} : Pour déterminer si la solution est à jour ou non. Si la dernière date de publication n'est pas récente, il est possible que le produit ne soit plus pris en charge.
+\end{enumerate}
 
+Dans le cadre d’une ville intelligente, les trois approches peuvent être utilisées. Selon le contexte et le secteur de l’organisation, il sera privilégié une d’entre elles. 
 
+Par exemple, si l’organisation est une entreprise qui est en train de développer une solution pour une smart city, il est indispensable de choisir un outil de développement tel que les bibliothèques de visualisation Javascript. Mais dans le cas d’une organisation qui souhaite gérer et visualiser une grande quantité de données avec des graphiques et des diagrammes, il est indispensable d’utiliser des logiciels de Business Intelligence tel que Tableau. 
 
+Dans une ville intelligente, un nouveau développement urbain durable exige une visualisation urbaine complète et des modèles de ville en 3D offrant une visualisation urbaine étendue avec de nouvelles techniques d'interrogation de données. Le système d’information centralisé basé sur un système d’information géographique (SIG) fait le lien entre différents secteurs. Il constitue une plateforme intersectorielle intégrée pour collecter, gérer, compiler, analyser et visualiser des informations temporelles et géospatiales en vue d’une planification, d’un développement et d’une gestion urbains durables dans une ville intelligente. Il peut mieux expliquer l'interaction et la variation dans le temps des indicateurs de développement durable. 
 
+Pour le développement durable des villes intelligente, le SIG possède des
+caractéristiques intéressantes tels que : 
+\begin{itemize}
+  \item Sélection de site et acquisition de terres
+  \item Planification, conception et visualisation
+  \item Construction et gestion de projet
+  \item Ventes et Marketing
+  \item Facilité de gestion
+  \item Opérations et rapports
+\end{itemize}
 
-
+Les SIG peuvent être utilisés tout au long du cycle de vie d'une ville intelligente: sélection du site, conception et construction, utilisation et maintenance. Le SIG est une technologie idéale qui peut évoluer dans tous les domaines, de l'actif individuel d'un bâtiment à un contexte pratiquement mondial reliant tous les aspects de la planification et du développement d'une ville intelligente.
 
 
 
@@ -662,20 +716,51 @@ Dégager les critères pour la comparaison (EX: Cas d’utilisation, Context, Ta
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Cas pratique: visualisation du Big Data chez Datategy}
 \section{Presentation de Datategy}
-DATATEGY est une société de conseil et d’expertise en Data Science. Elle conçoit, développe et commercialise une plateforme prédictive de lutte contre la fraude basée sur les technologies d’intelligence artificielle 100\% cloud......
-\section{Presentation d’OctoCity solution}
-La Smart City, ou ville intelligente consiste globalement en l’optimisation des coûts, de l’organisation, du bien-être des habitants.La ville est au service du citoyen mais ce dernier a néanmoins des obligations à respecter pour s’inscrire lui même comme acteur bénéficiant de ses services .Nous agissons en droite ligne avec l’objectif des opérateurs, des métropoles, et des territoires afin d’accompagner cet enjeu sociétal, politique et environnemental.Les solutions développées par DATATEGY s’interconnectent avec les réseaux existants, le croisement et l’exploitation des données.......
-\section{Etude comparative entre les différent bibliothèque de la visualisation}
-L'objectif de cette partie est de présenter les tâches qui été réalisés sur la visualisation de Big data dans le cadre de la solution OctoCity.(état de l’art- Critiques - proposition et réflexion).
+Datategy est une entreprise de 20 personnes. Il est spécialisé dans la science des données appliquée à la stratégie d'entreprise. La société est située à La Grande Arche, 1 parvis de la défense 92800, Paris, France.
+Elle a été fondé par des scientifiques de données et des stratèges commerciaux en 2016.
+La vision de Datategy consiste à extraire des informations pertinentes des données et à les transformer en une source majeure de prise de décision. Son objectif est d'amener les entreprises dans des organisations plus intelligentes et plus avisées et de tirer un avantage concurrentiel de l'utilisation efficace de leurs données.
+Datategy est une entreprise qui propose deux services principaux: un service de conseil et un produit de ville intelligente pour le transport et le stationnement, appelé OctoCity.
+Il couvre de nombreux secteurs: finance, énergie, services aux entreprises et produits de consommation. Afin de comprendre les spécificités des différents secteurs et d’optimiser efficacement l’utilisation de son expertise, la société s’intéresse à ces quatre secteurs.
 
-%\subsubsection{blabla}
-%\begin{figure}[!htp]
-%    \centering
-%    \includegraphics[height=6cm]{images/datategy-bubble-map.jpg}
-%    \scriptsize{}
-%    \caption{Visualisation le numbre de controle}
-%    \label{fig:3.1}
-%\end{figure}
+\section{Presentation d’OctoCity solution}
+La fraude coûte cher aux entreprises de services de transport. En France, le marché des transports coûte environ 800 millions d'euros et celui du stationnement environ 500 millions d'euros en 2017. La fraude représente environ 8 à 25\% du chiffre d’affaires des entreprises en France. Il augmente également chaque année d'environ 5\% .
+Devant l’inefficacité des moyens existants Datategy a ainsi mis au point Octocity Transport, une solution innovante, basée sur un algorithme prédictif, d’intelligence Artificielle, une solution 100\% Cloud permettant de générer des itinéraires optimaux pour les agents. Il traite les réplications de données avec la technologie Cassandra pour une disponibilité à 100\%. Il est composé d'une application de site Web et d'une application mobile connectée en temps réel.
+OctoCity est conçu pour les gestionnaires en permettant un suivi global des agents de contrôle sur le terrain et une analyse statistique de l'efficacité des tournées et des interventions à l'aide de l'application de site Web. Il est également conçu pour les agents de contrôle sur le terrain en permettant à l’application mobile de prendre des contraventions de stationnement et de consulter l’historique des contraventions de stationnement. Il oriente également les agents de contrôle vers les lieux où la fraude en matière de transport est plus importante en temps réel.
+
+
+\section{Etude comparative entre les différent bibliothèque de la visualisation}
+Dans le cadre de mon alternance, l’entreprise Datategy doit choisir une bibliothèque de visualisation qui répond à leurs besoins d’intégrer un dashboard avec différents graphiques et statistiques au sein du projet Transports. Un des objectifs de ce projet est de visualiser le nombre de contravention en fonction de différents critères tels que les stations, les lignes de bus, les arrondissements, etc. 
+Initialement, l’entreprise fait le choix d’utiliser la bibliothèque D3js dont les avantages sont listés ci-dessous :
+\begin{itemize}
+  \item Gratuité et Open Source
+  \item Flexibilité
+  \item Dynamisme
+  \item Gestion de données volumineuses
+  \item Rédaction de code personnalisé
+  \item Plugins
+\end{itemize}
+
+En réalisant des graphiques avec D3js, le codage prend beaucoup de temps et s’avère laborieux. Le code devient long et difficile à gérer.  D3js a notamment une longue courbe d'apprentissage. Cela demande aux développeurs beaucoup de temps pour apprendre les syntaxes. 
+Concernant le chargement de l’application Web, D3js importera plus de 70 Ko de code pour les graphiques les plus simples. 
+Ces points négatifs sont acceptable si l'objectif est de créer de nouvelles visualisations complexes. Cependant pour OctoCity, ce n'est pas le cas car il n’est pas nécessaire d’avoir beaucoup de types de graphiques différents et complexes. Pour faire des graphiques simples comme des donuts, des graphiques à barres, des graphiques linéaires, des diagrammes de dispersion, il est possible de les implémenter en utilisant une autre bibliothèque. 
+
+Il existe de nombreuses bibliothèques de visualisation, tels que Nvd3, Chart.js, Chartist, Plotly, C3js, HighChart et vectory [voir section ~\ref{subsec:JS}]. Le choix s’est porté parmis ces 6 bibliothèques. Pour choisir, il est indispensable de dégager des critères de comparaison comme indiqué dans la section ~\ref{sec:comparative}.
+Il existe de nombreux éléments comparables entre ces bibliothèques tels que :
+
+\begin{enumerate}
+  \item \textbf{La licence utilisée} : à l'exception des Highcharts, toutes ces bibliothèques sont sous licence MIT ou Apache. Cela signifie qu'elles peuvent être utilisées gratuitement. Il est également possible d’utiliser Highcharts gratuitement à des fins non commerciales. Sinon, il faut  acheter une licence.
+  \item \textbf{L'enrichissement et la maintenance de la bibliothèque dans le temps} : ceci peut être évalué à travers la popularité et l’activité du dépôt Github des bibliothèques. Il existe plusieurs outils permettant d'évaluer la bibliothèque tel que npm trends [12]. La figure ci-dessus montre le nombre d'étoiles, de forks  et d’issues pour chaque bibliothèque, ainsi que la dernière mise à jour. 
+  \item \textbf{La licence utilisée} : 
+  \item \textbf{La licence utilisée} : 
+  \item \textbf{La licence utilisée} : 
+  \item \textbf{La licence utilisée} : 
+  \item \textbf{La licence utilisée} : 
+   environment.
+\end{enumerate}
+
+
+ : 
+L'enrichissement et la maintenance de la bibliothèque dans le temps : 
 
 
 
@@ -724,6 +809,7 @@ FOR SMART CITIES p.4}} [2017]
 
 \bibitem{13} Rosa Marina Donolo \href{http://theses.insa-lyon.fr/publication/2014ISAL0075/these.pdf}{\emph{Contributions to geovisualization for territorial intelligence}} [2015]
 
+\bibitem{14} finances online \href{https://financesonline.com/15-best-business-intelligence-tools-small-big-business/#looker}{\emph{15 Best Business Intelligence Tools For Small And Big Business}}
 
 \end{thebibliography}
 \end{document}
