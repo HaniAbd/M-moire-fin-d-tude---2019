@@ -1,6 +1,6 @@
 #  Master Thesis 2019
 Quels sont les techniques et les outils de la visualisation du Big Data à apporter aux Smart Cities?
-![alt text] (https://images.app.goo.gl/LSkoMSij3wp6DWfw6)
+
 ## Problématique
 
 ### Description de la problématique
