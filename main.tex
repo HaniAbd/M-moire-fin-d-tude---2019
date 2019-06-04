@@ -25,8 +25,11 @@
 \usepackage{wrapfig}
 \usepackage{url}
 \usepackage{pdfpages}
+\usepackage[toc,page]{appendix}
 \usepackage[shortlabels]{enumitem}
 \usepackage[font=small,labelfont=bf]{caption}
+\usepackage{afterpage}
+% \usepackage{glossaries}
 \hypersetup{
     colorlinks=true,
 %     linkcolor=blue,
@@ -36,7 +39,7 @@
     urlcolor=black
 }
 
-
+% \pagestyle{headings}
 \definecolor{olivegreen}{rgb}{0,0.5,0}
 
 \titleformat{\chapter}[hang]{\bf\LARGE}{\thechapter}{0pc}{ - }
@@ -58,7 +61,7 @@
 %%%%%%%%%%%%%%%%%%
 %%% First page %%%
 %%%%%%%%%%%%%%%%%%
-\includepdf{images/cover2.pdf}
+\includepdf{images/cover2_signed.pdf}
 %\begin{titlepage}
 %\begin{center}
 
@@ -106,90 +109,67 @@
 
 %\end{center}
 %\end{titlepage}
-
+\newpage\null\thispagestyle{empty}\newpage
 \tableofcontents
-%\listoffigures
+\listoffigures
+\newpage\null\thispagestyle{empty}\newpage
 \chapter*{Remerciements}
-% Pour leur soutien, leur disponibilité et leur écoute tout au long de ce master MIAGE, je souhaite tout d'abord remercier Monsieur le professeur POIZAT, Monsieur le professeur GUYON et Madame CHAU, chargée d’insertion professionnelle. \\
+Pour leur soutien, leur disponibilité et leur écoute tout au long de ce master MIAGE, je souhaite tout d'abord remercier les enseignants et la responsable du master Madame Marie-Pierre GERVAIS. \\
 
-% Pour m’avoir accordé sa confiance pour la réalisation de ce projet intéressant, je tenais à remercier Madame GUEHIS, responsable de mon stage.\\
+Pour m’avoir accordé sa confiance pour la réalisation de ce mémoire et pour son aide précieuse, je tiens à remercier Madame GUEHIS, tutrice de mon mémoire.\\
 
-% Pour m’avoir accompagné, conseillé et formé tout au long de ce stage, je tenais à remercier Monsieur VILLECROZE, encadrant mon stage.\\
+Pour leur assistance et leur bienveillance, je tiens à remercier également toute l'équipe du CFA. \\
 
-% Pour l’aide technique, et les réponses à mes interrogations, j’adresse aussi mes remerciements à Monsieur DÉCOMBAS, ainsi que Monsieur CAPRA.\\
+Pour m’avoir accompagné, conseillé et formé tout au long année d'alternance, je tiens à remercier mon maître d'apprentissage Monsieur CHAU et Monsieur CHOUITEN, CEO de l'entreprise Datategy.\\
 
-% Pour leur aide, les informations sur les stages et les offres, je tiens à remercier également toute l'équipe administrative du master MIAGE. \\
+Pour leur soutien et leur réconfort, je tiens à remercier toute l'équipe de Datategy et tous mes camarades de ce master.\\
 
-% Mes plus profonds remerciements vont à mes parents. Tout au long de mon cursus, ils m’ont toujours soutenu, encouragé et aidé, malgré la distance qui nous éloigne à présent. Je remercie en particulier mon cousin le Docteur Alain ABDULWAHAB et sa famille, pour m’avoir soutenu dans mes efforts depuis mon arrivée en France.  \\
+Mes plus profonds remerciements vont à mes parents. Tout au long de mon cursus, ils m’ont toujours soutenu, encouragé et aidé, malgré la distance qui nous éloigne à présent. Je remercie en particulier mon cousin le Docteur Alain ABDULWAHAB et sa famille, pour m’avoir soutenu dans mes efforts depuis mon arrivée en France.  \\
 
-% Je remercie tous mes plus proches amis, en ayant une pensée pour Nicolas ROUGE à qui je souhaite réussite et bonheur. \\
+Je remercie mes proches amis, en ayant une pensée pour Nicolas ROUGE et Nassim KHATIR à qui je souhaite réussite et bonheur. \\
 
-% Plus personnellement, je remercie ma bien-aimée, Zuleyha KABA, pour son soutien infini, son écoute et surtout son amour qui m’a été essentiel durant ces années. 
+Plus personnellement, je remercie ma bien-aimée, Zuleyha KABA, pour son soutien infini, son écoute et surtout son amour qui m’a été essentiel durant ces années. 
+\newpage\null\thispagestyle{empty}\newpage
 \chapter*{Introduction}
 \addcontentsline{toc}{chapter}{Introduction}
 Une ville intelligente idéale est une ville où l’on peut mener une vie saine et agréable. En tant qu’organisme vivant, une ville intelligente vérifie ses fonctions vitales, s’ajuste et se maintient saine, minimisant ainsi les inconvénients de l’urbanisation, loin des embouteillages, des pénuries de logements, des concentrations malsaines de poussière fine, des centres-villes surpeuplés, des structures sociales en ruine et du bruit.
-L'expansion du Big Data et l'évolution des technologies de l'Internet des objets (IoT) ont joué un rôle important dans la faisabilité des initiatives de ville intelligente. Les mégadonnées offrent aux villes la possibilité d’obtenir des informations précieuses à partir d’un grand nombre de données recueillies auprès de diverses sources. L’Internet des objets permet l’intégration de capteurs, d’identification par radiofréquence et de Bluetooth dans un environnement réel utilisant des services hautement interconnectés. La combinaison de l'IoT  et du Big Data est un domaine de recherche inexploré qui a apporté de nouveaux défis intéressants pour atteindre l'objectif des futures villes intelligentes. Ces nouveaux défis se concentrent principalement sur des problèmes liés au business et à la technologie qui permettent aux villes d’actualiser la vision, les principes et les exigences des applications des villes intelligentes en réalisant les principales caractéristiques de l’environnement intelligent. Les smart cities sont le futur des grandes villes et les entreprises doivent décider de comment gérer les données et comment permettre à ses parties prenantes de prendre des décisions. Les données sont toujours plus nombreuses, plus complexes, plus variées et donc plus volumineuses, et plus particulièrement dans le cas des Smart Cities. Comment les analyser et en tirer profit pour prendre la meilleure décision au sein d’une entreprise afin de stimuler sa croissance ? \\
+L'expansion du Big Data et l'évolution des technologies de l'Internet des objets (IoT) ont joué un rôle important dans la faisabilité des initiatives de ville intelligente. Les Big Data offrent aux villes la possibilité d’obtenir des informations précieuses à partir d’un grand nombre de données recueillies auprès de diverses sources. L’Internet des objets permet l’intégration de capteurs, d’identification par radiofréquence et par Bluetooth dans un environnement réel utilisant des services hautement interconnectés. La combinaison de l'IoT  et du Big Data est un domaine de recherche inexploré qui a apporté de nouveaux défis intéressants pour atteindre l'objectif des futures villes intelligentes. Ces nouveaux défis se concentrent principalement sur des problèmes liés au business et à la technologie qui permettent aux villes d’actualiser la vision, les principes et les exigences des applications des villes intelligentes en réalisant les principales caractéristiques de l’environnement intelligent. Les smart cities sont le futur des grandes villes et les entreprises doivent décider de comment gérer les données et comment permettre à ses parties prenantes de prendre des décisions. Les données sont toujours plus nombreuses, plus complexes, plus variées et donc plus volumineuses, et plus particulièrement dans le cas des Smart Cities. Comment les visualiser et en tirer profit pour prendre la meilleure décision au sein d’une entreprise afin de stimuler sa croissance ? \\
 
 Actuellement, le contexte des villes modernes souhaitant devenir des villes intelligentes met en valeur la visualisation comme moyen d’analyse des données. La visualisation de données est la présentation de données dans un format graphique. Elle permet aux décideurs de voir les analyses présentées de manière visuelle, afin de pouvoir comprendre mieux et d’identifier de nouveaux modèles. Pour la business intelligence, la visualisation des données est très utile. Au lieu de parcourir un rapport comportant des centaines de lignes, un utilisateur professionnel peut simplement consulter un graphique. Les villes intelligentes apparaissent comme une stratégie de gestion de la performance urbaine, où il est nécessaire de visualiser un grand nombre de paramètres, souvent en temps réel. Les exigences du Big Data, les volumes croissants, les formats et normes de qualité variables, présentent des défis pour la gestion, le stockage, la visualisation et l'analyse des données, telles que la Geo-Visualisation et la Visual Analytics des données géospatiales. \\
 La visualisation des données est devenue un centre d'intérêt pour la recherche, les industries, les gouvernements et les autres organisations afin d’améliorer la mobilité, l'efficacité énergétique, la gestion des déchets et l'administration publique d'une ville intelligente. Cela aide à mieux comprendre le système urbain et permet le développement durable des villes futures en améliorant les interactions humaines avec les données géospatiales.\\
 
-Dans le cadre de mon Master M2 MIAGE en alternance à l’Université Paris Nanterre, j’ai souhaité réaliser un mémoire intitulé “Quels sont les techniques et les outils de la visualisation du Big Data dans les smart cities? “ pour décrire et comparer les différentes techniques et outils du Big Data dans les villes intelligentes. En effet, mon expérience en tant que développeur web front-end chez l’entreprise Datategy m’a fait découvrir l’intérêt de la visualisation à travers plusieurs tâches de visualisation Big Data.\\
+Dans le cadre de mon Master M2 MIAGE en alternance à l’Université Paris Nanterre, j’ai souhaité réaliser un mémoire intitulé “Quels sont les techniques et les outils de la visualisation du Big Data à apporter aux smart cities? “. En effet, mon expérience en tant que développeur web front-end chez l’entreprise Datategy m’a fait découvrir l’intérêt de la visualisation à travers plusieurs tâches de visualisation Big Data.\\
 
-Dans un premier temps, la définition théorique de la ville intelligente sera présenté. Cette définition se veut être un idéal vers lequel la ville intelligente veut tendre. L’impact de l'évolution des smart cities sur les domaines de l’économie, de la gouvernance, de l’environnement, de la mobilité et de la démographie seront analysés. Puis, le rôle de la technologie dans les smart cities, comprenant les données numériques (Big Data) et l’Internet of Things (IoT), sera abordé. De plus, la visualisation du Big Data, ses défis ainsi que les techniques et les outils de visualisation de données seront présentés. 
-Dans un second temps, la réalisation d’une étude comparative entre les différentes techniques et outils de visualisation de données dans un contexte Big Data et smart cities seront présentés dans le chapitre suivant.
-Dans un troisième temps, un cas pratique “la visualisation du Big Data chez Datategy” sera présenté, avec une étude comparative sur les différentes bibliothèques JavaScript de la visualisation Big Data. Par la suite, un bilan professionnel et personnel sera présenté. 
+Dans un premier temps, une définition théorique de la ville intelligente sera présenté. Cette définition se veut être un idéal vers lequel la ville intelligente veut tendre. L’impact de l'évolution des smart cities sur les domaines de l’économie, de la gouvernance, de l’environnement, de la mobilité et de la démographie seront abordés. Puis, le rôle de la technologie dans les smart cities, comprenant les données numériques (Big Data) et l’Internet des Objets (IoT), sera abordé. De plus, la visualisation du Big Data, ainsi que les techniques et les outils de visualisation de données seront présentés. 
+Dans un second temps, la réalisation d’une comparison entre les différentes techniques et outils de visualisation de données dans un contexte Big Data seront présentés dans le chapitre suivant.
+Dans un troisième temps, un cas pratique “la visualisation du Big Data chez Datategy” sera présenté, avec une étude comparative sur les différentes bibliothèques JavaScript de la visualisation Big Data. Par la suite, une conslusion sera présenté. 
 
+\chapter{Problématique}
+\section{Description de la problématique}
+Les villes cherchent à devenir intelligentes en connectant les systèmes isolés des organismes municipaux et en installant des capteurs intelligents. Les administrateurs de la ville cherchent à exploiter les informations tirées des données des capteurs de l'Internet des objets (IoT), de systèmes de positionnement global (GPS), de smartphones et d'ordinateurs. 80\% de ces données sont des données sombres, ce qui signifie que les données sont non structurées pour transmettre un sens en soi \cite{10}.
+Il est important que les décideurs puissent visualiser et interagir avec les données pour découvrir les modèles sous-jacents et pour décider des prochaines étapes. Grâce à la visualisation des données, il est possible de s’affranchir des experts en données pour lire les informations générées par celles-ci. 
+La visualisation des données doit être interactive, ce qui permet aux utilisateurs d’interagir avec les composants de la ville intelligente et les parties prenantes dans un environnement convivial. Les applications Web sont utilisées pour créer cet environnement interactif. L'environnement graphique SIG interactif permet la visualisation de composants urbains. Les utilisateurs et les gestionnaires peuvent utiliser ces cartes pour accéder aux données statiques et dynamiques concernant les systèmes urbains ainsi que pour mettre à jour les données.
+
+\section{Contexte et motivation}
+Les outils de visualisation de données volumineuses deviennent une nécessité absolue pour toute entreprise qui souhaite tirer le meilleur parti de ses programmes d’analyse. Les entreprises reconnaissent ainsi que de tels outils d’analyse sont utiles pour obtenir des informations stratégiques à partir du Big Data. Le marché de la visualisation se développe à un rythme sans précédent. En tant que développeur web front-end, une de mes missions était de choisir un outil de visualisation pour l'intégrer dans l’application de l’entreprise Datategy. J’ai été amené à me questionner sur le choix à effectuer parmis les différentes outils de la visualisation du Big Data, et ainsi les critères à privilégier pour faire ce choix. Dans le cas précis d’une smart city, le Big data et les données géospatiales joue un rôle très important. Cela m’a amené à me demander quels sont les outils de la visualisation les plus adaptés. 
+
+Chaque outil fournit différentes techniques de visualisation telles que des graphiques (graphiques à barres, graphiques linéaires, diagrammes de dispersion, etc) et/ou des cartographies (cartes à points, cartes à bulle, cartes Choroplèthes et thermiques, etc).  Il est nécessaire de comprendre les différentes techniques afin de déterminer laquelle convient le mieux à chaque présentation.
 
 \chapter{Smart city  et  visualisation du Big Data}
 \section{Smart city}
-\subsection{Définition de la ville intelligente}
-\subsubsection{Historique:}
+\subsection{Historique}
 La croissance des villes depuis la révolution industrielle a atteint des niveaux sans précédent. 
 %La division de la population des Etats-Unis a estimé qu'en 2016, 54,5\% de la population mondiale vivait dans des zones urbaines et qu'en 2050, ce nombre atteindrait 67\% \cite{0}. 
 Cette croissance considérable de la population urbaine nécessitera d’importants développements d’infrastructures urbaines pour faire face à la demande de ses habitants. Il ne fait aucun doute que les villes sont des systèmes complexes et que la croissance urbaine rapide engendre des embouteillages, une pollution et une inégalité sociale croissante. Ceux-ci peuvent transformer la ville en un point de convergence de nombreux risques (économiques, démographiques, sociaux et environnementaux). Cela pourrait sérieusement dépasser leur capacité à fournir des services adéquats à leurs citoyens \cite{1}. Cependant, des villes bien gérées peuvent offrir de multiples avantages aux personnes qui y vivent car elles permettent de réaliser des économies d’échelle en partageant des commodités telles que les transports, les installations de sport et de divertissement, les services aux entreprises, le haut débit, etc.
 Depuis les années 1990, les gouvernements et les chercheurs utilisent le terme « villes intelligentes » comme un label de mode ou pour aider certaines villes à se distinguer et à se promouvoir comme innovantes. Être une ville intelligente est une aspiration pour certaines villes qui ont élaboré des plans à long terme afin d’atteindre cet objectif \cite{2}.
-\subsubsection{Définition:}
+\subsection{Définition}
 De nombreuses études ont tenté de définir le concept de ville intelligente, mais le défi reste difficile à relever. C’est un concept multidisciplinaire et il est difficile de définir le terme « intelligent ». Les premières tentatives de définition du concept ont été axées sur l'intelligence des technologies de l'information pour la gestion de diverses fonctions de la ville \cite{3}. 
 Dernièrement, les études ont élargi leur champ d'action en incluant les résultats de la ville intelligente tels que la durabilité, la qualité de vie et les services aux citoyens.
 L'évaluation du niveau d'intelligence des villes est également devenue importante pour les chercheurs et les responsables gouvernementaux. Ils ont développé des classements prenant en compte des variables telles que l'économie, les infrastructures, l'innovation, la qualité de vie, les transports, le développement urbain, etc.
 Malgré la vaste littérature sur les villes intelligentes, il existe plus de trente définitions du terme. Ils abordent des aspects différents, mais pertinents, notamment la construction de ces villes. 
 Il ne fait aucun doute qu'une ville intelligente est un concept multidisciplinaire qui englobe non seulement son infrastructure informatique, mais également sa capacité à gérer les informations et les ressources pour améliorer la qualité de vie de ses habitants. L'utilisation de la technologie de l'information est considérée comme un facteur clé de l'intelligence d'une ville, car elle peut détecter, surveiller, contrôler et communiquer la plupart des services de la ville tels que les transports, l'électricité, le contrôle de l'environnement, la lutte contre la criminalité, les urgences sociales, etc \cite{4}.
-
-\subsection{Étapes pour la mise en œuvre de projets de ville intelligente}
-
-La mise en œuvre réussie d'un projet de ville intelligente nécessite la mise au point d'un système numérique capable de gérer et de visualiser les données géospatiales dans un environnement convivial. Le système d'information géographique (SIG) offre des fonctionnalités avancées et convivial pour les projets de ville intelligente.
-Le concept de « ville intelligente » vise à développer un système complet qui utilise des données géospatiales pour améliorer la compréhension des systèmes urbains complexes et pour améliorer l’efficacité et la sécurité de ces systèmes. 
-Ces données géospatiales concernent :
-\begin{itemize}
-\item \textbf{} L’environnement urbain construit tel que les infrastructures, les bâtiments et les espaces publics.
-\item \textbf{} L’environnement naturel tel que la biodiversité, les espaces verts, la qualité de l’air, le sol et l’eau.
-\item \textbf{} Les services urbains tels que les transports, les déchets municipaux, l’eau, l’énergie, la santé et l’éducation. 
-\end{itemize} 
-Le concept de ville intelligente vise également à transformer la gestion des villes «en silo» en un système «partagé» impliquant les acteurs urbains dans la conception, la réalisation et l’évaluation de projets urbains.
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[height=8cm]{images/Steps.png}
-    \caption{Étapes pour la mise en œuvre d’un projets de ville intelligente}
-    \label{fig:2.1}
-\end{figure}
-Figure~\ref{fig:2.1} inclut la construction du modèle numérique urbain, la collecte de données à l'aide de la couche de détection, puis l'analyse des données, la visualisation interactive des données et le contrôle du système. Le SIG joue un rôle dans ces étapes, comme décrit ci-dessous. 
-
-\subsubsection{1. Construction du modèle de ville intelligente:}
-La première étape de la mise en œuvre d’un projet de ville intelligente concerne la construction du modèle numérique urbain qui décrit les composants des environnements urbains et naturels construits. Le modèle numérique fournit pour chaque composant urbain la géolocalisation et les caractéristiques (attributs). Les SIG sont généralement utilisés pour la construction du modèle numérique de «composants horizontaux» urbains tels que les réseaux urbains, les installations de transport et l’environnement naturel, tandis que la modélisation des données du bâtiment (BIM) est utilisée pour la description de «composants verticaux» tels que les bâtiments. La combinaison des SIG et du BIM fournit un outil puissant pour la construction du modèle numérique urbain avec des données géoréférencées et la visualisation de ces données dans un environnement convivial.
-
-\subsubsection{2. Couche de détection:}
-La deuxième étape d’un projet de ville intelligente concerne la construction de la couche de détection qui transfère les données d’exploitation urbaine au système d’information de la ville intelligente. Cette couche comprend des capteurs utilisés pour la surveillance des réseaux et infrastructures urbains. Les données pourraient également être enrichies d'images, de vidéos et de fichiers audio, ce qui aboutirait à la construction de mégadonnées urbaines. Par exemple le système d'eau potable utilise des lecteurs de compteurs automatiques (AMR) pour enregistrer la consommation d'eau, des capteurs de pression pour enregistrer la pression de l'eau et des dispositifs de contrôle de la qualité de l'eau permettant de suivre la qualité de l'eau (turbidité, pH, chlore, conductivité). Le système de drainage utilise des capteurs pour surveiller le niveau et le débit d'eau, la qualité de l'eau (turbidité, température, pH, etc.) et le matériel de pompage. Il permet une détection précoce des inondations et des défauts dans les équipements de pompage. Le réseau électrique utilise des capteurs pour mesurer la tension électrique, le courant et la fréquence. Il permet une détection précoce des défauts du réseau électrique. Le système de chauffage urbain est surveillé par des capteurs pour enregistrer la température, la pression et le débit du fluide, ainsi que l'état de la vanne. Il permet la détection précoce des pannes et l'amélioration des performances du système. Le SIG offre la possibilité de visualiser le système de surveillance ainsi que les caractéristiques et l’état des capteurs. Il offre également la possibilité de visualiser des données historiques et en temps réel sur des cartes SIG.
-\subsubsection{3. L'analyse des données:}
-La troisième étape de la mise en œuvre d'un projet de ville intelligente concerne le développement d'un environnement analytique, qui transforme les données en temps réel améliorant la sécurité, l'efficacité et la qualité des systèmes urbains. L'environnement analytique comprend des logiciels d'ingénierie, de gestion et de sécurité pour les systèmes urbains, ainsi que des outils numériques avancés tels que l'intelligence artificielle (IA). Dans les projets de ville intelligente, les SIG fournissent des outils pour (i) l’analyse de données géospatiales (traitement géométrique, modèles de grille), (ii) l’analyse spatio-temporelle, (iii) les statistiques spatiales (autocorrélation spatiale et modèle de régression), (iv) l’analyse de surface (analyse de la forme et du flux de surface, méthodes de maillage et d'interpolation) et (v) analyse de localisation (calcul du plus court chemin, localisation de l'installation).
-
-\subsubsection{4. Visualisation interactive des données:}
-La visualisation interactive des données permet aux utilisateurs d’interagir avec les composants de la ville intelligente et les parties prenantes (Skateholder) dans un environnement convivial. Les applications Web sont utilisées pour créer cet environnement interactif. L'utilisation de fenêtres contextuelles HTML permet aux utilisateurs d'accéder à du contenu Web, tel que des graphiques référencés par des URL. L'environnement graphique SIG interactif permet la visualisation de composants urbains et de cartes de capteurs. Les utilisateurs et les gestionnaires peuvent utiliser ces cartes pour accéder aux données statiques et dynamiques concernant les systèmes urbains ainsi que pour mettre à jour les données.
-
-\subsubsection{5. Couche de contrôle}
-L'analyse des données en temps réel et des données historiques donne lieu à des commandes pour une gestion optimale et sécurisée des systèmes urbains. Ces commandes sont transmises à la couche de contrôle, qui comprend différents dispositifs électroniques tels que des vannes intelligentes, des pompes, des moteurs, des commutateurs, des disjoncteurs et des serrures. Le système SIG permet une visualisation en temps réel de ces appareils ainsi que de leur statut. Il pourrait également visualiser les erreurs dans la commande de l'appareil.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Avantages et opportunités}
-Les avantages d’une ville intelligente sont notamment les suivants :
+Les avantages d’une ville intelligente sont les suivants :
 \begin{itemize}
 \item \textbf{}Mise en place d’une gestion intelligente des infrastructures et des ressources naturelles.
 \item \textbf{}Utilisation efficace des ressources avec les systèmes technologiques tels que la planification des ressources d'entreprise (ERP) et le système d'information géographique (SIG).
@@ -197,24 +177,54 @@ Les avantages d’une ville intelligente sont notamment les suivants :
 \item \textbf{}Niveaux plus élevés de transparence et d’ouverture grâce au partage des données et des ressources, la transparence de l'information pour toutes les personnes impliquées encourage la collaboration et la communication entre entités et la création de plus de services et d'applications améliorant davantage la ville intelligente.
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \subsection{Étapes pour la mise en œuvre de projets de ville intelligente}
+
+% La mise en œuvre réussie d'un projet de ville intelligente nécessite la mise au point d'un système numérique capable de gérer et de visualiser les données géospatiales dans un environnement convivial. Le système d'information géographique (SIG) offre des fonctionnalités avancées et convivial pour les projets de ville intelligente.
+% Le concept de « ville intelligente » vise à développer un système complet qui utilise des données géospatiales pour améliorer la compréhension des systèmes urbains complexes et pour améliorer l’efficacité et la sécurité de ces systèmes. 
+% Ces données géospatiales concernent :
+% \begin{itemize}
+% \item \textbf{} L’environnement urbain construit tel que les infrastructures, les bâtiments et les espaces publics.
+% \item \textbf{} L’environnement naturel tel que la biodiversité, les espaces verts, la qualité de l’air, le sol et l’eau.
+% \item \textbf{} Les services urbains tels que les transports, les déchets municipaux, l’eau, l’énergie, la santé et l’éducation. 
+% \end{itemize} 
+% Le concept de ville intelligente vise également à transformer la gestion des villes «en silo» en un système «partagé» impliquant les acteurs urbains dans la conception, la réalisation et l’évaluation de projets urbains.
+% \begin{figure}[!ht]
+%     \centering
+%     \includegraphics[height=8cm]{images/Steps.png}
+%     \caption{Étapes pour la mise en œuvre d’un projets de ville intelligente}
+%     \label{fig:2.1}
+% \end{figure}
+% Figure~\ref{fig:2.1} inclut la construction du modèle numérique urbain, la collecte de données à l'aide de la couche de détection, puis l'analyse des données, la visualisation interactive des données et le contrôle du système. Le SIG joue un rôle dans ces étapes, comme décrit ci-dessous. 
+
+% \subsubsection{1. Construction du modèle de ville intelligente:}
+% La première étape de la mise en œuvre d’un projet de ville intelligente concerne la construction du modèle numérique urbain qui décrit les composants des environnements urbains et naturels construits. Le modèle numérique fournit pour chaque composant urbain la géolocalisation et les caractéristiques (attributs). Les SIG sont généralement utilisés pour la construction du modèle numérique de «composants horizontaux» urbains tels que les réseaux urbains, les installations de transport et l’environnement naturel, tandis que la modélisation des données du bâtiment (BIM) est utilisée pour la description de «composants verticaux» tels que les bâtiments. La combinaison des SIG et du BIM fournit un outil puissant pour la construction du modèle numérique urbain avec des données géoréférencées et la visualisation de ces données dans un environnement convivial.
+
+% \subsubsection{2. Couche de détection:}
+% La deuxième étape d’un projet de ville intelligente concerne la construction de la couche de détection qui transfère les données d’exploitation urbaine au système d’information de la ville intelligente. Cette couche comprend des capteurs utilisés pour la surveillance des réseaux et infrastructures urbains. Les données pourraient également être enrichies d'images, de vidéos et de fichiers audio, ce qui aboutirait à la construction de Big Data urbaines. Par exemple le système d'eau potable utilise des lecteurs de compteurs automatiques (AMR) pour enregistrer la consommation d'eau, des capteurs de pression pour enregistrer la pression de l'eau et des dispositifs de contrôle de la qualité de l'eau permettant de suivre la qualité de l'eau (turbidité, pH, chlore, conductivité). Le système de drainage utilise des capteurs pour surveiller le niveau et le débit d'eau, la qualité de l'eau (turbidité, température, pH, etc.) et le matériel de pompage. Il permet une détection précoce des inondations et des défauts dans les équipements de pompage. Le réseau électrique utilise des capteurs pour mesurer la tension électrique, le courant et la fréquence. Il permet une détection précoce des défauts du réseau électrique. Le système de chauffage urbain est surveillé par des capteurs pour enregistrer la température, la pression et le débit du fluide, ainsi que l'état de la vanne. Il permet la détection précoce des pannes et l'amélioration des performances du système. Le SIG offre la possibilité de visualiser le système de surveillance ainsi que les caractéristiques et l’état des capteurs. Il offre également la possibilité de visualiser des données historiques et en temps réel sur des cartes SIG.
+% \subsubsection{3. L'analyse des données:}
+% La troisième étape de la mise en œuvre d'un projet de ville intelligente concerne le développement d'un environnement analytique, qui transforme les données en temps réel améliorant la sécurité, l'efficacité et la qualité des systèmes urbains. L'environnement analytique comprend des logiciels d'ingénierie, de gestion et de sécurité pour les systèmes urbains, ainsi que des outils numériques avancés tels que l'intelligence artificielle (IA). Dans les projets de ville intelligente, les SIG fournissent des outils pour (i) l’analyse de données géospatiales (traitement géométrique, modèles de grille), (ii) l’analyse spatio-temporelle, (iii) les statistiques spatiales (autocorrélation spatiale et modèle de régression), (iv) l’analyse de surface (analyse de la forme et du flux de surface, méthodes de maillage et d'interpolation) et (v) analyse de localisation (calcul du plus court chemin, localisation de l'installation).
+
+% \subsubsection{4. Visualisation interactive des données:}
+% La visualisation interactive des données permet aux utilisateurs d’interagir avec les composants de la ville intelligente et les parties prenantes (Skateholder) dans un environnement convivial. Les applications Web sont utilisées pour créer cet environnement interactif. L'utilisation de fenêtres contextuelles HTML permet aux utilisateurs d'accéder à du contenu Web, tel que des graphiques référencés par des URL. L'environnement graphique SIG interactif permet la visualisation de composants urbains et de cartes de capteurs. Les utilisateurs et les gestionnaires peuvent utiliser ces cartes pour accéder aux données statiques et dynamiques concernant les systèmes urbains ainsi que pour mettre à jour les données.
+
+% \subsubsection{5. Couche de contrôle}
+% L'analyse des données en temps réel et des données historiques donne lieu à des commandes pour une gestion optimale et sécurisée des systèmes urbains. Ces commandes sont transmises à la couche de contrôle, qui comprend différents dispositifs électroniques tels que des vannes intelligentes, des pompes, des moteurs, des commutateurs, des disjoncteurs et des serrures. Le système SIG permet une visualisation en temps réel de ces appareils ainsi que de leur statut. Il pourrait également visualiser les erreurs dans la commande de l'appareil.
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Le rôle de la technologie dans les smart cities}
-\subsection{Les données numériques (Big Data) }
+\subsection{Big Data }
+La promesse d'une ville intelligente entraîne une augmentation exponentielle des données de plusieurs ordres de grandeur. Par conséquent, ces énormes volumes de données sont au cœur des services rendus par l'IdO. Le phénomène du Big Data est caractérisé depuis longtemps par le volume, la vitesse et la variété de types de données créés à des vitesses sans cesse croissantes. Le Big Data offre à la ville la possibilité d’obtenir des informations précieuses à partir d’une quantité considérable de données recueillies auprès de diverses sources. Les caractéristiques de ces données comprennent certainement des caractéristiques non structurées par rapport aux données volumineuses collectées par d'autres moyens.
+
+Les technologies intelligentes associées au Big Data et au Cloud computing, dans lesquelles diverses applications intelligentes échangent des informations à l'aide de capteurs intégrés et d'autres périphériques intégrés à l'infrastructure de cloud computing, génèrent de grandes quantités de données non structurées (cf. annexe \ref{annexeA}). Ces grandes quantités de données non structurées sont collectées et stockées dans le Cloud à l'aide de bases de données distribuées tolérantes aux pannes telles que NoSQL. Ainsi, le modèle de programmation pour le traitement de grands ensembles de données avec des algorithmes parallèles peut être utilisé pour l'analyse de données afin d'obtenir une valeur à partir des données stockées.
+Actuellement, une grande quantité de données est générée à partir de différentes sources de données, telles que les smartphones, les ordinateurs, les capteurs, les caméras, les systèmes de positionnement global, les sites de réseaux sociaux et les transactions commerciales. Étant donné que les données générées dans notre monde numérisé ne cessent de croître, des installations de stockage et de traitement de données efficaces ont posé des problèmes pour les plates-formes traditionnelles d'exploration de données et d'analyse. Les analyses de données volumineuses peuvent extraire des informations significatives des océans de données produites par des capteurs. L'analyse et l'utilisation efficaces du Big Data constituent un facteur clé du succès dans de nombreux domaines d'activité et de services, y compris lorsque cela est appliqué aux villes intelligentes.
+
 Les applications Big Data peuvent potentiellement servir de nombreux secteurs dans une ville intelligente. Elles aident à fournir de meilleures expériences client et de meilleurs services, ce qui aident les entreprises à améliorer leurs performances. Améliorer les soins de santé en améliorant les services de soins préventifs, les outils de diagnostic et de traitement, la gestion des dossiers de santé et les soins aux patients. Les systèmes de transport peuvent grandement tirer parti des données volumineuses pour optimiser les itinéraires et les horaires, répondre aux demandes variées et être plus respectueux de l'environnement \cite{5}.
-Le déploiement d’applications Big Data nécessite la mise en place d’une bonne infrastructure de technologies de l’information et de la communication (TIC). Les TIC soutiennent les villes intelligentes car elles apportent des solutions utiles, ainsi que des solutions uniques qui ne seraient peut-être pas possibles sans elles.
-L’adoption de solutions TIC, Cloud et Big Data aide à résoudre de nombreux problèmes, tels que la fourniture des outils de stockage et d’analyse. En outre, cela aide à atteindre le stade de l'innovation et encourage la collaboration et la communication entre les différentes entités d'une ville intelligente.
-Il existe de nombreux exemples d'applications Big Data servant les villes intelligentes telles que:
-\begin{itemize}
-\item \textbf{Education intelligente \cite{6}} : les TIC offrent une solution pour améliorer l'efficience, l'efficacité et la productivité des processus éducatifs grâce à des services éducatifs intelligents et flexibles permettant une meilleure utilisation de l'information, un contrôle et une évaluation améliorés, un soutien accru à l'apprentissage pour tous et tout au long de la vie. Les applications pédagogiques intelligentes impliquent les utilisateurs dans des environnements d’apprentissage actifs leur permettant de s’adapter aux changements rapides de la société et de l’environnement. Les mégadonnées dans l'éducation sont générées principalement par la collecte de données sur des personnes (par exemple des élèves, des enseignants, des parents, des administrateurs et d'autres personnels de soutien), des infrastructures (par exemple des écoles, des bibliothèques, des installations informatiques, des lieux d'enseignement, des musées et des universités) et des informations (cours, livres, examens, notes, enquêtes économiques, évaluations, rapports, etc). 
-\item \textbf{Feux de circulation intelligents \cite{7}} : l’un des principaux aspects des villes intelligentes est un bon contrôle de la circulation dans la ville, ce qui améliore les systèmes de transport et les déplacements des citoyens ainsi que la structure générale du trafic des villes. L'utilisation de feux de signalisation intelligents et de signaux est l'une des techniques les plus importantes que les villes intelligentes utilisent pour faire face aux volumes de trafic et aux encombrements élevés. Les feux de signalisation intelligents et les signaux doivent être interconnectés sur les réseaux routiers pour offrir plus d'informations sur les schémas de trafic. Chaque capteur détecte un paramètre différent du flux de trafic (par exemple, la vitesse des voitures, la densité du trafic, le temps d'attente aux feux, les embouteillages, etc.). Le système prend des décisions en fonction des valeurs de ces paramètres et donne les instructions appropriées aux voyants et aux signaux. 
-\item \textbf{Réseaux électriques intelligents :} appelés aussi Smart grids. Ce sont les réseaux électriques publics utilisent des télécommandes informatiques avec une technologie de communication bidirectionnelle entre les producteurs d'électricité et les consommateurs afin d'accroître l'efficacité et la fiabilité du réseau grâce à l'auto-surveillance et à la rétroaction du système. Cela implique de placer des capteurs et des compteurs intelligents sur les systèmes de production, de transmission et de distribution en plus des points d'accès des consommateurs pour obtenir des données granulaires en temps quasi réel sur la production, la consommation et les défauts actuels. Le traitement des données collectées, considérées comme une analyse de données volumineuses, en temps réel permet de renvoyer certaines informations de contrôle afin d'améliorer les performances globales du système d'alimentation électrique.
-Cela permet la mise en oeuvre des modèles de tarification dynamiques pour la consommation d'énergie, d’éviter les pannes d’électricité potentielles dues à la forte demande des consommateurs et peut fournir aux consommateurs des informations en temps quasi réel sur leur consommation d'énergie et de faire fonctionner leurs appareils pendant les périodes de tarification plus basse. 
-
-\end{itemize}
 
 
-\subsection{l’Internet des Objets IdO}
+
+\subsection{L’Internet des Objets IdO}
 Plus connu sous son sigle anglais IoT (Internet of Things) est la matérialisation d’Internet dans le monde réel qui offre une connectivité avancée des appareils intelligents, des appareils portables, des appareils et des services domestiques intelligents, des appareils médicaux, des véhicules connectés, des divertissements intelligents, des bâtiments intelligents et d’autres éléments reliés à un réseau d’Internet physique par une puce électronique, un capteur, une connectivité réseau leur permettant de communiquer entre eux, de collecter et d’échanger des données \cite{8}.
-L'IoT fournit le corps de périphériques en communication. Un écosystème IoT se compose d’appareils intelligents activés sur le Web qui utilisent des processeurs, des capteurs et du matériel de communication intégrés pour collecter, envoyer et exploiter les données acquises dans leurs environnements. 
+Un écosystème IoT se compose d’appareils intelligents activés sur le Web qui utilisent des processeurs, des capteurs et du matériel de communication intégrés pour collecter, envoyer et exploiter les données acquises dans leurs environnements. 
 Les périphériques IoT partagent les données des capteurs qu'ils collectent en se connectant à une passerelle IoT ou à un autre périphérique, où les données sont envoyées au cloud pour être analysées ou sont analysées localement. Parfois, ces appareils communiquent avec d’autres appareils apparentés et agissent en fonction des informations qu’ils obtiennent les uns des autres. Les appareils effectuent la majeure partie du travail sans intervention humaine, bien que les utilisateurs puissent interagir avec eux, par exemple pour les configurer, leur donner des instructions ou accéder aux données.
 
 Les protocoles de connectivité, de mise en réseau et de communication utilisés avec ces périphériques Web dépendent largement des applications IoT spécifiques déployées.
@@ -248,40 +258,45 @@ L'IoT encourage les entreprises à repenser leur façon d'aborder leurs activit�
 %     \label{fig:1.2}
 % \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Applications de Big Data et d'IoT dans les villes intelligentes}
+\subsection{Applications de Big Data et d'IdO dans les villes intelligentes}
 L'application des technologies Big Data à la ville intelligente permet un stockage et un traitement efficaces des données afin de produire des informations susceptibles d'améliorer différents services de la ville intelligente. En outre, le Big Data aide les décideurs à planifier toute expansion des services et des ressources de la ville intelligente \cite{9}.Voici différentes applications de la ville intelligente:
 
 \begin{enumerate}[a.] 
-\item \textbf{Smart gouvernance :} soutient l'intégration et la collaboration de différentes agences gouvernementales et combine ou rationalise leurs processus. Cela se traduit par des opérations plus efficaces, un meilleur traitement des données partagées, une gestion et une application plus stricte de la réglementation.
+\item \textbf{Gouvernance intelligente:} soutient l'intégration et la collaboration de différentes agences gouvernementales et combine ou rationalise leurs processus. Cela se traduit par des opérations plus efficaces, un meilleur traitement des données partagées, une gestion et une application plus stricte de la réglementation.
 Elle améliore les décisions commerciales grâce au support d'analyse Big Data. En recherchant le comportement et la croissance économique d’une entreprise en plus de ses concurrents et des conditions environnementales, les prises de décisions sont plus appropriées et plus efficaces en matière d’emploi, de production et de stratégies de localisation.
 Elle permet la publication de nouvelles politiques au profit des propriétaires de données (citoyens) et des producteurs (agences gouvernementales). Les agences gouvernementales aident à développer la qualité des données, tandis que les citoyens montrent comment ils peuvent utiliser les données et les transférer vers de nouvelles connaissances afin d'améliorer la qualité des services publics.
 Elle aident les gouvernements à se concentrer sur les préoccupations des citoyens en matière de santé et de protection sociale, de logement, d’éducation, de police et autres.\\
 
-\item \textbf{Smart environnement :} fournit des informations météorologiques qui permettront d’améliorer l’agriculture du pays, de mieux informer la population sur les conditions potentiellement dangereuses et de mieux gérer l’utilisation de l’énergie en fournissant des prévisions plus précises à la demande.\\
+\item \textbf{Environnement intelligent:} fournit des informations météorologiques qui permettront d’améliorer l’agriculture du pays, de mieux informer la population sur les conditions potentiellement dangereuses et de mieux gérer l’utilisation de l’énergie en fournissant des prévisions plus précises à la demande.\\
 
-\item \textbf{Smart mobilité :} reconnaît les modèles de trafic en explorant les données en temps réel. 
+\item \textbf{Mobilité intelligente:} reconnaît les modèles de trafic en explorant les données en temps réel. 
 Elle réduit les embouteillages sur les routes principales de la ville en prévoyant les conditions de circulation et en ajustant les contrôles de circulation. Grâce au Big Data, la ville intelligente peut réduire le trafic et les accidents en ouvrant de nouvelles routes, en améliorant l'infrastructure en fonction des données de congestion et en collectant des informations sur le parking et les routes alternatives.
 Elle réduit les déchets de la chaîne d'approvisionnement en associant les livraisons et en optimisant les mouvements d'expédition.
 Elle active la transmission en continu des données pour traiter et communiquer aux conducteurs les informations sur le trafic collectées via des capteurs, des feux de signalisation intelligents et des dispositifs embarqués via des smartphones ou d'autres dispositifs de communication.
-Les mégadonnées peuvent être utilisées pour envoyer des informations en retour à des entités spécifiques afin qu’elles prennent des mesures visant à atténuer ou à résoudre un problème de trafic.\\
+Les Big Data peuvent être utilisées pour envoyer des informations en retour à des entités spécifiques afin qu’elles prennent des mesures visant à atténuer ou à résoudre un problème de trafic.\\
 
-\item \textbf{Smart énergie:} facilite la prise de décision concernant les niveaux d'approvisionnement en électricité en adéquation avec la demande réelle des citoyens et dans toutes les conditions qui affectent.
+\item \textbf{Énergie intelligente:} facilite la prise de décision concernant les niveaux d'approvisionnement en électricité en adéquation avec la demande réelle des citoyens et dans toutes les conditions qui affectent.
 Elle permet la prévision en temps quasi réel grâce à une analyse efficace des données volumineuses collectées.
 Elle s’aligne sur les objectifs stratégiques (optimisation des ressources) par le biais de plans de tarification spécifiques compatibles avec les modèles d'approvisionnement, de demande et de production.\\
 
-\item \textbf{Smart éducation:} optimise la recherche universitaire. Par exemple, l'astronome peut maintenant analyser un grand ensemble de données astronomiques en utilisant des ordinateurs puissants au lieu d'analyses manuelles. En analysant et en explorant des images numériques de haute qualité prises depuis l'espace, de nouvelles découvertes peuvent se produire sur le terrain. Cela s'applique à de nombreux domaines scientifiques et de recherche tels que les expériences médicales, les opérations de fabrication, les études environnementales et les analyses économiques et financières.
+\item \textbf{Éducation intelligente:} optimise la recherche universitaire. Par exemple, l'astronome peut maintenant analyser un grand ensemble de données astronomiques en utilisant des ordinateurs puissants au lieu d'analyses manuelles. En analysant et en explorant des images numériques de haute qualité prises depuis l'espace, de nouvelles découvertes peuvent se produire sur le terrain. Cela s'applique à de nombreux domaines scientifiques et de recherche tels que les expériences médicales, les opérations de fabrication, les études environnementales et les analyses économiques et financières.
 Le comportement et le jumelage mèneront à de nouvelles connaissances. De l'évaluation des diplômés aux attitudes en ligne, chaque élève génère un suivi de données unique. En analysant ces données, les établissements d’enseignement peuvent déterminer s’ils utilisent leurs ressources aux bons endroits et produisent les bons résultats.\\
 
-\item \textbf{Smart sécurité :} fournit des cartes des zones géographiques détaillées sur le plan spatial et le plan temprel, permettant ainsi d’aider à déterminer facilement les changements qui pourraient survenir.
+\item \textbf{Sécurité intelligente:} fournit des cartes des zones géographiques détaillées sur le plan spatial et le plan temprel, permettant ainsi d’aider à déterminer facilement les changements qui pourraient survenir.
 Elle aide à prévoir les changements environnementaux futurs ou les catastrophes naturelles telles que la détection des tremblements de terre, qui permettront de sauver des vies et d'économiser des ressources.\\
-\end{enumerate}
 
+\item \textbf{Feux de circulation intelligents \cite{7}} : l’un des principaux aspects des villes intelligentes est un bon contrôle de la circulation dans la ville, ce qui améliore les systèmes de transport et les déplacements des citoyens ainsi que la structure générale du trafic des villes. L'utilisation de feux de signalisation intelligents et de signaux est l'une des techniques les plus importantes que les villes intelligentes utilisent pour faire face aux volumes de trafic et aux encombrements élevés. Les feux de signalisation intelligents et les signaux doivent être interconnectés sur les réseaux routiers pour offrir plus d'informations sur les schémas de trafic. Chaque capteur détecte un paramètre différent du flux de trafic (par exemple, la vitesse des voitures, la densité du trafic, le temps d'attente aux feux, les embouteillages, etc.). Le système prend des décisions en fonction des valeurs de ces paramètres et donne les instructions appropriées aux voyants et aux signaux.\\
+
+\item \textbf{Réseaux électriques intelligents :} appelés aussi Smart grids. Ce sont les réseaux électriques publics utilisent des télécommandes informatiques avec une technologie de communication bidirectionnelle entre les producteurs d'électricité et les consommateurs afin d'accroître l'efficacité et la fiabilité du réseau grâce à l'auto-surveillance et à la rétroaction du système. Cela implique de placer des capteurs et des compteurs intelligents sur les systèmes de production, de transmission et de distribution en plus des points d'accès des consommateurs pour obtenir des données granulaires en temps quasi réel sur la production, la consommation et les défauts actuels. Le traitement des données collectées, considérées comme une analyse de données volumineuses, en temps réel permet de renvoyer certaines informations de contrôle afin d'améliorer les performances globales du système d'alimentation électrique.
+Cela permet la mise en oeuvre des modèles de tarification dynamiques pour la consommation d'énergie, d’éviter les pannes d’électricité potentielles dues à la forte demande des consommateurs et peut fournir aux consommateurs des informations en temps quasi réel sur leur consommation d'énergie et de faire fonctionner leurs appareils pendant les périodes de tarification plus basse.\\ 
+
+\end{enumerate}
 \subsection{Les exigences des applications de ville intelligente}
 Les applications de ville intelligente basées sur le Big Data doivent répondre à plusieurs exigences découlant de la nature particulière des besoins de la ville intelligente et des caractéristiques du Big Data. Certaines exigences sont technologiques, tandis que d’autres sont liées à la sensibilisation des citoyens et aux rôles des gouvernements.\\
 \subsubsection{Gestion des données volumineuses : }
 Le principal avantage des applications de ville intelligente est qu’elles génèrent de gros volumes de données dans divers formats et dans de nombreux secteurs tels que le trafic, l’énergie, l’éducation, la santé et la fabrication. Ces données sont générées et collectées de manière massive et régulière, offrant ainsi une vue en temps réel de ce qui se passe dans la ville à tout moment. Pour garantir une utilisation appropriée et utile de ces données dans les applications de ville intelligente, il est important de disposer d'outils de gestion des données volumineuses appropriés et efficaces. La gestion des données volumineuses comprend le développement et l'exécution d'architectures, de politiques, de pratiques et de procédures qui gèrent correctement l'ensemble du cycle de vie des données tout au long de son utilisation dans les applications de ville intelligente. Comme les données proviennent de sources différentes avec des formats différents, il est nécessaire de disposer de fonctionnalités avancées de gestion des données permettant de reconnaître les différents formats et sources de données, de structurer, de gérer, de classer et de contrôler tous ces types et structures. La gestion des données volumineuses pour les applications de ville intelligente doit également permettre une gestion évolutive de données volumineuses afin de prendre en charge les applications hors ligne, ainsi qu'un traitement à faible temps de latence pour servir efficacement les applications en temps réel.\\
 \subsubsection{Plateformes de traitement de données volumineuses:}
-Les applications Big Data pour les villes intelligentes doivent effectuer des analyses de données qui nécessitent généralement une capacité de traitement énorme. Cela conduit à la nécessité de disposer des plateformes matérielles et logicielles évolutives et fiables. Les plateformes logicielles pour les villes intelligentes doivent offrir des capacités de calcul hautes performances, être optimisées pour le matériel utilisé, être stables et fiables pour les différentes applications nécessitant des données en cours d'exécution, prendre en charge le traitement de flux, fournir des niveaux élevés de résilience aux pannes et soutenu par une équipe et un fournisseur bien formés et compétents. Il existe différentes plateformes logicielles d'analyse des données volumineuses, telles que Hadoop Mapreduce , HPCC, Stratosphere et IBM Infosphere Streams, qui fournissent le traitement de flux requis par les applications de données volumineuses en temps réel. Ces plateformes fonctionnent bien sur des systèmes en cluster capables de fournir une plateforme matérielle, puissante et évolutive pour répondre aux exigences des applications de données volumineuses. Les mégadonnées peuvent également être traitées sur le Cloud en utilisant à la fois une plateforme Big Data (PaaS) et une infrastructure IaaS.\\
+Les applications Big Data pour les villes intelligentes doivent effectuer des analyses de données qui nécessitent généralement une capacité de traitement énorme. Cela conduit à la nécessité de disposer des plateformes matérielles et logicielles évolutives et fiables. Les plateformes logicielles pour les villes intelligentes doivent offrir des capacités de calcul hautes performances, être optimisées pour le matériel utilisé, être stables et fiables pour les différentes applications nécessitant des données en cours d'exécution, prendre en charge le traitement de flux, fournir des niveaux élevés de résilience aux pannes et soutenu par une équipe et un fournisseur bien formés et compétents. Il existe différentes plateformes logicielles d'analyse des données volumineuses, telles que Hadoop Mapreduce , HPCC, Stratosphere et IBM Infosphere Streams, qui fournissent le traitement de flux requis par les applications de données volumineuses en temps réel. Ces plateformes fonctionnent bien sur des systèmes en cluster capables de fournir une plateforme matérielle, puissante et évolutive pour répondre aux exigences des applications de données volumineuses. Les Big Data peuvent également être traitées sur le Cloud en utilisant à la fois une plateforme Big Data (PaaS) et une infrastructure IaaS.\\
 \subsubsection{Infrastructure de réseau intelligent:}
 
 La plupart des applications Big Data pour les villes intelligentes exigent des réseaux intelligents connectant leurs composants, y compris les équipements des résidents, tels que les voitures, les appareils intelligents et les téléphones intelligents. Ce réseau doit être capable de transférer efficacement les données collectées de leurs sources vers le lieu de collecte, de stockage et de traitement des données volumineuses, ainsi que de renvoyer les réponses aux différentes entités qui en ont besoin dans la ville intelligente. La prise en charge de la qualité de service (QoS) sur le réseau est extrêmement importante pour les applications Big Data en temps réel destinées aux villes intelligentes. \\
@@ -297,14 +312,9 @@ Pour prendre en charge efficacement les applications de données volumineuses, l
 
 
 \section{Visualisation du Big Data }
-\subsection{Context}
-Les villes cherchent à devenir intelligentes en connectant les systèmes isolés des organismes municipaux et en installant des capteurs intelligents. Les administrateurs de la ville cherchent à exploiter les informations tirées des données des capteurs de l'Internet des objets (IoT), de systèmes de positionnement global (GPS), de smartphones et d'ordinateurs. 80\% de ces données sont des données sombres, ce qui signifie que les données sont non structurées pour transmettre un sens en soi \cite{10}.
-Il est important de visualiser les données traitées pour découvrir les modèles et pour décider les prochaines étapes. Dans le but de faire ce processus efficacement, il est extrêmement important que les décideurs puissent visualiser et interagir avec les données.
-Cela signifie qu'il est possible de supprimer la dépendance sur des experts en données de la boucle, ce qui signifie aussi que la plateforme de visualisation de données doit être interactive pour interagir avec les données, donc les idées deviennent visuellement évidentes dans le processus de découverte.
-
-\subsection{L’importance de la visualisation du Big Data}
-La visualisation de données, qui exploite la puissance de la réalité virtuelle, de la réalité augmentée et de l’apprentissage automatique, est une plateforme idéale pour la visualisation de flux de données IoT. La visualisation naturelle basée sur les gestes est non seulement intuitive, mais elle est également capable de montrer des données spatiales et temporelles complexes sur la réplique virtuelle d’un environnement, par exemple le modèle Google Earth ou le prototype 3D d’une ville.
+La visualisation de données, qui exploite la puissance de la réalité virtuelle, de la réalité augmentée et de l’apprentissage automatique, est une plateforme idéale pour la visualisation de flux de données. La visualisation naturelle basée sur les gestes est non seulement intuitive, mais elle est également capable de montrer des données spatiales et temporelles complexes sur la réplique virtuelle d’un environnement, par exemple le modèle Google Earth ou le prototype 3D d’une ville.
 La nouvelle technologie nous libère des cages de données à écran plat bidimensionnelles et nous permet de pénétrer dans nos données elles-mêmes en nous aidant à découvrir des informations grâce à un moyen de corrélation visuelle simpliste mais très puissant. Il n’est pas difficile de prendre des décisions avec la visualisation des données.
+\subsection{L’importance de la visualisation du Big Data}
 Plusieurs avantages plus spécifiques méritent d’être pris en compte. Voici quelques-uns des avantages les plus précieux de la visualisation de données volumineuses :
 \subsubsection{1. Traiter rapidement de grandes quantités de données:}
 Avec autant d’informations saisies, organisées et analysées, il y a tout simplement trop de données brutes pour que l’esprit humain moyen puisse les traiter à un rythme raisonnable. La visualisation de données volumineuses supprime le long processus de compréhension des données et permet aux utilisateurs de digérer rapidement des quantités de données volumineux et complexes. Ceci est souvent accompli par l’utilisation de tableaux de bord interactifs, présentés visuellement.
@@ -343,63 +353,62 @@ Les cartes interactives permettent aux utilisateurs de parcourir le graphique, d
 \chapter{Les techniques et les approches de la visualisation du Big Data}
 Donner un sens aux faits, aux chiffres et aux mesures est une forme d'art, l'art de la visualisation de données. Les scientifiques de diverses disciplines utilisent des techniques informatiques pour modéliser des événements complexes et visualiser des phénomènes qui ne peuvent pas être observés directement, tels que les conditions météorologiques, les conditions médicales ou les relations mathématiques.
 \section{Les techniques de visualisation du Big Data}
-La visualisation de données fournit une suite importante d’outils et de techniques permettant d’obtenir une compréhension qualitative. Dans cette section, les différentes techniques de base tels que les graphiques, les infographiques,  les cartographies et géo-visualisation seront présentés.
+La visualisation de données fournit une suite importante d’outils et de techniques permettant d’obtenir une compréhension qualitative. Dans cette section, les différentes techniques de base tels que les graphiques, les infographiques,  les cartographies et géo-visualisation seront présentées.
 \subsection{Les graphiques:}
-Il existe quatre catégories de graphiques de base, qui peuvent être utilisés pour présenter les données (Comparaison , Composition , Distribution et Relation).
+Il existe quatre catégories de graphiques de base, qui peuvent être utilisés pour présenter les données (Comparaison, Composition, Distribution et Relation).\\
+
 \begin{figure}[!ht]
     \centering
     \includegraphics[height=8cm]{images/diagramme-de-charts.jpg}
-    \caption{Le diagramme de sélection de graphique \footnotemark}
+    \caption{Le diagramme de sélection de graphique}
     \label{fig:2.1}
 \end{figure}
-\footnotetext{source : \url{https://eazybi.com/blog/data_visualization_and_chart_types/}}
- Le diagramme de sélection de graphique illustré à la figure ~\ref{fig:2.1}
-, permet de choisir le bon graphique en fonction du type de données.
+ Le diagramme de sélection de graphique illustré à la figure ~\ref{fig:2.1} (source :\small \href{https://eazybi.com/blog/data_visualization_and_chart_types/}{https://eazybi.com/blog})
+ permet de choisir le bon graphique en fonction du type de données.
 \subsubsection{1. Comparaison: }
 Ces visualisations se rapportent au temps et à la taille des données. Les graphiques de comparaison sont utilisés pour comparer la magnitude des valeurs et peuvent être utilisés pour trouver facilement les valeurs les plus basses et les plus hautes dans les données. Les graphiques de comparaison peuvent être également utiliser pour comparer les valeurs actuelles par rapport aux valeurs anciennes afin de déterminer si les valeurs augmentent ou diminuent. Les questions les plus courantes sont «quels produits se vendent le mieux» et «comment nos ventes se comparent-elles à celles de l'année dernière».
 Il n’existe pas un seul graphique à utiliser pour toutes les données synchronisées; certaines situations requièrent des graphiques linéaires tandis que d'autres nécessitent des graphiques à barres ou des graphiques en aires (pour les données cycliques).
 Par exemple, pour un nombre moins élevé de catégories parmi les éléments, le  graphique à barres affiche mieux les différences entre les données que les camemberts. C’est la raison pour laquelle il est préférable d’utiliser un graphique à barres qu’un graphique à secteurs lorsqu'il est question de comparaison.
 \subsubsection{2. Composition:}
-Les graphiques de composition sont utilisés pour voir comment une partie se compare à la totalité et comment une valeur totale peut être divisée en plusieurs valeurs. Un graphique de composition montre la valeur relative, mais certains graphiques peuvent également être utilisés pour montrer la différence absolue. La différence est entre regarder le pourcentage du total et la valeur du total. Les questions communes sont «quelle part du marché nous avons dans une région» ou «en quels domaines notre budget est-il divisé».
+Les graphiques de composition sont utilisés pour voir comment une partie se compare à la totalité et comment une valeur totale peut être divisée en plusieurs parties. Un graphique de composition montre la valeur relative, mais certains graphiques peuvent être également utilisés pour montrer la différence absolue. Les questions communes sont «quelle part du marché nous avons dans une région» ou «en quels domaines notre budget est-il divisé».
 Ces visualisations font référence à des ensembles de données qui évoluent dans le temps ou incluent des données statiques. Avec les données statiques, un diagramme à secteurs peut fonctionner.
 \subsubsection{3. Relations : }
-Les diagrammes de relations sont utilisés pour voir la relation entre les données et peuvent être utilisés pour trouver des corrélations, des valeurs aberrantes et des grappes de données. Les questions courantes sont les suivantes: «existe-t-il une corrélation entre les dépenses publicitaires et les ventes de nos produits» ou «comment les dépenses et les revenus varient-ils d’une région à l’autre et quel est l’écart»
+Les diagrammes de relations sont utilisés pour voir la relation entre les données et peuvent être utilisés pour trouver des corrélations, des valeurs aberrantes et des grappes de données. Les questions courantes sont les suivantes: «existe-t-il une corrélation entre les dépenses publicitaires et les ventes de nos produits» ou «comment les dépenses et les revenus varient-ils d’une région à l’autre et quel est l’écart». 
 
 \subsubsection{4. Distribution: }
 Les graphiques de distribution sont utilisés pour voir comment les valeurs quantitatives sont réparties le long d'un axe, du plus bas au plus élevé. En examinant la forme des données, un utilisateur peut identifier des caractéristiques telles que la plage de valeurs, la tendance centrale, la forme et les valeurs aberrantes. Il peut être utilisé pour répondre à des questions telles que «nombre de clients par groupe d'âge» ou «combien de jours en retard ont nos paiements».
-Pour illustrer mieux ce type de graphique, le graphique de nuages de points (Scatter plot) est illustré à la figure ~\ref{fig:2.2} et présenté ci-dessous :
+Pour illustrer mieux ce type de graphique, le graphique de nuages de points (Scatter plot) est illustré à la figure~\ref{fig:2.2} (source :\small \href{https://datavizcatalogue.com/methods/scatterplot.html}{https://datavizcatalogue.com}) et présenté ci-dessous.
 \pagebreak
 
 En affichant une variable dans chaque axe, il est possible de détecter une relation ou une corrélation entre les deux variables.
 \begin{figure}[!htb]
 \begin{minipage}{0.46\linewidth}
-Différents types de corrélation peuvent être interprétés à travers les modèles affichés sur les diagrammes de dispersion. Il existe une corrélation positive (les valeurs augmentent ensemble), négative (une valeur diminue avec l’augmentation), nulle (pas de corrélation), linéaire, exponentiel et en forme de U. La force de la corrélation peut être déterminée par la proximité des points sur le graphique. Les points qui finissent loin du groupe général de points sont appelés points aberrants.
+Différents types de corrélation peuvent être interprétés à travers les modèles affichés sur les diagrammes de dispersion. Il existe une corrélation positive (les valeurs augmentent ensemble), négative (une valeur diminue avec l’augmentation de l'autre valeur), nulle (pas de corrélation), linéaire, exponentiel et en forme de U. La force de la corrélation peut être déterminée par la proximité des points sur le graphique. Les points qui finissent loin du groupe général de points sont appelés points aberrants.
 Des lignes ou des courbes sont ajustées dans le graphique pour faciliter l'analyse et sont dessinées aussi près que possible de tous les points. Ainsi, il est montré comment tous les points ont été condensés en une seule droite. Ceci est généralement connu sous le nom de Droite de meilleur ajustement et peut être utilisé pour effectuer des estimations par interpolation.
 Les diagrammes de dispersion sont parfaits lorsqu’il est associé des données numériques et que l’objectif est de voir si une variable a un impact sur l'autre. Cependant, il est important de rappeler que la corrélation n'est pas une cause et qu'une autre variable inaperçue peut influer sur les résultats.
 \end{minipage}\hfil
 \begin{minipage}{0.35\linewidth}
     \includegraphics[height=13cm]{images/scatter-plot.png}
-    \caption{\small Diagramme de dispersion \footnotemark}
+    \caption{\small Diagramme de dispersion}
  \label{fig:2.2}
 \end{minipage}
 \end{figure}
-\footnotetext{source : \url{https://datavizcatalogue.com/methods/scatterplot.html}}
+% \footnotetext{source : \url{https://datavizcatalogue.com/methods/scatterplot.html}}
 \subsection{Infographie}
-Les infographies sont devenues un moyen de communication de masse; ils sont conçus pour atteindre un public plus large en simplifiant les sujets complexes et en les organisant dans un format facile à digérer, contrairement à d'autres types de visualisations. \\*
-Une infographie (graphique d'information) est une représentation visuelle de l'information qui vise à rendre les données facilement compréhensibles au premier coup d'œil. Une infographie utilise au minimum le texte et peut constituer un outil puissant pour afficher des données, expliquer des concepts, simplifier les présentations, cartographier les relations, afficher les tendances et fournir des informations essentielles.Les infographies se présentent sous différentes formes. Ils sont classés en fonction de leur objectif, des types d’objets utilisés et du flux d’informations. 
+Les infographies sont devenues un moyen de communication de masse; elles sont conçus pour atteindre un public plus large en simplifiant les sujets complexes et en les organisant dans un format facile à comprendre, contrairement à d'autres types de visualisations. \\*
+Une infographie (graphique d'information) est une représentation visuelle de l'information [voir figure \ref{fig:2.3}] (source : \href{https://www.hongkiat.com/blog/infographic-design-kit/}{https://www.hongkiat.com/blog}) qui vise à rendre les données facilement compréhensibles au premier coup d'œil. Une infographie utilise au minimum le texte et peut constituer un outil puissant pour afficher des données, expliquer des concepts, simplifier les présentations, cartographier les relations, afficher les tendances et fournir des informations essentielles. Les infographies se présentent sous différentes formes. Elles sont classées en fonction de leur objectif, des types d’objets utilisés et du flux d’informations. 
 \newpage
 \begin{figure}[!ht]
     \centering
     \includegraphics[height=10cm]{images/infographic.jpg}
-    \caption{Exemple d'une infographie \footnotemark}
+    \caption{Exemple d'une infographie }
     \label{fig:2.3}
 \end{figure}
-\footnotetext{source : \url{https://www.hongkiat.com/blog/infographic-design-kit/}}
 \subsubsection{1. Infographie d'information}
 L'infographie informationnelle se distingue par son utilisation de texte supérieure à la moyenne par rapport à d'autres types d'infographie. Le graphique peut être amélioré par des icônes, des formes, des couleurs et d'autres éléments visuels, mais dans l'ensemble, l'accent est mis sur les mots.
 
 \subsubsection{2. Infographie de la chronologie }
-L'infographie de la chronologie décrit les événements ou les actions dans un ordre chronologique. Ils sont souvent utilisés pour démontrer le développement d’un produit, une tendance historique ou l’évolution d’une idée. L'infographie de la chronologie utilise des icônes, des images et des éléments graphiques pour transmettre le message. Le format de la timeline peut être vertical, horizontal ou sinueux. Les infographies verticales et chronologiques sinueuses sont généralement plus faciles à lire. Une infographie de chronologie horizontale convient mieux aux affiches, aux présentations et aux environnements où l'espace n'est pas une contrainte.
+L'infographie de la chronologie décrit les événements ou les actions dans un ordre chronologique. Elles sont souvent utilisées pour démontrer le développement d’un produit, une tendance historique ou l’évolution d’une idée. L'infographie de la chronologie utilise des icônes, des images et des éléments graphiques pour transmettre le message. Le format de la timeline peut être vertical, horizontal ou sinueux. Les infographies verticales et chronologiques sinueuses sont généralement plus faciles à lire. Une infographie de chronologie horizontale convient mieux aux affiches, aux présentations et aux environnements où l'espace n'est pas une contrainte.
 
 \subsubsection{3. Infographie de graphiques }
 L’infographie de graphiques a un graphique comme pièce maîtresse de la visualisation des informations. Des couleurs, des formes et des icônes peuvent être ajoutés à des fins d'emphase et/ou d'explication. Les graphiques fonctionnent mieux lorsqu’il est effectué une comparaison élémentaire d'éléments. 
@@ -411,7 +420,6 @@ Les graphiques en secteur apparaissent assez souvent dans l'infographie, car ils
 L’infographie de processus décrit les processus de prise de décision. Les infographies de processus sont également appelées arbres de décision ou organigrammes. Chaque étape est liée à la suivante par des lignes et des flèches directionnelles. 
 
 Alors qu'il existe différents types d'infographies, certains éléments sont essentiels pour rendre une représentation visuelle des données qualifiée d'infographie. Pratiquement toutes les infographies utilisent chacune d’elles dans une certaine mesure (couleurs, polices, icônes et images).
-
 \subsection{Géomatique et Cartographie}
 Le terme géomatique est un néologisme composé de « géo » (pour géographie) et de « matique » (pour informatique). C’est la discipline ayant pour objet « la gestion des données à référence spatiale et qui fait appel aux sciences et aux technologies reliées à leur acquisition, leur stockage, leur traitement et leur diffusion» \cite{11}. En somme, la géomatique est le domaine de l’informatique auquel se rattache les SIG (Système d’Information Géographique). La cartographie incorpore trois dimensions sous-jacentes \cite{11}:
 
@@ -430,30 +438,30 @@ Les cartes à points sont idéales pour voir comment les choses sont réparties 
 \begin{figure}[!ht]
     \centering
     \includegraphics[height=5cm]{images/dot_map.png}
-    \caption{Carte à point \footnotemark}
+     \scriptsize{source :\url{https://datavizcatalogue.com/methods/dot_map.html}}
+     \caption{Carte à point}
     \label{fig:2.4}
 \end{figure}
-\footnotetext{source : \url{https://datavizcatalogue.com/methods/dot_map.html}}
 \subsubsection{2. Les cartes à bulle (Bubble Map)}
 Avec cette carte de données, les cercles sont affichés sur une région géographique désignée, la surface du cercle étant proportionnelle à sa valeur dans le jeu de données. Les cartes à bulles permettent de comparer des proportions sur des régions géographiques sans les problèmes causés par la taille de la région, comme le montre la carte de Choropleth. Cependant, l'un des principaux défauts de la carte à bulle est que des bulles trop volumineuses peuvent chevaucher d'autres bulles et régions sur la carte. Il faut donc en tenir compte.
 \begin{figure}[!ht]
     \centering
     \includegraphics[height=5cm]{images/bubble_map.png}
     \scriptsize{source :\url{https://datavizcatalogue.com/methods/bubble_map.html}}
-    \caption{Carte à bulle \footnotemark}
+    \caption{Carte à bulle }
     \label{fig:2.5}
 \end{figure}
-\footnotetext{source : \url{https://datavizcatalogue.com/methods/dot_map.html}}
 \subsubsection{3. Les cartes Choroplèthes (Choropleth Map)}
 Les cartes Choroplèthes affichent des zones géographiques ou des régions divisées colorées, ombrées ou structurées par rapport à une variable de données. Cela fournit un moyen de visualiser les valeurs sur une zone géographique, ce qui peut montrer des variations ou des modèles sur l'emplacement affiché.
 La variable de données utilise la progression de la couleur pour se représenter dans chaque région de la carte. En règle générale, il peut s'agir d'un mélange d'une couleur à une autre, d'une progression de teinte unique, transparente à opaque, claire à sombre ou d'un spectre de couleurs complet.
 \begin{figure}[!ht]
     \centering
     \includegraphics[height=5cm]{images/choropleth.png}
-    \caption{Carte Choroplèthes \footnotemark}
+    \scriptsize{source :\url{https://datavizcatalogue.com/methods/choropleth.html}}
+    \caption{Carte Choroplèthes }
     \label{fig:2.6}
 \end{figure}
-\footnotetext{source : \url{https://datavizcatalogue.com/methods/choropleth.html}}
+
 \begin{figure}[!htb]
 \begin{minipage}{0.46\linewidth}
 
@@ -466,17 +474,16 @@ Les cartes thermiques sont utiles pour afficher la variance entre plusieurs vari
 \begin{minipage}{0.35\linewidth}
 \centering
     \includegraphics[height=8cm]{images/Heatmap.png}
-    \caption{Carte thermique \footnotemark}
+    \scriptsize{source :\url{https://blog.socialcops.com/academy/resources/7-techniques-to-visualize-geospatial-data/}}
+    \caption{Carte thermique}
  \label{fig:2.7}
 \end{minipage}
 \end{figure}
-\footnotetext{source : \url{https://blog.socialcops.com/academy/resources/7-techniques-to-visualize-geospatial-data/}}
 
 En règle générale, toutes les lignes constituent une catégorie (étiquettes affichées à gauche ou à droite) et toutes les colonnes constituent une autre catégorie (étiquettes affichées en haut ou en bas). Les lignes et les colonnes individuelles sont divisées en sous-catégories, qui correspondent toutes les unes aux autres dans une matrice. Les cellules contenues dans le tableau contiennent des données catégoriques à code de couleurs ou des données numériques, basées sur une échelle de couleurs. Les données contenues dans une cellule sont basées sur la relation entre les deux variables de la ligne et de la colonne de connexion.
 
 Une légende est nécessaire à côté d’une carte thermique pour que celle-ci puisse être lue avec succès. Les données catégorielles sont codées par couleur, tandis que les données numériques nécessitent une échelle de couleurs qui se mélange d'une couleur à l'autre afin de représenter la différence entre les valeurs hautes et basses. 
 Les cartes thermiques peuvent également être utilisées pour afficher les modifications des données au fil du temps si l'une des lignes ou des colonnes est définie sur des intervalles de temps. Par exemple, utilisez une carte thermique pour comparer les changements de température au cours de l’année dans plusieurs villes, afin de déterminer les endroits les plus chauds ou les plus froids. Ainsi, les lignes pourraient répertorier les villes à comparer, les colonnes contiennent chaque mois et les cellules contiennent les valeurs de température.
-
 \subsection{La Géovisualisation}
 La géo-visualisation et l'analyse visuelle de données géospatiales sont devenues un centre d'intérêt pour la recherche, les industries, le gouvernement et d'autres organisations pour améliorer la mobilité, l'efficacité énergétique, la gestion des déchets et l'administration publique d'une ville intelligente \cite{12}.\\
 
@@ -494,18 +501,18 @@ La gestion des données spatiales joue un rôle fondamental dans la conception d
 
 Ces dernières années, différentes techniques de représentation des données spatiales ont été considérablement développées dans différents types de cartes (cartes de points, de lignes, de polygones, de cartes choroplèthes, de cartes isoplèthes, de cartogrammes, etc).\\ Les indicateurs spatiaux peuvent être représentés de différentes manières: en deux ou en trois dimensions, en fonction du caractère bidimensionnel ou tridimensionnel des phénomènes. Si le phénomène analysé a principalement deux dimensions, il est courant de le représenter en utilisant le même nombre de variables spatiales. 
 La représentation consiste à faire des choix qui nécessitent un premier niveau d’analyse pour extraire la signification et la transmettre à l’utilisateur via une représentation graphique, telle que la carte ou la visualisation 3D illustré ci-dessous. 
-
-
-\begin{figure}[!ht]
+\begin{figure}[!htb]
     \centering
-    \includegraphics[height=6.6cm]{images/bienIci.jpg}
-    %\scriptsize{source :\url{https:// }}
-    \caption{capture d'écran du site Bien’Ici }
+    \includegraphics[height=6.5cm]{images/bienIci.jpg}
+    \scriptsize{source :\url{https://www.bienici.com/}}
+    \caption{Capture d'écran du site Bien'Ici}
     \label{fig:2.9}
 \end{figure}
-La figure ~\ref{fig:2.9} présente une nouvelle approche pour la recherche immobilière, plus simple, plus rapide et plus agréable pour les internautes par l’entreprise Bien’Ici . Sa cartographie en 3D était développée par l’agence de jeux vidéos F4Map\footnote{ La carte F4 (F4Map) est une carte 3D basée sur Openstreetmap qui utilise la technologie WebGL } qui a modélisé la France entière en 3D. La carte passe automatiquement en 3D à partir d’un certain niveau de zoom. Toutes les annonces sont repérables sur la carte par un point rouge ou une étiquette de prix.  La carte en 3D permet de déplacer dans tous les sens afin de découvrir le logement et le quartier sous tous les angles.
+
+La figure~\ref{fig:2.9} présente une nouvelle approche pour la recherche immobilière, plus simple, plus rapide et plus agréable pour les internautes par l’entreprise Bien’Ici . Sa cartographie en 3D était développée par l’agence de jeux vidéos F4Map\footnote{ La carte F4 (F4Map) est une carte 3D basée sur Openstreetmap qui utilise la technologie WebGL } qui a modélisé la France entière en 3D. La carte passe automatiquement en 3D à partir d’un certain niveau de zoom. Toutes les annonces sont repérables sur la carte par un point rouge ou une étiquette de prix.  La carte en 3D permet de déplacer dans tous les sens afin de découvrir le logement et le quartier sous tous les angles.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Outils de visualisation du Big Data: }
 Les outils de visualisation de données sont exactement les armes dont nous avons besoin. Ces outils nous montrent diverses informations sur les données collectées. Les grands entreprises tels que Google et Microsoft collectent et manipulent des données volumineuses pour concevoir l'avenir de leurs stratégies commerciales. Cette section couvre certains outils de visualisation associés au Big Data. Les outils de visualisation sont diverses.  Plusieurs approches se sont dégagés selon le contexte. \\
 
@@ -587,7 +594,6 @@ Plotly.js est une bibliothèque JavaScript de haut niveau, gratuite et à code s
 \end{itemize} 
 \subsubsection{7. Nvd3}
 NVD3 est une bibliothèque Javascript visant à créer des graphiques et des composants réutilisables pour D3.js, en offrant les mêmes fonctionnalités puissantes, mais beaucoup plus simple à utiliser. Elle permet de gérer des ensembles de données complexes et de créer des visualisations avancées.
-
 \subsection{Approche de visualisation des BI}
 Les outils d'aide à la décision ont pour objectif d’aider à comprendre les tendances et à tirer parti de données pour permettre de prendre des décisions commerciales stratégiques.
 Ces outils permettent de réaliser des graphiques, des présentations et des tableaux de bord en toute simplicité. Les analyses de données peuvent être effectuées à l’aide de JavaScript, Python, R, Matlab, Jupyter ou encore Excel. 
@@ -628,12 +634,11 @@ Au total, il existe plus de 20 solutions BI sur le marché. Trois outils présen
 \item \textbf{} Les solutions d’exploration des données, tels que les produits dédiés à l’informatique décisionnelle et les outils offrant une fonction BI en self-service comme la suite SQL de microsoft, Qlik, Tableau, Tibco, Microstratégy, etc. 
 
 \end{itemize} 
-
 \subsection{Approche de visualisation de SIG}
 La visualisation de données par la cartographie est devenue un moyen essentiel pour les villes intelligentes de tirer parti des données recueillies à partir de diverses technologies ou d’applications intelligentes. Les cartes de système d'information géographique (SIG) fournissent des éléments visuels faciles à assimiler et qui peuvent aider les villes à déterminer les zones nécessitant certains aménagements ou services, ainsi que les meilleurs plans de répartition des ressources.
 Certains outils de cartographie sont destinées à des analyses de niche, d'autres à des analyses plus étendues, telles que les réparations nécessaires dans une ville. Bon nombre de ces applications vont au-delà du traçage des données existantes et fournissent également une analyse prédictive pour aider à prévenir et à résoudre les futurs problèmes des villes.
 Les logiciels SIG englobent un large éventail d'applications impliquant une combinaison de cartes numériques et de données géoréférencées. Les logiciels SIG peuvent être classés en différentes catégories.
-Il existe deux catégories principales :  
+Il existe deux catégories principales \cite{15} :  
 
 \begin{enumerate}
 \item \textbf{Logiciel open source} 
@@ -673,28 +678,27 @@ En outre, le logiciel fonctionne sur de nombreux systèmes d'exploitation, notam
 Il permet d'explorer de manière interactive les données spatiales et de composer des cartes à l'aide de l'interface graphique conviviale. L'interface utilise de nombreux outils, notamment le gestionnaire de base de données, les signets spatiaux, le navigateur QGIS, les outils d'annotation, le panneau de présentation, le composeur de carte, la reprojection à la volée, etc.
 
 QGIS facilite également l'analyse des données spatiales sur toutes les bases de données et autres formats pris en charge par OGR. Le logiciel propose des outils d'échantillonnage, d'analyse vectorielle, de géotraitement, de gestion de base de données et de géométrie. Un autre avantage est la possibilité d'étendre les fonctionnalités de QGIS à l'aide de plugins. Les bibliothèques de plugins extensibles et l'architecture facilitent l'adaptation de la plate-forme aux besoins spécifiques. En outre, il est plus facile de créer des applications supplémentaires en utilisant Python ou C ++.
-
-\section{Etude comparative sur les approches }
+\section{Comparaison des approches }
 \label{sec:comparative}
-Il existe de nombreux outils de visualisation du Big Data, qui sont classé selon le contexte en trois catégories. Au sein de ces catégories, les outils de visualisation de données sont également classé en fonction de leur spécialité. 
-Premièrement, les puissants outils de BI, tels que Tableau, permettent de visualiser, récupérer, analyser et documenter des données. Les outils de BI sont conçus pour rendre le flux de données gérable, permettant ainsi aux organisations, grandes ou petites, de transformer des données non structurées en actions exploitables sans besoin des experts de base de données ou des développeurs.
+Il existe de nombreux outils de visualisation du Big Data, qui sont classés selon le contexte en trois catégories. Au sein de ces catégories, les outils de visualisation de données sont également classés en fonction de leur spécialité. 
+Premièrement, les outils puissants de BI, tels que Tableau, permettent de visualiser, récupérer, analyser et documenter des données. Les outils de BI sont conçus pour rendre le flux de données gérable, permettant ainsi aux organisations, grandes ou petites, de transformer des données non structurées en actions exploitables sans besoin des experts de base de données ou des développeurs.
 Deuxièmement, les bibliothèques de graphiques Javascript tels que D3js sont des outils de développement, principalement des bibliothèques des APIs ou des modules de langage de programmation. Ces outils sont utilisés pour étendre une application à l’aide de méthodes fournies ad hoc par la bibliothèque. 
-Troisièmement, les outils de SIG tels que ArcGIS sont à l’origine de nombreux services de géolocalisation basés sur l’analyse des données et leur visualisation. Pour le développement urbain et sa durabilité, la technologie SIG a la capacité d’être utilisée pour piloter des systèmes d’aide à la planification, à l’aménagement du territoire, la gestion des infrastructures et réseaux, le transport,la logistique, l’assurance, les télécommunications, l’ingénierie, l’éducation et la recherche, etc. 
+Troisièmement, les outils de SIG tels que ArcGIS sont à l’origine de nombreux services de géolocalisation basés sur l’analyse des données et leur visualisation. Pour le développement urbain et sa durabilité, la technologie SIG a la capacité d’être utilisée pour piloter des systèmes d’aide à la planification, à l’aménagement du territoire, la gestion des infrastructures et réseaux, le transport, la logistique, l’assurance, les télécommunications, l’ingénierie, l’éducation et la recherche, etc. \\
 
-Après avoir décrit les principales approches caractérisant les outils de visualisation, il est nécessaire de dégager des critères pour comparer ces différents outils. Voici une description de ces critères de comparaison 
+Après avoir décrit les principales approches caractérisant les outils de visualisation, il est nécessaire de dégager des critères pour comparer ces différents outils. Voici une description de ces critères de comparaison:
 \begin{enumerate}
   \item \textbf {Catégorie de logiciel }: Il représente la typologie de la solution analysée. Il distingue une application de bureau (application autonome sans mécanisme d'extension), une application ou des services Web, une bibliothèque de logiciels (par exemple, une bibliothèque Javascript pour le Web), un framework logiciel (une application logicielle complexe avec un plugin ou mécanisme basé sur des add-ons pour l'étendre, afin de connecter le framework à une solution existante pour le stockage de données ou l'analyse). 
-  \item \textbf {Technique de visualisation } : Il répond à la question ( Pour quel type d’objet graphique l’outil est-il conçu?). Ainsi, il renseigne sur l'objet graphique principal ou le widget pris en charge par l'outil. De nombreuses solutions ne se limitent pas à un seul objet graphique, mais généralement, il existe un ou plusieurs widgets pris en charge par l’outil. Par exemple, Plotly est conçu pour les widgets de graphique, alors que Polymaps pour les cartes.
+  \item \textbf {Technique de visualisation } : Il répond à la question «pour quel type d’objet graphique l’outil est-il conçu?». Ainsi, il renseigne sur l'objet graphique principal ou le widget pris en charge par l'outil. De nombreuses solutions ne se limitent pas à un seul objet graphique, mais généralement, il existe un ou plusieurs widgets pris en charge par l’outil. Par exemple, Plotly est conçu pour les widgets de graphique, alors que Polymaps pour les cartes.
   \item \textbf {Système d'exploitation} : Le système d'exploitation (par exemple, Linux, Windows, Mac OS X) sur lequel l'outil est exécuté.
   \item \textbf {Licence} : Ceci informe sur la licence de la solution, commerciale et open source sous diverses licences (Licence Apache, GNU GPL,MIT etc.).
-  \item \textbf {Évolutivité } : Ce critère concerne les mécanismes de l’évolutivité horizontale des outils afin de prendre en charge de très grands ensembles de données. Certaines solutions concernent, par exemple, la possibilité de connecter le logiciel à 
+  \item \textbf {Évolutivité } : Ce critère concerne les mécanismes de l’évolutivité horizontale des outils afin de prendre en charge de très grands ensembles de données. Certaines solutions concernent, par exemple, la possibilité de connecter le logiciel à une instance Hadoop s'exécutant sur un grand ensemble de données.
   \item \textbf {Extensibilité} : Ce critère concerne les mécanismes d'extension de l'outil via des add-ons ou des plugins, ainsi que la possibilité de le connecter à une solution de stockage existante. Par exemple, Plotly peut être connecté à Matlab ou à R, à l’aide de connecteurs clients spécifiques. 
   \item \textbf {Dernière version et date de publication} : Pour déterminer si la solution est à jour ou non. Si la dernière date de publication n'est pas récente, il est possible que le produit ne soit plus pris en charge.
 \end{enumerate}
 
-Dans le cadre d’une ville intelligente, les trois approches peuvent être utilisées. Selon le contexte et le secteur de l’organisation, il sera privilégié une d’entre elles. 
+Dans le cadre d’une ville intelligente, les trois approches peuvent être utilisées. Selon le contexte et le secteur de l’organisation, une d'entre elle sera priviligié.
 
-Par exemple, si l’organisation est une entreprise qui est en train de développer une solution pour une smart city, il est indispensable de choisir un outil de développement tel que les bibliothèques de visualisation Javascript. Mais dans le cas d’une organisation qui souhaite gérer et visualiser une grande quantité de données avec des graphiques et des diagrammes, il est indispensable d’utiliser des logiciels de Business Intelligence tel que Tableau. 
+Par exemple, si l’organisation est une entreprise qui est en train de développer une solution pour une smart city, il est indispensable de choisir un outil de développement tel que les bibliothèques de visualisation Javascript. Mais dans le cas d’une organisation qui souhaite gérer et visualiser une grande quantité de données avec des graphiques et des diagrammes, il est indispensable d’utiliser des logiciels de Business Intelligence tel que Tableau.\\ 
 
 Dans une ville intelligente, un nouveau développement urbain durable exige une visualisation urbaine complète et des modèles de ville en 3D offrant une visualisation urbaine étendue avec de nouvelles techniques d'interrogation de données. Le système d’information centralisé basé sur un système d’information géographique (SIG) fait le lien entre différents secteurs. Il constitue une plateforme intersectorielle intégrée pour collecter, gérer, compiler, analyser et visualiser des informations temporelles et géospatiales en vue d’une planification, d’un développement et d’une gestion urbains durables dans une ville intelligente. Il peut mieux expliquer l'interaction et la variation dans le temps des indicateurs de développement durable. 
 
@@ -719,21 +723,19 @@ Les SIG peuvent être utilisés tout au long du cycle de vie d'une ville intelli
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \chapter{Cas pratique: visualisation du Big Data chez Datategy}
 \section{Presentation de Datategy}
-Datategy est une entreprise de 20 personnes. Il est spécialisé dans la science des données appliquée à la stratégie d'entreprise. La société est située à La Grande Arche, 1 parvis de la défense 92800, Paris, France.
-Elle a été fondé par des scientifiques de données et des stratèges commerciaux en 2016.
+Datategy est une entreprise de 20 personnes. Elle est spécialisée dans la science des données appliquée à la stratégie d'entreprise. La société est située à La Grande Arche, 1 parvis de la défense 92800, Paris, France.
+Elle a été fondée par des data scientists en 2016.
 La vision de Datategy consiste à extraire des informations pertinentes des données et à les transformer en une source majeure de prise de décision. Son objectif est d'amener les entreprises dans des organisations plus intelligentes et plus avisées et de tirer un avantage concurrentiel de l'utilisation efficace de leurs données.
 Datategy est une entreprise qui propose deux services principaux: un service de conseil et un produit de ville intelligente pour le transport et le stationnement, appelé OctoCity.
 Il couvre de nombreux secteurs: finance, énergie, services aux entreprises et produits de consommation. Afin de comprendre les spécificités des différents secteurs et d’optimiser efficacement l’utilisation de son expertise, la société s’intéresse à ces quatre secteurs.
-
 \section{Presentation d’OctoCity solution}
-La fraude coûte cher aux entreprises de services de transport. En France, le marché des transports coûte environ 800 millions d'euros et celui du stationnement environ 500 millions d'euros en 2017. La fraude représente environ 8 à 25\% du chiffre d’affaires des entreprises en France. Il augmente également chaque année d'environ 5\% .
+La fraude coûte cher aux entreprises de services de transport. En France, le marché des transports coûte environ 800 millions d'euros et celui du stationnement environ 500 millions d'euros en 2017 \cite{16}. La fraude représente environ 8 à 25\% du chiffre d’affaires des entreprises en France. Il augmente également chaque année d'environ 5\% .
 Devant l’inefficacité des moyens existants Datategy a ainsi mis au point Octocity Transport, une solution innovante, basée sur un algorithme prédictif, d’intelligence Artificielle, une solution 100\% Cloud permettant de générer des itinéraires optimaux pour les agents. Il traite les réplications de données avec la technologie Cassandra pour une disponibilité à 100\%. Il est composé d'une application de site Web et d'une application mobile connectée en temps réel.
 OctoCity est conçu pour les gestionnaires en permettant un suivi global des agents de contrôle sur le terrain et une analyse statistique de l'efficacité des tournées et des interventions à l'aide de l'application de site Web. Il est également conçu pour les agents de contrôle sur le terrain en permettant à l’application mobile de prendre des contraventions de stationnement et de consulter l’historique des contraventions de stationnement. Il oriente également les agents de contrôle vers les lieux où la fraude en matière de transport est plus importante en temps réel.
-
-
-\section{Etude comparative entre les différent bibliothèque de la visualisation}
+\section{Etude comparative des bibliothèques Javascript}
 Dans le cadre de mon alternance, l’entreprise Datategy doit choisir une bibliothèque de visualisation qui répond à leurs besoins d’intégrer un dashboard avec différents graphiques et statistiques au sein du projet Transports. Un des objectifs de ce projet est de visualiser le nombre de contravention en fonction de différents critères tels que les stations, les lignes de bus, les arrondissements, etc. 
 Initialement, l’entreprise fait le choix d’utiliser la bibliothèque D3js dont les avantages sont listés ci-dessous :
 \begin{itemize}
@@ -745,38 +747,38 @@ Initialement, l’entreprise fait le choix d’utiliser la bibliothèque D3js do
   \item Plugins
 \end{itemize}
 
-En réalisant des graphiques avec D3js, le codage prend beaucoup de temps et s’avère laborieux. Le code devient long et difficile à gérer.  D3js a notamment une longue courbe d'apprentissage. Cela demande aux développeurs beaucoup de temps pour apprendre les syntaxes. 
+En réalisant des graphiques avec D3js, le développement prend beaucoup de temps et s’avère laborieux. Le code devient long et difficile à gérer.  D3js a notamment une longue courbe d'apprentissage. Cela demande aux développeurs beaucoup de temps pour apprendre les syntaxes. 
 Concernant le chargement de l’application Web, D3js importera plus de 70 Ko de code pour les graphiques les plus simples. 
-Ces points négatifs sont acceptable si l'objectif est de créer de nouvelles visualisations complexes. Cependant pour OctoCity, ce n'est pas le cas car il n’est pas nécessaire d’avoir beaucoup de types de graphiques différents et complexes. Pour faire des graphiques simples comme des donuts, des graphiques à barres, des graphiques linéaires, des diagrammes de dispersion, il est possible de les implémenter en utilisant une autre bibliothèque. 
+Ces points négatifs sont acceptable si l'objectif est de créer de nouvelles visualisations complexes. Cependant pour OctoCity, ce n'est pas le cas car il n’est pas nécessaire d’avoir beaucoup de types de graphiques différents et complexes. Pour faire des graphiques simples comme des donuts, des graphiques à barres, des graphiques linéaires, des diagrammes de dispersion, il est possible de les implémenter en utilisant une autre bibliothèque. \\
 
 Il existe de nombreuses bibliothèques de visualisation, tels que Nvd3, Chart.js, Chartist, Plotly, C3js, HighChart et vectory [voir section ~\ref{subsec:JS}]. Le choix s’est porté parmis ces 6 bibliothèques. Pour choisir, il est indispensable de dégager des critères de comparaison comme indiqué dans la section ~\ref{sec:comparative}.
 Il existe de nombreux éléments comparables entre ces bibliothèques tels que :
 
 \begin{enumerate}
   \item \textbf{La licence utilisée} : à l'exception des Highcharts, toutes ces bibliothèques sont sous licence MIT ou Apache. Cela signifie qu'elles peuvent être utilisées gratuitement. Il est également possible d’utiliser Highcharts gratuitement à des fins non commerciales. Sinon, il faut  acheter une licence.
-  \item \textbf{L'enrichissement et la maintenance de la bibliothèque dans le temps} : ceci peut être évalué à travers la popularité et l’activité du dépôt Github des bibliothèques. Il existe plusieurs outils permettant d'évaluer la bibliothèque tel que npm trends. La figure ci-dessus montre le nombre d'étoiles, de forks  et d’issues pour chaque bibliothèque, ainsi que la dernière mise à jour. 
+  \item \textbf{L'enrichissement et la maintenance de la bibliothèque dans le temps} : ceci peut être évalué à travers la popularité et l’activité du dépôt Github des bibliothèques. Il existe plusieurs outils permettant d'évaluer la bibliothèque tel que npm trends\footnote{Application de comparaison de Backages NPM, \url{https://www.npmtrends.com/}}. La figure ci-dessous montre le nombre d'étoiles, de forks  et d’issues pour chaque bibliothèque, ainsi que la dernière mise à jour. 
   \begin{figure}[!ht]
     \centering
     \includegraphics[height=4cm]{images/npm-trends-stat.jpg}
     \caption{Tableau comparatif des bibliothèque}
     \label{fig:3.1}
 \end{figure}
-  \item \textbf{Les techniques de visualisation} : Il en existe plusieurs tels que les graphiques 2D et 3D, les cartographies et les statistiques, etc. Toutes ces bibliothèques fournit des graphiques 2D tels que les donuts, les graphiques à barres, les graphiques linéaires, les diagrammes de dispersion, etc. De plus, la bibliothèque Plotly fournit aussi quelques graphiques en 3D et quelques types de cartographies tels que les cartes Choroplèthes, Nuages de points sur cartes et Cartes à bulles.
-  \item \textbf{Les options de personnalisation} : tels que (titres, légendes, zoom, info-bulle, réactivité). Comparer les options de conception et de personnalisation est délicat. Chaque bibliothèque fournit des options personnalisées et il est difficile de les comparer. La table ci-dessus montre la présence des options pour chaque bibliothèque :
+  \item \textbf{Les techniques de visualisation} : Il en existe plusieurs tels que les graphiques 2D et 3D, les cartographies et les statistiques, etc. Toutes ces bibliothèques fournissent des graphiques 2D tels que les donuts, les graphiques à barres, les graphiques linéaires, les diagrammes de dispersion, etc. De plus, la bibliothèque Plotly fournit aussi quelques graphiques en 3D et quelques types de cartographies tels que les cartes Choroplèthes, Nuages de points sur cartes et Cartes à bulles.
+  \item \textbf{Les options de personnalisation} : tels que (titres, légendes, zoom, info-bulle, réactivité). Comparer les options de conception et de personnalisation est délicat. Chaque bibliothèque fournit des options personnalisées et il est difficile de les comparer. La table ci-dessous montre la présence des options pour chaque bibliothèque :
   \begin{figure}[!ht]
     \centering
     \includegraphics[height=5cm]{images/options-table.jpg}
     \caption{Tableau comparatif des bibliothèque selon les options personnalisation}
     \label{fig:3.2}
 \end{figure}
-  \item \textbf{Le nombre de téléchargements} : Consulter les téléchargements hebdomadaires sur NPM et les étoiles sur Github permet de savoir quelle est sa popularité.  La figure ci-dessus montre le nombre de téléchargement selon NPM trends. 
+  \item \textbf{Le nombre de téléchargements} : Consulter les téléchargements hebdomadaires sur NPM et les étoiles sur Github permet de savoir quelle est sa popularité.  La figure ci-dessous montre le nombre de téléchargement selon NPM trends. 
    \begin{figure}[!ht]
     \centering
     \includegraphics[height=6cm]{images/npm-trends-chart.jpg}
-    \caption{Graphique comparatif des bibliothèque selon le nombre de téléchargement }
+    \caption{Graphique comparatif des bibliothèque JS selon le nombre de téléchargement }
     \label{fig:3.3}
 \end{figure}
-  \item \textbf{ La maintenance active} : Elle est le meilleur moyen qui permet à la bibliothèque de passer d’une version nouvelle et expérimentale à une version stable et mature. Cela comprends des corrections des bugs réguliers et des améliorations supplémentaires. Pour cela, il faut consulter l'historique des commits et le Code Frequency (sous l'onglet Insights) sur Github, ainsi que vérifier la date de «dernière publication» sur le NPM. La table ci-dessous montre le nombre et la dernière date de commits par bibliothèque:
+  \item \textbf{La maintenance active} : Elle est le meilleur moyen qui permet à la bibliothèque de passer d’une version nouvelle et expérimentale à une version stable et mature. Cela comprends des corrections des bugs réguliers et des améliorations supplémentaires. Pour cela, il faut consulter l'historique des commits et le Code Frequency (sous l'onglet Insights) sur Github, ainsi que vérifier la date de «dernière publication» sur le NPM. La table ci-dessous montre le nombre et la dernière date de commits par bibliothèque:
   \begin{figure}[!ht]
     \centering
     \includegraphics[height=3.3cm]{images/commit-table.jpg}
@@ -786,14 +788,20 @@ Il existe de nombreux éléments comparables entre ces bibliothèques tels que :
   \item \textbf{Taille} : Il faut vérifier la taille du package en utilisant des outils tels que Bundlephobia qui indique la taille d'un package NPM, la durée de téléchargement estimée sur des réseaux lents, l'évolution de la taille de l'ensemble au fil des versions et la composition des dépendances.
   \item \textbf{Test de coverage} : Il est nécessaire de vérifier les badges de couverture sur NPM / Github et d’ouvrir les fichiers de test.
 \end{enumerate}
+L’arbre décisionnel schématise le processus de choix en fonction des caractéristiques des bibliothèques Javascript (cf.annexe \ref{annexeC})
 
 
 
+\chapter{Conclusion}
+Chaque ville aspire à devenir une ville intelligente dotée d'infrastructures de base pour offrir un style de vie de qualité à ses citoyens. Le Big Data a un grand potentiel pour augmenter et utiliser les services de ville intelligente. Les entreprises peuvent ainsi analyser les données volumineuses pour prendre les décisions et les mesures stratégiques appropriées. La visualisation de données volumineuses et la géovisualisation ont pour objectif de gérer, communiquer et afficher rapidement de grandes quantités de données, et en particulier de fournir une représentation graphique des données permettant d'afficher et de révéler des informations complexes dans des délais rapides. \\
 
+ Ce mémoire vise à offrir une vision globale de la technologie utilisée dans une ville intelligente et un répertoire détaillé des différentes techniques et outils utilisés pour la visualisation du Big Data. Premièrement, j’ai abordé les techniques existantes dans la ville intelligente. Puis, j’ai dégagé les différences entre ces techniques selon les cas d’utilisation, afin de faciliter le choix de la technique appropriée dans la réalisation d’une présentation des données. Ensuite, les outils de la visualisation visant à visualiser le Big Data ont également été proposés, et les applications des villes intelligentes dans lesquelles l'analyse des données volumineuses peut jouer un rôle important ont été discutées. Dans ce contexte, j’ai regroupé les différents outils en trois approches selon le projet de l’entreprise. J’ai aussi dégagé des critères de comparaison afin de comparer ces approches. \\
+ 
+Au cours du cas pratique, une étude de cas est réalisée pour comparer les différentes bibliothèques Javascript qui peuvent être utilisées dans le cadre d’une solution destinée aux smart city. 
+Par la suite, j’ai souhaité faire une étude comparative entre les différents outils de visualisation basé sur un système d’information géographique SIG car ils fournissent une visualisation de données géospatiales de haute qualité qui peut améliorer la compréhension et la capacité de prise de décision en ce qui concerne l’identification, la valorisation et la sélection dans une carte. Cependant, les données que j’avais recueillies et le temps imparti étaient insuffisants pour le bon déroulement de cette étude comparative.\\
 
-\chapter{Bilan et conclusion}
-\section{Bilan professionnel et personnel}
-\section{Conclusion}
+En conclusion, la visualisation du Big Data joue un rôle important dans l'obtention d'informations précieuses et dans la prise de décision stratégique des entreprises ou des organismes municipaux.  La recherche sur le Big Data dans une ville intelligente en est à son commencement et les défis qui restent à résoudre en font un domaine pratique.
+
 
 
 % \nocite{*}
@@ -805,7 +813,7 @@ Il existe de nombreux éléments comparables entre ces bibliothèques tels que :
 \bibitem{0}
 United Nations. \href{https://www.un.org/en/development/desa/population/publications/pdf/urbanization/the_worlds_cities_in_2016_data_booklet.pdf}{\emph{P.D.: The World’s Cities in 2016. United Nations}. [2016].} 
 
-\bibitem{1} Paolo Neirotti, Alberto De Marco, Anna Corinna Cagliano, Giulio Mangano⇑, Francesco Scorrano \href{https://www.researchgate.net/publication/260015335_Current_trends_in_Smart_City_initiatives_Some_stylised_facts}{\emph{, Current trends in Smart City initiatives: some stylised facts. Cities}. [2013]} 
+\bibitem{1} Paolo Neirotti, Alberto De Marco, Anna Corinna Cagliano, Giulio Mangano, Francesco Scorrano \href{https://www.researchgate.net/publication/260015335_Current_trends_in_Smart_City_initiatives_Some_stylised_facts}{\emph{, Current trends in Smart City initiatives: some stylised facts. Cities}. [2013]} 
 
 \bibitem{2}  Sandra Breux et Jérémy Diaz, \href{http://espace.inrs.ca/4917/1/Rapport-LaVilleIntelligente.pdf}{\emph{LA VILLE INTELLIGENTE Origine, définitions, forces et limites d’une expression polysémique}} [2017]
 
@@ -818,7 +826,7 @@ United Nations. \href{https://www.un.org/en/development/desa/population/publicat
 
 \bibitem{6}IEEE. \href{https://ieeexplore.ieee.org/abstract/document/5958132}{\emph{Enabling Future Education with Smart Services pp. 550–556}} [2011]
 
-\bibitem{7}Aguilera G, Galan JL, Campos JC, Rodríguez P. \href{}{\emph{An Accelerated-Time Simulation for Traffic Flow in a Smart City.}} [2013]
+\bibitem{7}Aguilera G, Galan JL, Campos JC, Rodríguez P. \href{https://www.sciencedirect.com/science/article/pii/S0377042713006523}{\emph{An Accelerated-Time Simulation for Traffic Flow in a Smart City.}} [2013]
 
 \bibitem{8}Gaetan R. \href{https://www.objetconnecte.com/iot-definition-chiffres-usages-marches/}{\emph{IoT, qu’est-ce que c’est ? Définition, chiffres, usages et marché.}} [2015]
 
@@ -837,5 +845,63 @@ FOR SMART CITIES p.4}} [2017]
 
 \bibitem{14} finances online \href{https://financesonline.com/15-best-business-intelligence-tools-small-big-business/#looker}{\emph{15 Best Business Intelligence Tools For Small And Big Business}}
 
+\bibitem{15} Wikipedia \href{https://ipfs.io/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/List_of_geographic_information_systems_software.html}{\emph{List of geographic information systems software}}
+
+\bibitem{16} UITP \href{https://www.uitp.org/sites/default/files/cck-focus-papers-files/UITP_Statistic\%20Brief_national\%20PT\%20stats.pdf}{\emph{URBAN PUBLIC TRANSPORT IN THE 21ST CENTURY}}[2017]
+
+
+
 \end{thebibliography}
+\newpage\null\thispagestyle{empty}\newpage
+% \newpage
+% \makeglossaries
+% \newglossaryentry{CEO}
+% {
+%         name=CEO,
+%         description={Chief of Executive Officer}
+% }
+% \newacronym{gcd}{GCD}{Greatest Common Divisor}
+% \newacronym{lcm}{LCM}{Least Common Multiple}
+
+\appendix
+\chapter{Annexe A: Le rôle du Big Data dans la ville intelligente}
+\label{annexeA}
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[height=7cm]{images/BD1.jpg}
+    \caption{Paysage de la ville intelligente et technologies Big Data }
+    \scriptsize{\small source : \url{https://www.sciencedirect.com/science/article/pii/S0268401216302778}}
+    \label{fig:annexeA1}
+\end{figure}
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[height=7cm]{images/BD2.jpg}
+    \caption{Cadre de construction des technologies Big Data pour la ville intelligente}
+    \scriptsize{\small source : \url{https://www.sciencedirect.com/science/article/pii/S0268401216302778}}
+    \label{fig:annexeA2}
+\end{figure}
+\chapter{Annexe B: Comparison les outils de SIG}
+\label{annexeB}
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[height=12cm]{images/GIS-tools.jpg}
+    \caption{Comparaison des outils SIG selon licence, source et système d'exploitation}
+    \scriptsize{\small source : \url{https://en.wikipedia.org/wiki/Comparison_of_geographic_information_systems_software}}
+    \label{fig:annexB}
+\end{figure}
+% \begin{figure}[!htb]
+%     \centering
+%     \includegraphics[height=4cm]{images/Map-serveur.jpg}
+%     \caption{}
+%     \scriptsize{\small source : \url{https://en.wikipedia.org/wiki/Comparison_of_geographic_information_systems_software}}
+%     \label{fig:my_label}
+% \end{figure}
+\chapter{Annexe C: Arbre décisionnel schématise}
+\label{annexeC}
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[height=9cm]{images/JSlibrary.jpg}
+    \caption{Le processus de choix en fonction des caractéristiques des bibliothèques Javascript}
+    \label{fig:annexeC}
+\end{figure}
 \end{document}
