@@ -1,47 +1,14 @@
-# M-moire-fin-d-tude---2019
-Quel est l'impact de la visualisation du Big Data sur les smart cities?
+#  Master Thesis 2019
+Quels sont les techniques et les outils de la visualisation du Big Data à apporter aux Smart Cities?
 
-# Plan détaillé
-1 - Introduction <br />
-2 - Visualisation du Big Data dans les smart cities<br />
-2.1 - Smart city<br />
-  2.1.1 - Définition de la ville intelligente<br />
-  2.1.2 - Étapes pour la mise en œuvre de projets de ville intelligente<br />
-  2.1.3 - Avantages et opportunités<br />
-2.2 - Le rôle de la technologie dans les smart cities<br />
-  2.2.1 - Les données numériques (Big Data) <br />
-  2.2.2 - Internet of Things (IoT)<br />
-  2.2.3 - Avantages du Big Data dans les composants de la ville intelligente<br />
-  2.2.4 - Les exigences des applications de ville intelligente basées sur le Big Data<br />
-2.3 - Visualisation du Big Data <br />
-  2.2.1 - Context<br />
-  2.2.2 - L’importance de la visualisation du Big Data<br />
-  2.2.3 - Les techniques de visualisation dans un contexte Big Data <br />
-	  2.2.3.1 - Graphiques bidimensionnels<br />
-	  2.2.3.2 - Techniques de visualisation des données géospatiales<br />
-	  2.2.3.3 - Géovisualisation et analyse visuelle<br />
-2.2.4 - Outils de visualisation de données <br />
-	2.2.4.1 - Google Chart<br />
-	2.2.4.2 - Tableau<br />
-	2.2.4.3 - D3JS<br />
-3 - Etude comparative<br />
-3.1 - Selon des critères d'affaires<br />
-3.2 - Selon des critères techniques<br />
-3.3 - Les éléments déterminant le choix de visualisation du Big Data<br />
-3.4 - Les défis de la visualisation du Big Data<br />
+## Problématique
 
-3.5 - Défis et opportunités avec la visualisation du Big Data dans le contexte des Smart Cities<br />
+### Description de la problématique
+Les villes cherchent à devenir intelligentes en connectant les systèmes isolés des organismes municipaux et en installant des capteurs intelligents. Les administrateurs de la ville cherchent à exploiter les informations tirées des données des capteurs de l'Internet des objets (IoT), de systèmes de positionnement global (GPS), de smartphones et d'ordinateurs. 80\% de ces données sont des données sombres, ce qui signifie que les données sont non structurées pour transmettre un sens en soi \cite{10}.
+Il est important que les décideurs puissent visualiser et interagir avec les données pour découvrir les modèles sous-jacents et pour décider des prochaines étapes. Grâce à la visualisation des données, il est possible de s’affranchir des experts en données pour lire les informations générées par celles-ci. 
+La visualisation des données doit être interactive, ce qui permet aux utilisateurs d’interagir avec les composants de la ville intelligente et les parties prenantes dans un environnement convivial. Les applications Web sont utilisées pour créer cet environnement interactif. L'environnement graphique SIG interactif permet la visualisation de composants urbains. Les utilisateurs et les gestionnaires peuvent utiliser ces cartes pour accéder aux données statiques et dynamiques concernant les systèmes urbains ainsi que pour mettre à jour les données.
+### Contexte et motivation
 
-4 - Cas Cas pratique: visualisation du Big Data chez Datategy<br />
-4.1 - Presentation de Datategy<br />
-4.2 - Presentation d’OctoCity solution<br />
-4.3 - Visualisation big data dans le cadre de la solution OctoCity<br />
+Les outils de visualisation de données volumineuses deviennent une nécessité absolue pour toute entreprise qui souhaite tirer le meilleur parti de ses programmes d’analyse. Les entreprises reconnaissent ainsi que de tels outils d’analyse sont utiles pour obtenir des informations stratégiques à partir du Big Data. Le marché de la visualisation se développe à un rythme sans précédent. En tant que développeur web front-end, une de mes missions était de choisir un outil de visualisation pour l'intégrer dans l’application de l’entreprise Datategy. J’ai été amené à me questionner sur le choix à effectuer parmis les différentes outils de la visualisation du Big Data, et ainsi les critères à privilégier pour faire ce choix. Dans le cas précis d’une smart city, le Big data et les données géospatiales joue un rôle très important. Cela m’a amené à me demander quels sont les outils de la visualisation les plus adaptés. 
 
-5 - Bilan et conclusion<br />
-6.1 - Bilan professionnel<br />
-6.2 - Bilan personnel<br />
-6.3 - Conclusion<br />
-
-6 - Bibliographie
-
-7 - Annexe
+Chaque outil fournit différentes techniques de visualisation telles que des graphiques (graphiques à barres, graphiques linéaires, diagrammes de dispersion, etc) et/ou des cartographies (cartes à points, cartes à bulle, cartes Choroplèthes et thermiques, etc).  Il est nécessaire de comprendre les différentes techniques afin de déterminer laquelle convient le mieux à chaque présentation.
